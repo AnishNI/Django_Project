@@ -1,0 +1,1022 @@
+SR NO ,Job Title,Company,Skills,Location,Job Type,Salary
+1,Data Scientist,TechCorp,"python, machine learning, pandas",Pune,Full-time,1200000
+2,Web Developer,Webify,"react, javascript, html",Remote,Contract,800000
+3,Backend Engineer,CodeBase,"node.js, express, mongodb",Bangalore,Full-time,1000000
+4,Frontend Developer,PixelSoft,"vue.js, css, html",Hyderabad,Part-time,600000
+5,DevOps Engineer,CloudWorks,"aws, docker, kubernetes",Mumbai,Full-time,1300000
+6,AI Researcher,DeepMind,"python, tensorflow, llms",Remote,Full-time,1500000
+7,Cybersecurity Analyst,SecureNet,"network security, penetration testing",Delhi,Contract,950000
+8,Blockchain Developer,ChainTech,"solidity, ethereum, smart contracts",Pune,Full-time,1250000
+9,Database Administrator,DataBank,"sql, oracle, dbms",Chennai,Full-time,900000
+10,Mobile App Developer,Appify,"flutter, dart, firebase",Remote,Part-time,700000
+11,Product Manager,InnovateNow,"agile, product roadmaps",Bangalore,Full-time,1400000
+12,System Administrator,InfraTech,"linux, shell scripting, monitoring",Mumbai,Full-time,850000
+13,ML Engineer,AlgoWorks,"scikit-learn, deep learning",Hyderabad,Full-time,1100000
+14,UI/UX Designer,Designo,"figma, adobe xd, wireframing",Delhi,Contract,650000
+15,Cloud Architect,SkyNet,"aws, azure, architecture",Remote,Full-time,1600000
+16,Software Engineer,SoftNova,"java, spring boot",Chennai,Full-time,1050000
+17,Technical Writer,DocuSoft,"documentation, markdown, APIs",Remote,Part-time,550000
+18,Game Developer,GameHub,"unity, c#, animation",Pune,Contract,950000
+19,Network Engineer,ConnectTech,"networking, cisco, troubleshooting",Bangalore,Full-time,980000
+20,Business Analyst,BizSolutions,"excel, sql, data analysis",Hyderabad,Full-time,900000
+21,Backend Engineer,InnovateX,"client relations, campaign strategy, presentations",Remote,Full-time,2077390
+22,Pharmacist,DevSolutions,"prescription handling, pharma knowledge",Mumbai,Part-time,2156932
+23,Mobile App Developer,Global Travels,"client relations, campaign strategy, presentations",Bangalore,Internship,505632
+24,Backend Engineer,BrightFuture School,"adobe photoshop, illustrator, creativity",Mumbai,Internship,1624666
+25,Wedding Manager,TechNova,"figma, user testing, wireframing",Bangalore,Contract,747828
+26,UX Designer,BizConsult,"aws, docker, kubernetes",Hyderabad,Contract,2193494
+27,UI/UX Designer,Global Travels,"python, pandas, numpy",Remote,Contract,2230063
+28,Account Director,TechNova,"test case writing, selenium, bug tracking",Hyderabad,Contract,1940328
+29,Customer Support Specialist,PharmaCare,"react, javascript, css",Pune,Contract,2320990
+30,UX Designer,TechNova,"python, pandas, numpy",Delhi,Internship,2432957
+31,ML Engineer,BuildRight Infra,"python, pandas, numpy",Delhi,Part-time,1374737
+32,UI/UX Designer,CloudNet,"curriculum planning, classroom management, communication",Bangalore,Full-time,1334124
+33,Restaurant Manager,DesignCrafters,"node.js, express, mongodb",Hyderabad,Contract,720283
+34,Account Director,CreativeHub Agency,"customer service, ticketing, troubleshooting",Mumbai,Internship,1830166
+35,Hotel Receptionist,DesignCrafters,"typing, accuracy, database entry",Hyderabad,Internship,1161307
+36,HR Coordinator,DesignCrafters,"event coordination, client management, budgeting",Pune,Part-time,1522032
+37,Data Entry Clerk,DataWiz,"autocad, site planning, structural analysis",Mumbai,Contract,926540
+38,System Administrator,Global Travels,"sql, data visualization, problem solving",Bangalore,Part-time,982811
+39,Web Developer,HealthFirst Clinic,"sql, data analysis, tableau",Hyderabad,Part-time,1699993
+40,System Administrator,EduWise Academy,"excel, financial modeling, data interpretation",Delhi,Part-time,592744
+41,Web Developer,BuildRight Infra,"excel, financial modeling, data interpretation",Remote,Contract,2318018
+42,Database Administrator,DataWiz,"react, javascript, css",Hyderabad,Part-time,657989
+43,Game Developer,DreamWeddings Inc.,"prescription handling, pharma knowledge",Delhi,Contract,1394042
+44,Blockchain Developer,InnovateX,"customer service, ticketing, troubleshooting",Pune,Part-time,557679
+45,HR Coordinator,EduWise Academy,"autocad, site planning, structural analysis",Delhi,Full-time,1815445
+46,Graphic Designer,TechNova,"test case writing, selenium, bug tracking",Bangalore,Full-time,1345753
+47,Restaurant Manager,PharmaCare,"java, spring, hibernate",Bangalore,Internship,843064
+48,Pharmacist,TechNova,"react, javascript, css",Mumbai,Internship,2089253
+49,Hotel Receptionist,CreativeHub Agency,"sql, data analysis, tableau",Pune,Full-time,2415871
+50,UI/UX Designer,DataWiz,"figma, user testing, wireframing",Delhi,Contract,2204111
+51,HR Coordinator,DreamWeddings Inc.,"java, spring, hibernate",Remote,Part-time,1412312
+52,Financial Analyst,InnovateX,"salesforce, CRM, negotiation",Mumbai,Full-time,773117
+53,AI Researcher,BuildRight Infra,"inventory, hospitality management, POS systems",Delhi,Part-time,915417
+54,Web Developer,DataWiz,"typing, accuracy, database entry",Bangalore,Full-time,1649387
+55,Civil Engineer,Global Travels,"customer service, ticketing, troubleshooting",Mumbai,Internship,996758
+56,Business Analyst,EduWise Academy,"node.js, express, mongodb",Bangalore,Contract,1156071
+57,Wedding Manager,HealthFirst Clinic,"excel, financial modeling, data interpretation",Pune,Contract,1082398
+58,Frontend Developer,City Hospital,"inventory, hospitality management, POS systems",Remote,Contract,1473267
+59,Wedding Manager,CreativeHub Agency,"test case writing, selenium, bug tracking",Pune,Part-time,2068380
+60,Teacher,CloudNet,"excel, financial modeling, data interpretation",Hyderabad,Contract,2269413
+61,Pharmacist,DesignCrafters,"excel, financial modeling, data interpretation",Bangalore,Full-time,1355088
+62,Wedding Manager,InnovateX,"figma, user testing, wireframing",Mumbai,Part-time,2075638
+63,Business Analyst,BuildRight Infra,"adobe photoshop, illustrator, creativity",Delhi,Internship,1028266
+64,Frontend Developer,FinEdge Solutions,"legal documentation, compliance, case review",Hyderabad,Contract,1917679
+65,Data Scientist,BuildRight Infra,"node.js, express, mongodb",Pune,Contract,1894192
+66,Database Administrator,InnovateX,"python, pandas, numpy",Mumbai,Full-time,689999
+67,Game Developer,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Mumbai,Contract,2112489
+68,Operations Manager,BizConsult,"java, spring, hibernate",Remote,Part-time,877068
+69,Game Developer,BrightFuture School,"salesforce, CRM, negotiation",Pune,Contract,2170263
+70,UX Designer,BuildRight Infra,"event coordination, client management, budgeting",Remote,Part-time,2205227
+71,DevOps Engineer,CreativeHub Agency,"figma, user testing, wireframing",Bangalore,Full-time,1294095
+72,HR Coordinator,EduWise Academy,"excel, financial modeling, data interpretation",Pune,Full-time,1803286
+73,UX Designer,CreativeHub Agency,"sql, data visualization, problem solving",Bangalore,Part-time,2276306
+74,Product Manager,DreamWeddings Inc.,"client relations, campaign strategy, presentations",Bangalore,Part-time,2344482
+75,Account Director,DataWiz,"excel, financial modeling, data interpretation",Bangalore,Contract,704364
+76,Legal Advisor,TechNova,"client relations, campaign strategy, presentations",Pune,Contract,2442315
+77,Cybersecurity Analyst,TechNova,"curriculum planning, classroom management, communication",Delhi,Internship,2135162
+78,Software Engineer,HealthFirst Clinic,"excel, financial modeling, data interpretation",Delhi,Part-time,563102
+79,Cybersecurity Analyst,InnovateX,"curriculum planning, classroom management, communication",Hyderabad,Contract,1729276
+80,AI Researcher,BrightFuture School,"curriculum planning, classroom management, communication",Remote,Internship,1993594
+81,QA Analyst,CreativeHub Agency,"prescription handling, pharma knowledge",Remote,Part-time,875238
+82,Web Developer,BizConsult,"java, spring, hibernate",Delhi,Full-time,1092554
+83,Graphic Designer,DesignCrafters,"react, javascript, css",Pune,Contract,646172
+84,Restaurant Manager,InnovateX,"react, javascript, css",Bangalore,Contract,1712003
+85,Civil Engineer,DreamWeddings Inc.,"sql, data analysis, tableau",Pune,Contract,1997099
+86,Marketing Manager,BuildRight Infra,"interviewing, HR software, conflict resolution",Pune,Part-time,1434138
+87,Product Manager,EduWise Academy,"client relations, campaign strategy, presentations",Pune,Internship,1334602
+88,Hotel Receptionist,HealthFirst Clinic,"sql, data analysis, tableau",Pune,Part-time,2040420
+89,Pharmacist,HealthFirst Clinic,"java, spring, hibernate",Bangalore,Full-time,548978
+90,ML Engineer,HealthFirst Clinic,"java, spring, hibernate",Remote,Contract,616904
+91,Technical Writer,FinEdge Solutions,"salesforce, CRM, negotiation",Pune,Part-time,1973698
+92,Wedding Manager,BrightFuture School,"react, javascript, css",Hyderabad,Part-time,1691589
+93,DevOps Engineer,InnovateX,"check-in, phone etiquette, scheduling",Delhi,Contract,1908258
+94,Data Entry Clerk,HealthFirst Clinic,"excel, financial modeling, data interpretation",Pune,Part-time,1072546
+95,Mobile App Developer,EduWise Academy,"react, javascript, css",Pune,Full-time,1516745
+96,Product Manager,DevSolutions,"patient care, diagnosis, medical documentation",Delhi,Part-time,1580313
+97,Business Analyst,BizConsult,"adobe photoshop, illustrator, creativity",Remote,Full-time,2445802
+98,Customer Support Specialist,BizConsult,"test case writing, selenium, bug tracking",Mumbai,Contract,1506914
+99,Business Analyst,Global Travels,"salesforce, CRM, negotiation",Delhi,Internship,1464268
+100,UX Designer,DesignCrafters,"node.js, express, mongodb",Delhi,Internship,1991615
+101,Pharmacist,FinEdge Solutions,"check-in, phone etiquette, scheduling",Hyderabad,Part-time,1995156
+102,Operations Manager,BuildRight Infra,"check-in, phone etiquette, scheduling",Mumbai,Full-time,2318802
+103,Sales Executive,City Hospital,"curriculum planning, classroom management, communication",Hyderabad,Internship,1645459
+104,Data Scientist,BizConsult,"sql, data analysis, tableau",Delhi,Contract,1644079
+105,ML Engineer,InnovateX,"patient care, diagnosis, medical documentation",Pune,Full-time,1006753
+106,Software Engineer,PharmaCare,"python, pandas, numpy",Mumbai,Part-time,718375
+107,Operations Manager,HealthFirst Clinic,"react, javascript, css",Pune,Internship,828782
+108,Network Engineer,TechNova,"excel, financial modeling, data interpretation",Bangalore,Contract,2464465
+109,Cybersecurity Analyst,EduWise Academy,"java, spring, hibernate",Delhi,Part-time,824487
+110,Business Analyst,BuildRight Infra,"react, javascript, css",Hyderabad,Internship,578123
+111,Technical Writer,DevSolutions,"react, javascript, css",Pune,Internship,1281061
+112,UX Designer,DreamWeddings Inc.,"excel, financial modeling, data interpretation",Mumbai,Internship,2358914
+113,Data Scientist,DreamWeddings Inc.,"adobe photoshop, illustrator, creativity",Mumbai,Contract,2020015
+114,Database Administrator,TechNova,"react, javascript, css",Pune,Full-time,1164637
+115,Technical Writer,BrightFuture School,"aws, docker, kubernetes",Remote,Part-time,1270231
+116,Product Manager,BuildRight Infra,"event coordination, client management, budgeting",Mumbai,Part-time,951117
+117,Web Developer,HealthFirst Clinic,"autocad, site planning, structural analysis",Hyderabad,Part-time,1960027
+118,Game Developer,City Hospital,"typing, accuracy, database entry",Delhi,Full-time,745249
+119,Legal Advisor,BizConsult,"java, spring, hibernate",Hyderabad,Full-time,2256712
+120,UX Designer,CreativeHub Agency,"react, javascript, css",Bangalore,Part-time,2027366
+121,DevOps Engineer,Global Travels,"python, pandas, numpy",Delhi,Internship,1005364
+122,Blockchain Developer,BuildRight Infra,"typing, accuracy, database entry",Mumbai,Contract,1399763
+123,Web Developer,BuildRight Infra,"check-in, phone etiquette, scheduling",Remote,Part-time,1280271
+124,UX Designer,DesignCrafters,"autocad, site planning, structural analysis",Remote,Part-time,667064
+125,Web Developer,BrightFuture School,"inventory, hospitality management, POS systems",Remote,Full-time,1517675
+126,Teacher,EduWise Academy,"python, pandas, numpy",Hyderabad,Internship,873867
+127,Pharmacist,CreativeHub Agency,"figma, user testing, wireframing",Delhi,Internship,1587277
+128,Legal Advisor,HealthFirst Clinic,"salesforce, CRM, negotiation",Mumbai,Full-time,1668328
+129,Blockchain Developer,DesignCrafters,"patient care, diagnosis, medical documentation",Bangalore,Contract,1604610
+130,Technical Writer,EduWise Academy,"customer service, ticketing, troubleshooting",Delhi,Part-time,2285456
+131,Network Engineer,InnovateX,"autocad, site planning, structural analysis",Mumbai,Contract,2365176
+132,Civil Engineer,TechNova,"patient care, diagnosis, medical documentation",Bangalore,Part-time,1672499
+133,Technical Writer,BizConsult,"test case writing, selenium, bug tracking",Delhi,Full-time,1389833
+134,UX Designer,FinEdge Solutions,"customer service, ticketing, troubleshooting",Mumbai,Full-time,907467
+135,HR Coordinator,DataWiz,"customer service, ticketing, troubleshooting",Hyderabad,Full-time,969099
+136,Account Director,TechNova,"legal documentation, compliance, case review",Mumbai,Contract,1172770
+137,Network Engineer,EduWise Academy,"test case writing, selenium, bug tracking",Pune,Part-time,1814054
+138,Teacher,CreativeHub Agency,"interviewing, HR software, conflict resolution",Pune,Full-time,1526543
+139,QA Analyst,EduWise Academy,"adobe photoshop, illustrator, creativity",Hyderabad,Contract,828226
+140,Teacher,TechNova,"salesforce, CRM, negotiation",Hyderabad,Contract,1125553
+141,ML Engineer,CloudNet,"java, spring, hibernate",Pune,Part-time,1590615
+142,AI Researcher,DesignCrafters,"customer service, ticketing, troubleshooting",Remote,Part-time,595211
+143,Customer Support Specialist,DreamWeddings Inc.,"autocad, site planning, structural analysis",Bangalore,Contract,1343675
+144,Network Engineer,Global Travels,"test case writing, selenium, bug tracking",Mumbai,Part-time,1033072
+145,Civil Engineer,CreativeHub Agency,"test case writing, selenium, bug tracking",Bangalore,Contract,577790
+146,Data Entry Clerk,City Hospital,"aws, docker, kubernetes",Pune,Contract,789339
+147,Sales Executive,PharmaCare,"interviewing, HR software, conflict resolution",Hyderabad,Internship,1543215
+148,Restaurant Manager,DevSolutions,"interviewing, HR software, conflict resolution",Hyderabad,Full-time,1553111
+149,UX Designer,DataWiz,"client relations, campaign strategy, presentations",Bangalore,Full-time,746676
+150,Software Engineer,City Hospital,"excel, financial modeling, data interpretation",Hyderabad,Full-time,1768950
+151,Data Scientist,CreativeHub Agency,"customer service, ticketing, troubleshooting",Pune,Part-time,2066979
+152,Restaurant Manager,CloudNet,"java, spring, hibernate",Bangalore,Part-time,2208138
+153,Web Developer,BrightFuture School,"inventory, hospitality management, POS systems",Mumbai,Internship,986162
+154,Cybersecurity Analyst,PharmaCare,"react, javascript, css",Hyderabad,Contract,2289671
+155,Wedding Manager,BuildRight Infra,"inventory, hospitality management, POS systems",Bangalore,Part-time,1168201
+156,Frontend Developer,FinEdge Solutions,"typing, accuracy, database entry",Remote,Part-time,766809
+157,Network Engineer,InnovateX,"aws, docker, kubernetes",Pune,Part-time,1995229
+158,Legal Advisor,Global Travels,"curriculum planning, classroom management, communication",Bangalore,Internship,1921067
+159,ML Engineer,FinEdge Solutions,"autocad, site planning, structural analysis",Hyderabad,Contract,692999
+160,Hotel Receptionist,DataWiz,"react, javascript, css",Delhi,Internship,2241697
+161,Data Entry Clerk,DataWiz,"java, spring, hibernate",Remote,Full-time,1364758
+162,Game Developer,HealthFirst Clinic,"figma, user testing, wireframing",Remote,Contract,1850002
+163,QA Analyst,InnovateX,"check-in, phone etiquette, scheduling",Bangalore,Contract,690681
+164,Legal Advisor,City Hospital,"legal documentation, compliance, case review",Mumbai,Full-time,2319562
+165,Business Analyst,InnovateX,"inventory, hospitality management, POS systems",Hyderabad,Part-time,890337
+166,Mobile App Developer,DreamWeddings Inc.,"autocad, site planning, structural analysis",Hyderabad,Contract,1013932
+167,DevOps Engineer,Global Travels,"adobe photoshop, illustrator, creativity",Pune,Internship,546993
+168,Data Scientist,BuildRight Infra,"patient care, diagnosis, medical documentation",Hyderabad,Full-time,2119524
+169,ML Engineer,TechNova,"legal documentation, compliance, case review",Mumbai,Internship,2421832
+170,Operations Manager,TechNova,"java, spring, hibernate",Bangalore,Contract,1021394
+171,Software Engineer,PharmaCare,"typing, accuracy, database entry",Pune,Full-time,642537
+172,Financial Analyst,DreamWeddings Inc.,"java, spring, hibernate",Remote,Internship,1089697
+173,Operations Manager,HealthFirst Clinic,"autocad, site planning, structural analysis",Hyderabad,Internship,977116
+174,Software Engineer,DreamWeddings Inc.,"client relations, campaign strategy, presentations",Bangalore,Part-time,1611143
+175,Database Administrator,CreativeHub Agency,"autocad, site planning, structural analysis",Hyderabad,Internship,1054500
+176,Frontend Developer,City Hospital,"test case writing, selenium, bug tracking",Bangalore,Internship,812620
+177,Web Developer,DevSolutions,"aws, docker, kubernetes",Bangalore,Contract,1802336
+178,UI/UX Designer,BrightFuture School,"event coordination, client management, budgeting",Delhi,Part-time,2452704
+179,Business Analyst,CreativeHub Agency,"salesforce, CRM, negotiation",Bangalore,Part-time,1372918
+180,QA Analyst,BuildRight Infra,"salesforce, CRM, negotiation",Remote,Full-time,1709883
+181,Data Entry Clerk,DataWiz,"typing, accuracy, database entry",Delhi,Contract,1142904
+182,Game Developer,Global Travels,"aws, docker, kubernetes",Pune,Part-time,2216592
+183,Wedding Manager,CreativeHub Agency,"node.js, express, mongodb",Bangalore,Part-time,1189774
+184,Cybersecurity Analyst,CloudNet,"excel, financial modeling, data interpretation",Remote,Contract,721539
+185,Cybersecurity Analyst,TechNova,"excel, financial modeling, data interpretation",Mumbai,Full-time,1403811
+186,ML Engineer,HealthFirst Clinic,"figma, user testing, wireframing",Bangalore,Internship,1036997
+187,Frontend Developer,PharmaCare,"interviewing, HR software, conflict resolution",Pune,Part-time,2364330
+188,Cybersecurity Analyst,EduWise Academy,"event coordination, client management, budgeting",Hyderabad,Part-time,1156689
+189,System Administrator,CloudNet,"react, javascript, css",Bangalore,Part-time,1406823
+190,UI/UX Designer,BizConsult,"react, javascript, css",Hyderabad,Part-time,1707809
+191,UI/UX Designer,EduWise Academy,"excel, financial modeling, data interpretation",Mumbai,Part-time,2376436
+192,Mobile App Developer,DataWiz,"java, spring, hibernate",Mumbai,Internship,1563576
+193,Teacher,DreamWeddings Inc.,"curriculum planning, classroom management, communication",Bangalore,Full-time,885332
+194,Data Scientist,CreativeHub Agency,"sql, data visualization, problem solving",Hyderabad,Contract,1917288
+195,Database Administrator,DataWiz,"curriculum planning, classroom management, communication",Delhi,Part-time,1771453
+196,Frontend Developer,PharmaCare,"adobe photoshop, illustrator, creativity",Bangalore,Part-time,1915116
+197,HR Coordinator,DevSolutions,"patient care, diagnosis, medical documentation",Pune,Internship,2420298
+198,Cloud Architect,InnovateX,"java, spring, hibernate",Hyderabad,Full-time,1920944
+199,Cybersecurity Analyst,DreamWeddings Inc.,"sql, data analysis, tableau",Remote,Internship,1049406
+200,Restaurant Manager,City Hospital,"test case writing, selenium, bug tracking",Pune,Contract,940471
+201,ML Engineer,CloudNet,"interviewing, HR software, conflict resolution",Bangalore,Full-time,1910913
+202,Frontend Developer,BuildRight Infra,"interviewing, HR software, conflict resolution",Mumbai,Internship,752530
+203,Network Engineer,InnovateX,"react, javascript, css",Bangalore,Part-time,1129431
+204,Customer Support Specialist,HealthFirst Clinic,"curriculum planning, classroom management, communication",Remote,Contract,1894584
+205,Graphic Designer,BizConsult,"java, spring, hibernate",Bangalore,Full-time,739266
+206,UX Designer,BrightFuture School,"customer service, ticketing, troubleshooting",Hyderabad,Part-time,565674
+207,Pharmacist,DesignCrafters,"event coordination, client management, budgeting",Hyderabad,Part-time,2304385
+208,ML Engineer,HealthFirst Clinic,"react, javascript, css",Bangalore,Part-time,503668
+209,HR Coordinator,CloudNet,"prescription handling, pharma knowledge",Delhi,Contract,1799161
+210,Data Entry Clerk,BrightFuture School,"patient care, diagnosis, medical documentation",Remote,Part-time,1155226
+211,Software Engineer,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Pune,Contract,636908
+212,Backend Engineer,PharmaCare,"node.js, express, mongodb",Delhi,Internship,1803419
+213,QA Analyst,TechNova,"event coordination, client management, budgeting",Pune,Contract,953643
+214,Game Developer,TechNova,"sql, data analysis, tableau",Delhi,Internship,2078593
+215,Marketing Manager,DesignCrafters,"prescription handling, pharma knowledge",Remote,Full-time,1454658
+216,Product Manager,BuildRight Infra,"curriculum planning, classroom management, communication",Remote,Internship,801331
+217,Sales Executive,BuildRight Infra,"aws, docker, kubernetes",Mumbai,Full-time,1838078
+218,Financial Analyst,Global Travels,"java, spring, hibernate",Remote,Internship,1843412
+219,System Administrator,FinEdge Solutions,"patient care, diagnosis, medical documentation",Remote,Full-time,1334124
+220,Business Analyst,City Hospital,"legal documentation, compliance, case review",Remote,Internship,2104900
+221,Customer Support Specialist,DevSolutions,"customer service, ticketing, troubleshooting",Remote,Internship,2034069
+222,HR Coordinator,CloudNet,"event coordination, client management, budgeting",Pune,Full-time,2320948
+223,Hotel Receptionist,FinEdge Solutions,"curriculum planning, classroom management, communication",Delhi,Part-time,893601
+224,Nurse Practitioner,HealthFirst Clinic,"react, javascript, css",Delhi,Part-time,983533
+225,Game Developer,PharmaCare,"inventory, hospitality management, POS systems",Hyderabad,Contract,1269847
+226,Marketing Manager,FinEdge Solutions,"check-in, phone etiquette, scheduling",Hyderabad,Full-time,2478268
+227,Nurse Practitioner,DesignCrafters,"react, javascript, css",Hyderabad,Part-time,1328767
+228,AI Researcher,DataWiz,"salesforce, CRM, negotiation",Delhi,Full-time,1399309
+229,Business Analyst,DataWiz,"figma, user testing, wireframing",Pune,Contract,674571
+230,Network Engineer,TechNova,"sql, data analysis, tableau",Hyderabad,Full-time,1164810
+231,Financial Analyst,HealthFirst Clinic,"client relations, campaign strategy, presentations",Mumbai,Contract,2493472
+232,Mobile App Developer,DataWiz,"curriculum planning, classroom management, communication",Pune,Part-time,513851
+233,Marketing Manager,DesignCrafters,"test case writing, selenium, bug tracking",Mumbai,Contract,2283231
+234,Graphic Designer,InnovateX,"autocad, site planning, structural analysis",Mumbai,Full-time,692969
+235,Account Director,BuildRight Infra,"customer service, ticketing, troubleshooting",Mumbai,Part-time,2092054
+236,Pharmacist,CloudNet,"autocad, site planning, structural analysis",Remote,Contract,1485721
+237,Business Analyst,DevSolutions,"sql, data analysis, tableau",Hyderabad,Internship,771069
+238,Technical Writer,DevSolutions,"customer service, ticketing, troubleshooting",Bangalore,Contract,1217428
+239,Business Analyst,DevSolutions,"react, javascript, css",Remote,Contract,2155039
+240,Restaurant Manager,DataWiz,"sql, data analysis, tableau",Mumbai,Internship,2446514
+241,Mobile App Developer,DreamWeddings Inc.,"node.js, express, mongodb",Mumbai,Contract,1109743
+242,Pharmacist,BrightFuture School,"typing, accuracy, database entry",Remote,Contract,1426444
+243,Game Developer,EduWise Academy,"typing, accuracy, database entry",Pune,Full-time,1106682
+244,Cybersecurity Analyst,DataWiz,"typing, accuracy, database entry",Bangalore,Full-time,2396200
+245,Data Entry Clerk,CloudNet,"customer service, ticketing, troubleshooting",Delhi,Internship,2457931
+246,Database Administrator,PharmaCare,"legal documentation, compliance, case review",Mumbai,Part-time,1115760
+247,Data Entry Clerk,BizConsult,"node.js, express, mongodb",Delhi,Part-time,1258040
+248,Game Developer,PharmaCare,"sql, data visualization, problem solving",Hyderabad,Part-time,1541939
+249,Nurse Practitioner,PharmaCare,"sql, data visualization, problem solving",Pune,Full-time,1286953
+250,Nurse Practitioner,DevSolutions,"test case writing, selenium, bug tracking",Pune,Contract,1248134
+251,Pharmacist,DevSolutions,"customer service, ticketing, troubleshooting",Mumbai,Part-time,828399
+252,Nurse Practitioner,HealthFirst Clinic,"node.js, express, mongodb",Delhi,Internship,1399466
+253,UX Designer,DreamWeddings Inc.,"autocad, site planning, structural analysis",Pune,Internship,2454924
+254,Marketing Manager,InnovateX,"figma, user testing, wireframing",Remote,Internship,2160519
+255,Backend Engineer,BizConsult,"inventory, hospitality management, POS systems",Hyderabad,Internship,1100349
+256,Nurse Practitioner,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Mumbai,Part-time,1384099
+257,Data Entry Clerk,Global Travels,"test case writing, selenium, bug tracking",Bangalore,Contract,1871527
+258,Frontend Developer,InnovateX,"prescription handling, pharma knowledge",Remote,Contract,863592
+259,Cloud Architect,FinEdge Solutions,"curriculum planning, classroom management, communication",Delhi,Contract,752333
+260,QA Analyst,BizConsult,"sql, data visualization, problem solving",Mumbai,Contract,1458711
+261,HR Coordinator,BuildRight Infra,"python, pandas, numpy",Bangalore,Contract,1448619
+262,Hotel Receptionist,City Hospital,"inventory, hospitality management, POS systems",Pune,Internship,1615352
+263,Data Entry Clerk,CloudNet,"inventory, hospitality management, POS systems",Mumbai,Part-time,771071
+264,Mobile App Developer,FinEdge Solutions,"inventory, hospitality management, POS systems",Remote,Full-time,1726233
+265,Hotel Receptionist,BrightFuture School,"node.js, express, mongodb",Pune,Contract,2390774
+266,Civil Engineer,DevSolutions,"legal documentation, compliance, case review",Delhi,Contract,1055387
+267,Graphic Designer,CloudNet,"sql, data analysis, tableau",Bangalore,Full-time,2444010
+268,Legal Advisor,PharmaCare,"event coordination, client management, budgeting",Hyderabad,Full-time,2436109
+269,Web Developer,HealthFirst Clinic,"patient care, diagnosis, medical documentation",Remote,Contract,2130198
+270,Business Analyst,TechNova,"inventory, hospitality management, POS systems",Pune,Contract,2461421
+271,Web Developer,TechNova,"salesforce, CRM, negotiation",Pune,Part-time,1722772
+272,DevOps Engineer,DataWiz,"python, pandas, numpy",Delhi,Full-time,1415059
+273,Blockchain Developer,Global Travels,"inventory, hospitality management, POS systems",Remote,Internship,802852
+274,Technical Writer,BizConsult,"legal documentation, compliance, case review",Hyderabad,Part-time,1729676
+275,ML Engineer,DesignCrafters,"figma, user testing, wireframing",Pune,Internship,1398590
+276,Legal Advisor,DreamWeddings Inc.,"node.js, express, mongodb",Remote,Part-time,1684352
+277,Blockchain Developer,HealthFirst Clinic,"sql, data analysis, tableau",Pune,Part-time,2142169
+278,Network Engineer,DesignCrafters,"aws, docker, kubernetes",Remote,Full-time,1899801
+279,UX Designer,BrightFuture School,"legal documentation, compliance, case review",Delhi,Contract,677172
+280,Backend Engineer,PharmaCare,"curriculum planning, classroom management, communication",Bangalore,Part-time,1370693
+281,Wedding Manager,City Hospital,"prescription handling, pharma knowledge",Remote,Contract,1137829
+282,Sales Executive,FinEdge Solutions,"patient care, diagnosis, medical documentation",Delhi,Full-time,2223348
+283,Customer Support Specialist,PharmaCare,"interviewing, HR software, conflict resolution",Bangalore,Full-time,1611203
+284,Software Engineer,BrightFuture School,"sql, data analysis, tableau",Remote,Part-time,1740442
+285,DevOps Engineer,Global Travels,"excel, financial modeling, data interpretation",Remote,Part-time,925334
+286,Customer Support Specialist,DesignCrafters,"node.js, express, mongodb",Hyderabad,Contract,1164314
+287,Sales Executive,DreamWeddings Inc.,"salesforce, CRM, negotiation",Bangalore,Part-time,1132151
+288,AI Researcher,DreamWeddings Inc.,"salesforce, CRM, negotiation",Remote,Part-time,1360509
+289,Data Scientist,BizConsult,"typing, accuracy, database entry",Delhi,Internship,1912423
+290,Restaurant Manager,BrightFuture School,"patient care, diagnosis, medical documentation",Delhi,Full-time,1294748
+291,Technical Writer,DreamWeddings Inc.,"adobe photoshop, illustrator, creativity",Hyderabad,Contract,2389991
+292,Database Administrator,CreativeHub Agency,"event coordination, client management, budgeting",Pune,Full-time,1174125
+293,Business Analyst,FinEdge Solutions,"prescription handling, pharma knowledge",Mumbai,Contract,934928
+294,Graphic Designer,BizConsult,"interviewing, HR software, conflict resolution",Bangalore,Full-time,1847805
+295,Restaurant Manager,Global Travels,"java, spring, hibernate",Remote,Full-time,1620378
+296,ML Engineer,CloudNet,"curriculum planning, classroom management, communication",Remote,Contract,1663118
+297,Game Developer,Global Travels,"python, pandas, numpy",Delhi,Full-time,1029861
+298,Operations Manager,CloudNet,"legal documentation, compliance, case review",Bangalore,Contract,892528
+299,Cloud Architect,FinEdge Solutions,"salesforce, CRM, negotiation",Bangalore,Part-time,2447750
+300,Customer Support Specialist,CloudNet,"adobe photoshop, illustrator, creativity",Pune,Contract,1012221
+301,Web Developer,DesignCrafters,"autocad, site planning, structural analysis",Mumbai,Part-time,690186
+302,Technical Writer,DevSolutions,"prescription handling, pharma knowledge",Pune,Internship,1398034
+303,Product Manager,BuildRight Infra,"patient care, diagnosis, medical documentation",Pune,Part-time,582508
+304,Teacher,EduWise Academy,"java, spring, hibernate",Pune,Full-time,888105
+305,Business Analyst,Global Travels,"prescription handling, pharma knowledge",Delhi,Part-time,1122824
+306,Account Director,BizConsult,"salesforce, CRM, negotiation",Pune,Internship,2188232
+307,AI Researcher,DesignCrafters,"curriculum planning, classroom management, communication",Delhi,Contract,980646
+308,UI/UX Designer,BizConsult,"typing, accuracy, database entry",Bangalore,Part-time,2280048
+309,Network Engineer,DataWiz,"customer service, ticketing, troubleshooting",Hyderabad,Full-time,1021634
+310,Frontend Developer,City Hospital,"legal documentation, compliance, case review",Hyderabad,Part-time,1984797
+311,ML Engineer,BrightFuture School,"prescription handling, pharma knowledge",Delhi,Full-time,551591
+312,Software Engineer,HealthFirst Clinic,"autocad, site planning, structural analysis",Mumbai,Internship,1420025
+313,Blockchain Developer,PharmaCare,"salesforce, CRM, negotiation",Hyderabad,Internship,1155791
+314,Customer Support Specialist,CloudNet,"curriculum planning, classroom management, communication",Hyderabad,Internship,1131529
+315,Hotel Receptionist,CreativeHub Agency,"legal documentation, compliance, case review",Hyderabad,Part-time,1197942
+316,Technical Writer,City Hospital,"typing, accuracy, database entry",Bangalore,Internship,2107530
+317,Cloud Architect,InnovateX,"python, pandas, numpy",Remote,Internship,657742
+318,Financial Analyst,HealthFirst Clinic,"inventory, hospitality management, POS systems",Delhi,Part-time,2403270
+319,Business Analyst,DataWiz,"salesforce, CRM, negotiation",Remote,Part-time,1450179
+320,Graphic Designer,InnovateX,"inventory, hospitality management, POS systems",Delhi,Contract,2469308
+321,Customer Support Specialist,HealthFirst Clinic,"excel, financial modeling, data interpretation",Remote,Internship,1408529
+322,Database Administrator,FinEdge Solutions,"aws, docker, kubernetes",Bangalore,Contract,556246
+323,Network Engineer,DreamWeddings Inc.,"node.js, express, mongodb",Bangalore,Contract,1647080
+324,Backend Engineer,HealthFirst Clinic,"aws, docker, kubernetes",Remote,Contract,1330926
+325,Backend Engineer,PharmaCare,"curriculum planning, classroom management, communication",Remote,Internship,1654562
+326,Blockchain Developer,Global Travels,"aws, docker, kubernetes",Mumbai,Contract,2479964
+327,Business Analyst,CreativeHub Agency,"event coordination, client management, budgeting",Hyderabad,Internship,862721
+328,UI/UX Designer,TechNova,"salesforce, CRM, negotiation",Pune,Internship,2371911
+329,Frontend Developer,BrightFuture School,"customer service, ticketing, troubleshooting",Pune,Internship,1536313
+330,ML Engineer,FinEdge Solutions,"adobe photoshop, illustrator, creativity",Bangalore,Contract,2061650
+331,Marketing Manager,InnovateX,"adobe photoshop, illustrator, creativity",Pune,Internship,1269253
+332,Operations Manager,FinEdge Solutions,"salesforce, CRM, negotiation",Mumbai,Contract,888079
+333,AI Researcher,HealthFirst Clinic,"client relations, campaign strategy, presentations",Remote,Contract,533190
+334,Hotel Receptionist,CloudNet,"test case writing, selenium, bug tracking",Mumbai,Internship,1978564
+335,DevOps Engineer,EduWise Academy,"react, javascript, css",Pune,Full-time,1903153
+336,Technical Writer,DevSolutions,"test case writing, selenium, bug tracking",Hyderabad,Contract,728692
+337,Business Analyst,EduWise Academy,"aws, docker, kubernetes",Pune,Internship,2045671
+338,Technical Writer,DataWiz,"patient care, diagnosis, medical documentation",Mumbai,Full-time,1513626
+339,Account Director,DevSolutions,"test case writing, selenium, bug tracking",Mumbai,Full-time,1079165
+340,Frontend Developer,DesignCrafters,"curriculum planning, classroom management, communication",Pune,Contract,1911681
+341,Data Scientist,PharmaCare,"test case writing, selenium, bug tracking",Pune,Contract,537153
+342,Frontend Developer,BuildRight Infra,"patient care, diagnosis, medical documentation",Remote,Part-time,1672480
+343,Operations Manager,DataWiz,"legal documentation, compliance, case review",Remote,Full-time,515471
+344,Backend Engineer,TechNova,"node.js, express, mongodb",Bangalore,Internship,2180301
+345,Cybersecurity Analyst,DreamWeddings Inc.,"node.js, express, mongodb",Hyderabad,Internship,767215
+346,DevOps Engineer,CreativeHub Agency,"inventory, hospitality management, POS systems",Delhi,Full-time,791812
+347,Business Analyst,Global Travels,"check-in, phone etiquette, scheduling",Pune,Contract,2409691
+348,Marketing Manager,DevSolutions,"legal documentation, compliance, case review",Hyderabad,Contract,783144
+349,Graphic Designer,BrightFuture School,"sql, data visualization, problem solving",Bangalore,Part-time,796174
+350,Operations Manager,FinEdge Solutions,"python, pandas, numpy",Hyderabad,Full-time,2321181
+351,Data Scientist,DreamWeddings Inc.,"customer service, ticketing, troubleshooting",Hyderabad,Internship,682247
+352,Pharmacist,FinEdge Solutions,"event coordination, client management, budgeting",Pune,Contract,838664
+353,Network Engineer,HealthFirst Clinic,"salesforce, CRM, negotiation",Mumbai,Part-time,1296465
+354,Civil Engineer,CreativeHub Agency,"node.js, express, mongodb",Mumbai,Full-time,951627
+355,Data Scientist,CloudNet,"client relations, campaign strategy, presentations",Hyderabad,Internship,1939083
+356,Product Manager,InnovateX,"excel, financial modeling, data interpretation",Pune,Internship,1295789
+357,Blockchain Developer,EduWise Academy,"react, javascript, css",Mumbai,Contract,552171
+358,Pharmacist,TechNova,"patient care, diagnosis, medical documentation",Bangalore,Full-time,2231541
+359,Mobile App Developer,Global Travels,"typing, accuracy, database entry",Hyderabad,Full-time,1737357
+360,Blockchain Developer,DataWiz,"python, pandas, numpy",Hyderabad,Part-time,967079
+361,Financial Analyst,CloudNet,"check-in, phone etiquette, scheduling",Mumbai,Full-time,1295762
+362,Cloud Architect,BrightFuture School,"event coordination, client management, budgeting",Hyderabad,Internship,509254
+363,Restaurant Manager,City Hospital,"node.js, express, mongodb",Hyderabad,Full-time,932714
+364,Cybersecurity Analyst,Global Travels,"test case writing, selenium, bug tracking",Pune,Full-time,1862316
+365,Sales Executive,DreamWeddings Inc.,"figma, user testing, wireframing",Mumbai,Full-time,1753098
+366,Backend Engineer,CloudNet,"curriculum planning, classroom management, communication",Delhi,Contract,1052523
+367,Marketing Manager,CloudNet,"autocad, site planning, structural analysis",Delhi,Contract,955602
+368,Civil Engineer,PharmaCare,"inventory, hospitality management, POS systems",Pune,Internship,908513
+369,AI Researcher,DevSolutions,"curriculum planning, classroom management, communication",Bangalore,Full-time,1778446
+370,Account Director,BizConsult,"python, pandas, numpy",Delhi,Internship,2158062
+371,Software Engineer,BizConsult,"excel, financial modeling, data interpretation",Remote,Full-time,1026157
+372,Sales Executive,FinEdge Solutions,"node.js, express, mongodb",Bangalore,Full-time,2345222
+373,Customer Support Specialist,DreamWeddings Inc.,"typing, accuracy, database entry",Bangalore,Part-time,1178924
+374,Data Scientist,DataWiz,"check-in, phone etiquette, scheduling",Remote,Internship,506646
+375,AI Researcher,TechNova,"adobe photoshop, illustrator, creativity",Bangalore,Full-time,610063
+376,Civil Engineer,BrightFuture School,"node.js, express, mongodb",Delhi,Full-time,2304844
+377,ML Engineer,InnovateX,"python, pandas, numpy",Hyderabad,Part-time,1221332
+378,Marketing Manager,BizConsult,"client relations, campaign strategy, presentations",Pune,Full-time,2436973
+379,Legal Advisor,HealthFirst Clinic,"curriculum planning, classroom management, communication",Delhi,Contract,1922628
+380,Frontend Developer,Global Travels,"inventory, hospitality management, POS systems",Mumbai,Contract,790441
+381,Network Engineer,DevSolutions,"patient care, diagnosis, medical documentation",Bangalore,Contract,660182
+382,ML Engineer,BizConsult,"java, spring, hibernate",Pune,Internship,1783337
+383,UI/UX Designer,BizConsult,"prescription handling, pharma knowledge",Pune,Full-time,2360845
+384,System Administrator,InnovateX,"inventory, hospitality management, POS systems",Delhi,Full-time,1233518
+385,Blockchain Developer,TechNova,"prescription handling, pharma knowledge",Delhi,Full-time,1501077
+386,Financial Analyst,DreamWeddings Inc.,"prescription handling, pharma knowledge",Remote,Part-time,1633136
+387,UX Designer,City Hospital,"sql, data visualization, problem solving",Pune,Full-time,1290428
+388,AI Researcher,HealthFirst Clinic,"sql, data visualization, problem solving",Mumbai,Full-time,605688
+389,Pharmacist,DataWiz,"legal documentation, compliance, case review",Bangalore,Full-time,1865356
+390,System Administrator,BizConsult,"react, javascript, css",Remote,Internship,845865
+391,QA Analyst,CreativeHub Agency,"autocad, site planning, structural analysis",Pune,Internship,2293881
+392,HR Coordinator,TechNova,"patient care, diagnosis, medical documentation",Remote,Part-time,2089475
+393,Account Director,FinEdge Solutions,"client relations, campaign strategy, presentations",Pune,Contract,927099
+394,Restaurant Manager,CloudNet,"sql, data analysis, tableau",Hyderabad,Contract,1996371
+395,Software Engineer,DreamWeddings Inc.,"prescription handling, pharma knowledge",Bangalore,Contract,2251143
+396,Marketing Manager,City Hospital,"sql, data visualization, problem solving",Delhi,Contract,871924
+397,Data Entry Clerk,CreativeHub Agency,"client relations, campaign strategy, presentations",Bangalore,Internship,1572289
+398,Blockchain Developer,EduWise Academy,"autocad, site planning, structural analysis",Mumbai,Internship,837146
+399,Backend Engineer,InnovateX,"test case writing, selenium, bug tracking",Hyderabad,Part-time,1387466
+400,Teacher,City Hospital,"python, pandas, numpy",Hyderabad,Part-time,962036
+401,Business Analyst,TechNova,"node.js, express, mongodb",Delhi,Contract,1127784
+402,HR Coordinator,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Hyderabad,Full-time,1507539
+403,HR Coordinator,DevSolutions,"event coordination, client management, budgeting",Mumbai,Part-time,1698048
+404,Legal Advisor,BrightFuture School,"test case writing, selenium, bug tracking",Delhi,Internship,1401246
+405,Restaurant Manager,HealthFirst Clinic,"legal documentation, compliance, case review",Pune,Contract,1904748
+406,Software Engineer,DataWiz,"prescription handling, pharma knowledge",Pune,Part-time,1754481
+407,HR Coordinator,InnovateX,"typing, accuracy, database entry",Delhi,Full-time,1305492
+408,Technical Writer,HealthFirst Clinic,"figma, user testing, wireframing",Hyderabad,Full-time,1888639
+409,Frontend Developer,PharmaCare,"figma, user testing, wireframing",Remote,Part-time,1923049
+410,Marketing Manager,PharmaCare,"customer service, ticketing, troubleshooting",Hyderabad,Full-time,2306187
+411,QA Analyst,DataWiz,"legal documentation, compliance, case review",Pune,Full-time,533779
+412,Account Director,Global Travels,"customer service, ticketing, troubleshooting",Delhi,Internship,1317286
+413,Data Scientist,InnovateX,"prescription handling, pharma knowledge",Pune,Full-time,645223
+414,Backend Engineer,FinEdge Solutions,"sql, data visualization, problem solving",Mumbai,Contract,1506446
+415,Wedding Manager,BuildRight Infra,"aws, docker, kubernetes",Hyderabad,Part-time,682562
+416,Pharmacist,Global Travels,"excel, financial modeling, data interpretation",Delhi,Contract,932981
+417,Pharmacist,DreamWeddings Inc.,"sql, data visualization, problem solving",Delhi,Full-time,902936
+418,Business Analyst,PharmaCare,"react, javascript, css",Pune,Part-time,1607521
+419,Operations Manager,DreamWeddings Inc.,"figma, user testing, wireframing",Pune,Internship,1717170
+420,Mobile App Developer,DreamWeddings Inc.,"react, javascript, css",Mumbai,Contract,1589322
+421,Graphic Designer,InnovateX,"inventory, hospitality management, POS systems",Hyderabad,Part-time,1094969
+422,Frontend Developer,Global Travels,"figma, user testing, wireframing",Delhi,Contract,1932227
+423,Marketing Manager,DataWiz,"sql, data visualization, problem solving",Remote,Full-time,2161161
+424,Business Analyst,BuildRight Infra,"adobe photoshop, illustrator, creativity",Delhi,Internship,2492981
+425,Network Engineer,TechNova,"customer service, ticketing, troubleshooting",Pune,Internship,1013562
+426,UI/UX Designer,DevSolutions,"prescription handling, pharma knowledge",Mumbai,Internship,1216838
+427,Marketing Manager,CreativeHub Agency,"salesforce, CRM, negotiation",Mumbai,Part-time,533898
+428,Technical Writer,TechNova,"java, spring, hibernate",Pune,Contract,1657696
+429,Web Developer,Global Travels,"sql, data analysis, tableau",Mumbai,Internship,2457609
+430,Pharmacist,DreamWeddings Inc.,"check-in, phone etiquette, scheduling",Remote,Part-time,2016139
+431,Customer Support Specialist,BizConsult,"prescription handling, pharma knowledge",Pune,Full-time,2450027
+432,Product Manager,HealthFirst Clinic,"legal documentation, compliance, case review",Hyderabad,Internship,945440
+433,Civil Engineer,InnovateX,"node.js, express, mongodb",Remote,Full-time,909300
+434,Technical Writer,DataWiz,"legal documentation, compliance, case review",Pune,Contract,2397697
+435,Financial Analyst,TechNova,"salesforce, CRM, negotiation",Bangalore,Full-time,1661211
+436,Database Administrator,EduWise Academy,"curriculum planning, classroom management, communication",Remote,Internship,1141955
+437,Frontend Developer,BuildRight Infra,"interviewing, HR software, conflict resolution",Delhi,Contract,2331940
+438,Game Developer,CreativeHub Agency,"node.js, express, mongodb",Remote,Internship,1555615
+439,Web Developer,BrightFuture School,"react, javascript, css",Delhi,Internship,1278336
+440,Database Administrator,BizConsult,"sql, data visualization, problem solving",Mumbai,Contract,1267736
+441,Restaurant Manager,DevSolutions,"inventory, hospitality management, POS systems",Pune,Part-time,807063
+442,Hotel Receptionist,DesignCrafters,"autocad, site planning, structural analysis",Delhi,Full-time,1244344
+443,ML Engineer,DreamWeddings Inc.,"sql, data visualization, problem solving",Bangalore,Contract,977627
+444,QA Analyst,EduWise Academy,"patient care, diagnosis, medical documentation",Remote,Full-time,1392523
+445,Data Scientist,BuildRight Infra,"react, javascript, css",Remote,Part-time,959484
+446,Business Analyst,InnovateX,"client relations, campaign strategy, presentations",Pune,Internship,2057524
+447,Financial Analyst,CreativeHub Agency,"patient care, diagnosis, medical documentation",Remote,Part-time,969948
+448,UI/UX Designer,DevSolutions,"figma, user testing, wireframing",Hyderabad,Full-time,1815104
+449,ML Engineer,DesignCrafters,"java, spring, hibernate",Remote,Internship,1201688
+450,Marketing Manager,City Hospital,"client relations, campaign strategy, presentations",Hyderabad,Internship,2371096
+451,Customer Support Specialist,FinEdge Solutions,"excel, financial modeling, data interpretation",Remote,Full-time,1362184
+452,Backend Engineer,BrightFuture School,"patient care, diagnosis, medical documentation",Delhi,Contract,2151929
+453,UI/UX Designer,EduWise Academy,"curriculum planning, classroom management, communication",Delhi,Contract,2472868
+454,Civil Engineer,TechNova,"customer service, ticketing, troubleshooting",Hyderabad,Internship,1497804
+455,Cybersecurity Analyst,DesignCrafters,"sql, data analysis, tableau",Hyderabad,Internship,869173
+456,Civil Engineer,BuildRight Infra,"typing, accuracy, database entry",Mumbai,Part-time,1607825
+457,Cloud Architect,CloudNet,"legal documentation, compliance, case review",Hyderabad,Contract,2293711
+458,Legal Advisor,BuildRight Infra,"node.js, express, mongodb",Bangalore,Part-time,1624246
+459,Account Director,CreativeHub Agency,"curriculum planning, classroom management, communication",Bangalore,Internship,847198
+460,Product Manager,TechNova,"inventory, hospitality management, POS systems",Mumbai,Contract,1575487
+461,Cloud Architect,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Pune,Contract,1925407
+462,ML Engineer,InnovateX,"prescription handling, pharma knowledge",Mumbai,Full-time,2474927
+463,Civil Engineer,CloudNet,"aws, docker, kubernetes",Delhi,Full-time,1506713
+464,Data Scientist,CreativeHub Agency,"adobe photoshop, illustrator, creativity",Bangalore,Part-time,1909094
+465,Marketing Manager,BrightFuture School,"figma, user testing, wireframing",Mumbai,Contract,1183959
+466,Wedding Manager,FinEdge Solutions,"sql, data analysis, tableau",Remote,Full-time,1580543
+467,Data Entry Clerk,PharmaCare,"figma, user testing, wireframing",Bangalore,Full-time,2306473
+468,Backend Engineer,FinEdge Solutions,"prescription handling, pharma knowledge",Hyderabad,Internship,768753
+469,QA Analyst,FinEdge Solutions,"legal documentation, compliance, case review",Hyderabad,Part-time,807603
+470,Financial Analyst,BizConsult,"prescription handling, pharma knowledge",Delhi,Full-time,1011509
+471,Frontend Developer,FinEdge Solutions,"interviewing, HR software, conflict resolution",Hyderabad,Part-time,1633659
+472,Financial Analyst,FinEdge Solutions,"python, pandas, numpy",Mumbai,Internship,562379
+473,HR Coordinator,PharmaCare,"salesforce, CRM, negotiation",Remote,Part-time,857170
+474,Backend Engineer,Global Travels,"react, javascript, css",Hyderabad,Full-time,1607339
+475,Pharmacist,BuildRight Infra,"legal documentation, compliance, case review",Hyderabad,Part-time,2144769
+476,Business Analyst,Global Travels,"event coordination, client management, budgeting",Pune,Full-time,1031713
+477,Network Engineer,DataWiz,"aws, docker, kubernetes",Bangalore,Part-time,1165044
+478,Teacher,TechNova,"excel, financial modeling, data interpretation",Bangalore,Part-time,2342985
+479,Civil Engineer,City Hospital,"event coordination, client management, budgeting",Bangalore,Part-time,1239953
+480,Network Engineer,Global Travels,"adobe photoshop, illustrator, creativity",Remote,Internship,670119
+481,Sales Executive,BuildRight Infra,"client relations, campaign strategy, presentations",Bangalore,Contract,1112443
+482,QA Analyst,CreativeHub Agency,"customer service, ticketing, troubleshooting",Delhi,Contract,936537
+483,Business Analyst,BrightFuture School,"event coordination, client management, budgeting",Bangalore,Full-time,1088956
+484,Civil Engineer,DataWiz,"salesforce, CRM, negotiation",Mumbai,Internship,1830700
+485,Operations Manager,TechNova,"salesforce, CRM, negotiation",Mumbai,Full-time,546928
+486,Business Analyst,InnovateX,"interviewing, HR software, conflict resolution",Bangalore,Part-time,1096988
+487,Mobile App Developer,DreamWeddings Inc.,"patient care, diagnosis, medical documentation",Pune,Contract,2124334
+488,Hotel Receptionist,FinEdge Solutions,"curriculum planning, classroom management, communication",Mumbai,Contract,859737
+489,DevOps Engineer,DesignCrafters,"legal documentation, compliance, case review",Remote,Contract,1525179
+490,Network Engineer,BuildRight Infra,"salesforce, CRM, negotiation",Bangalore,Full-time,1895153
+491,Teacher,Global Travels,"check-in, phone etiquette, scheduling",Hyderabad,Full-time,1286560
+492,UX Designer,InnovateX,"autocad, site planning, structural analysis",Delhi,Internship,1791704
+493,Sales Executive,PharmaCare,"node.js, express, mongodb",Delhi,Full-time,1410939
+494,Software Engineer,BrightFuture School,"prescription handling, pharma knowledge",Remote,Contract,764777
+495,Graphic Designer,HealthFirst Clinic,"figma, user testing, wireframing",Mumbai,Contract,1798189
+496,Graphic Designer,InnovateX,"sql, data analysis, tableau",Bangalore,Full-time,671807
+497,Operations Manager,FinEdge Solutions,"sql, data analysis, tableau",Mumbai,Internship,1881440
+498,AI Researcher,FinEdge Solutions,"python, pandas, numpy",Remote,Full-time,1138952
+499,Web Developer,CreativeHub Agency,"curriculum planning, classroom management, communication",Hyderabad,Contract,729678
+500,AI Researcher,DataWiz,"sql, data analysis, tableau",Hyderabad,Contract,1760450
+501,Civil Engineer,DesignCrafters,"node.js, express, mongodb",Remote,Full-time,878126
+502,Operations Manager,BuildRight Infra,"test case writing, selenium, bug tracking",Hyderabad,Full-time,1618880
+503,Teacher,FinEdge Solutions,"legal documentation, compliance, case review",Mumbai,Part-time,532129
+504,System Administrator,DesignCrafters,"event coordination, client management, budgeting",Mumbai,Full-time,1484317
+505,Business Analyst,CloudNet,"python, pandas, numpy",Delhi,Internship,2439615
+506,Sales Executive,BizConsult,"check-in, phone etiquette, scheduling",Pune,Full-time,2035941
+507,Teacher,CloudNet,"figma, user testing, wireframing",Delhi,Internship,1016690
+508,QA Analyst,DesignCrafters,"react, javascript, css",Mumbai,Contract,2274072
+509,Pharmacist,InnovateX,"figma, user testing, wireframing",Pune,Full-time,1474426
+510,UI/UX Designer,BrightFuture School,"excel, financial modeling, data interpretation",Bangalore,Internship,1353942
+511,UX Designer,DesignCrafters,"typing, accuracy, database entry",Mumbai,Contract,1057617
+512,Financial Analyst,DreamWeddings Inc.,"typing, accuracy, database entry",Bangalore,Internship,2237693
+513,UX Designer,DesignCrafters,"python, pandas, numpy",Pune,Full-time,2169517
+514,Customer Support Specialist,CreativeHub Agency,"aws, docker, kubernetes",Pune,Part-time,1372932
+515,Data Scientist,TechNova,"curriculum planning, classroom management, communication",Pune,Part-time,1855135
+516,Financial Analyst,BizConsult,"check-in, phone etiquette, scheduling",Hyderabad,Contract,1692847
+517,Graphic Designer,InnovateX,"salesforce, CRM, negotiation",Pune,Contract,821563
+518,Network Engineer,FinEdge Solutions,"curriculum planning, classroom management, communication",Bangalore,Full-time,1075635
+519,Blockchain Developer,CreativeHub Agency,"salesforce, CRM, negotiation",Pune,Full-time,1253652
+520,Frontend Developer,HealthFirst Clinic,"node.js, express, mongodb",Mumbai,Contract,2144449
+521,Teacher,DevSolutions,"node.js, express, mongodb",Bangalore,Part-time,2217092
+522,Web Developer,FinEdge Solutions,"node.js, express, mongodb",Remote,Internship,2160078
+523,Game Developer,CreativeHub Agency,"check-in, phone etiquette, scheduling",Hyderabad,Part-time,2311977
+524,Cloud Architect,EduWise Academy,"adobe photoshop, illustrator, creativity",Delhi,Contract,1187732
+525,Mobile App Developer,HealthFirst Clinic,"aws, docker, kubernetes",Delhi,Contract,2497127
+526,Account Director,DreamWeddings Inc.,"aws, docker, kubernetes",Remote,Contract,911387
+527,Business Analyst,DevSolutions,"sql, data analysis, tableau",Remote,Contract,2238628
+528,Product Manager,DevSolutions,"sql, data analysis, tableau",Mumbai,Part-time,1979759
+529,Sales Executive,TechNova,"java, spring, hibernate",Delhi,Full-time,2424905
+530,Data Entry Clerk,BizConsult,"react, javascript, css",Hyderabad,Part-time,1598087
+531,Business Analyst,PharmaCare,"patient care, diagnosis, medical documentation",Bangalore,Part-time,1879123
+532,Web Developer,HealthFirst Clinic,"react, javascript, css",Mumbai,Contract,1395252
+533,Game Developer,BuildRight Infra,"sql, data analysis, tableau",Delhi,Part-time,1912325
+534,ML Engineer,BizConsult,"figma, user testing, wireframing",Remote,Contract,1966369
+535,Software Engineer,City Hospital,"python, pandas, numpy",Hyderabad,Full-time,768675
+536,Civil Engineer,InnovateX,"sql, data analysis, tableau",Hyderabad,Full-time,2093911
+537,UX Designer,DreamWeddings Inc.,"test case writing, selenium, bug tracking",Bangalore,Contract,858061
+538,UX Designer,DreamWeddings Inc.,"figma, user testing, wireframing",Bangalore,Part-time,1631461
+539,Nurse Practitioner,HealthFirst Clinic,"sql, data visualization, problem solving",Pune,Full-time,1776996
+540,Network Engineer,PharmaCare,"java, spring, hibernate",Bangalore,Part-time,2439918
+541,Financial Analyst,DevSolutions,"sql, data visualization, problem solving",Delhi,Full-time,2197130
+542,Restaurant Manager,DevSolutions,"salesforce, CRM, negotiation",Remote,Contract,1804092
+543,Hotel Receptionist,InnovateX,"sql, data analysis, tableau",Remote,Internship,1587033
+544,Customer Support Specialist,EduWise Academy,"sql, data visualization, problem solving",Bangalore,Full-time,1296418
+545,Civil Engineer,DataWiz,"react, javascript, css",Pune,Part-time,1593756
+546,Data Entry Clerk,EduWise Academy,"figma, user testing, wireframing",Mumbai,Contract,1030344
+547,Financial Analyst,HealthFirst Clinic,"sql, data analysis, tableau",Bangalore,Internship,2466805
+548,Technical Writer,DevSolutions,"customer service, ticketing, troubleshooting",Pune,Full-time,1827210
+549,Frontend Developer,PharmaCare,"salesforce, CRM, negotiation",Bangalore,Full-time,2231126
+550,Marketing Manager,EduWise Academy,"typing, accuracy, database entry",Remote,Contract,2328253
+551,Web Developer,PharmaCare,"sql, data visualization, problem solving",Pune,Contract,1261328
+552,Mobile App Developer,DreamWeddings Inc.,"autocad, site planning, structural analysis",Bangalore,Contract,1042842
+553,UI/UX Designer,HealthFirst Clinic,"excel, financial modeling, data interpretation",Delhi,Part-time,1150757
+554,Product Manager,EduWise Academy,"client relations, campaign strategy, presentations",Delhi,Internship,515243
+555,Hotel Receptionist,DataWiz,"typing, accuracy, database entry",Remote,Internship,895218
+556,Sales Executive,HealthFirst Clinic,"java, spring, hibernate",Hyderabad,Part-time,1224288
+557,Restaurant Manager,InnovateX,"interviewing, HR software, conflict resolution",Remote,Part-time,889793
+558,Data Scientist,CreativeHub Agency,"salesforce, CRM, negotiation",Pune,Internship,1593320
+559,Legal Advisor,TechNova,"event coordination, client management, budgeting",Delhi,Internship,2424333
+560,Business Analyst,EduWise Academy,"curriculum planning, classroom management, communication",Remote,Full-time,1853565
+561,Graphic Designer,TechNova,"curriculum planning, classroom management, communication",Pune,Part-time,1942694
+562,Game Developer,BizConsult,"prescription handling, pharma knowledge",Pune,Internship,876372
+563,ML Engineer,EduWise Academy,"patient care, diagnosis, medical documentation",Delhi,Full-time,1914363
+564,Sales Executive,DesignCrafters,"client relations, campaign strategy, presentations",Delhi,Part-time,687793
+565,Blockchain Developer,PharmaCare,"node.js, express, mongodb",Delhi,Internship,1211027
+566,UX Designer,DreamWeddings Inc.,"check-in, phone etiquette, scheduling",Hyderabad,Part-time,1015078
+567,Product Manager,HealthFirst Clinic,"excel, financial modeling, data interpretation",Delhi,Contract,2325792
+568,Data Entry Clerk,FinEdge Solutions,"salesforce, CRM, negotiation",Mumbai,Full-time,698958
+569,Teacher,FinEdge Solutions,"sql, data visualization, problem solving",Delhi,Full-time,1550873
+570,Customer Support Specialist,HealthFirst Clinic,"check-in, phone etiquette, scheduling",Remote,Part-time,683845
+571,Backend Engineer,DreamWeddings Inc.,"node.js, express, mongodb",Bangalore,Part-time,1117670
+572,Blockchain Developer,InnovateX,"sql, data analysis, tableau",Pune,Internship,1215316
+573,Graphic Designer,BrightFuture School,"interviewing, HR software, conflict resolution",Hyderabad,Full-time,1594820
+574,Hotel Receptionist,EduWise Academy,"inventory, hospitality management, POS systems",Delhi,Contract,2346196
+575,Technical Writer,BuildRight Infra,"client relations, campaign strategy, presentations",Pune,Internship,1552683
+576,Web Developer,BrightFuture School,"salesforce, CRM, negotiation",Remote,Part-time,2238733
+577,Database Administrator,City Hospital,"salesforce, CRM, negotiation",Mumbai,Internship,1984614
+578,Sales Executive,CreativeHub Agency,"python, pandas, numpy",Delhi,Full-time,2014418
+579,Technical Writer,BrightFuture School,"typing, accuracy, database entry",Mumbai,Full-time,777883
+580,HR Coordinator,DesignCrafters,"salesforce, CRM, negotiation",Delhi,Full-time,1892349
+581,Account Director,PharmaCare,"interviewing, HR software, conflict resolution",Hyderabad,Internship,2232564
+582,Legal Advisor,DataWiz,"figma, user testing, wireframing",Bangalore,Full-time,1294351
+583,Operations Manager,TechNova,"client relations, campaign strategy, presentations",Bangalore,Part-time,2374576
+584,Legal Advisor,BuildRight Infra,"java, spring, hibernate",Mumbai,Contract,1303292
+585,Data Scientist,CloudNet,"node.js, express, mongodb",Mumbai,Contract,1467281
+586,Legal Advisor,City Hospital,"prescription handling, pharma knowledge",Bangalore,Full-time,698981
+587,Teacher,FinEdge Solutions,"interviewing, HR software, conflict resolution",Remote,Full-time,2289083
+588,Mobile App Developer,CreativeHub Agency,"patient care, diagnosis, medical documentation",Remote,Full-time,627016
+589,Data Entry Clerk,DreamWeddings Inc.,"sql, data visualization, problem solving",Bangalore,Contract,892226
+590,System Administrator,DevSolutions,"customer service, ticketing, troubleshooting",Mumbai,Internship,1081146
+591,HR Coordinator,CreativeHub Agency,"client relations, campaign strategy, presentations",Bangalore,Part-time,1016442
+592,Operations Manager,Global Travels,"node.js, express, mongodb",Delhi,Contract,1452780
+593,Data Scientist,FinEdge Solutions,"check-in, phone etiquette, scheduling",Delhi,Part-time,1254246
+594,Operations Manager,TechNova,"sql, data analysis, tableau",Pune,Contract,977135
+595,Business Analyst,CloudNet,"customer service, ticketing, troubleshooting",Delhi,Contract,1516411
+596,Software Engineer,CreativeHub Agency,"salesforce, CRM, negotiation",Bangalore,Contract,1106547
+597,Data Scientist,DreamWeddings Inc.,"autocad, site planning, structural analysis",Delhi,Full-time,829835
+598,Restaurant Manager,PharmaCare,"client relations, campaign strategy, presentations",Pune,Internship,1458444
+599,Restaurant Manager,PharmaCare,"react, javascript, css",Remote,Full-time,1046703
+600,UI/UX Designer,BrightFuture School,"customer service, ticketing, troubleshooting",Remote,Contract,1736171
+601,Financial Analyst,BuildRight Infra,"customer service, ticketing, troubleshooting",Pune,Full-time,1139164
+602,Network Engineer,DesignCrafters,"customer service, ticketing, troubleshooting",Mumbai,Part-time,746831
+603,Data Scientist,InnovateX,"inventory, hospitality management, POS systems",Pune,Internship,783370
+604,AI Researcher,DataWiz,"excel, financial modeling, data interpretation",Mumbai,Full-time,1253555
+605,Cloud Architect,BuildRight Infra,"adobe photoshop, illustrator, creativity",Remote,Full-time,2328655
+606,Database Administrator,City Hospital,"salesforce, CRM, negotiation",Delhi,Full-time,984953
+607,Teacher,CreativeHub Agency,"event coordination, client management, budgeting",Bangalore,Part-time,875592
+608,Operations Manager,DesignCrafters,"adobe photoshop, illustrator, creativity",Pune,Full-time,709121
+609,AI Researcher,BuildRight Infra,"legal documentation, compliance, case review",Pune,Part-time,2453023
+610,Hotel Receptionist,InnovateX,"salesforce, CRM, negotiation",Delhi,Internship,933634
+611,Sales Executive,BizConsult,"salesforce, CRM, negotiation",Delhi,Contract,2420522
+612,Database Administrator,BuildRight Infra,"figma, user testing, wireframing",Hyderabad,Contract,1093563
+613,Database Administrator,Global Travels,"prescription handling, pharma knowledge",Hyderabad,Full-time,961024
+614,UI/UX Designer,InnovateX,"legal documentation, compliance, case review",Bangalore,Contract,1961162
+615,Product Manager,DevSolutions,"legal documentation, compliance, case review",Delhi,Contract,2497992
+616,Blockchain Developer,HealthFirst Clinic,"sql, data analysis, tableau",Pune,Full-time,2211221
+617,Nurse Practitioner,BuildRight Infra,"event coordination, client management, budgeting",Delhi,Full-time,1483211
+618,Cloud Architect,PharmaCare,"test case writing, selenium, bug tracking",Remote,Internship,993587
+619,Business Analyst,City Hospital,"react, javascript, css",Pune,Internship,1636005
+620,Technical Writer,Global Travels,"customer service, ticketing, troubleshooting",Mumbai,Internship,1975022
+621,Mobile App Developer,BizConsult,"prescription handling, pharma knowledge",Mumbai,Part-time,823040
+622,Business Analyst,BuildRight Infra,"autocad, site planning, structural analysis",Bangalore,Contract,2322828
+623,Hotel Receptionist,EduWise Academy,"test case writing, selenium, bug tracking",Delhi,Full-time,1466435
+624,UI/UX Designer,Global Travels,"sql, data visualization, problem solving",Mumbai,Contract,1041767
+625,Game Developer,InnovateX,"java, spring, hibernate",Mumbai,Full-time,1991955
+626,Technical Writer,DesignCrafters,"excel, financial modeling, data interpretation",Pune,Contract,639833
+627,Marketing Manager,City Hospital,"event coordination, client management, budgeting",Hyderabad,Internship,1556632
+628,Data Entry Clerk,CreativeHub Agency,"event coordination, client management, budgeting",Pune,Internship,1188727
+629,Hotel Receptionist,DataWiz,"event coordination, client management, budgeting",Bangalore,Full-time,2483200
+630,Customer Support Specialist,FinEdge Solutions,"legal documentation, compliance, case review",Delhi,Contract,589146
+631,System Administrator,DesignCrafters,"prescription handling, pharma knowledge",Bangalore,Full-time,2047512
+632,ML Engineer,CreativeHub Agency,"curriculum planning, classroom management, communication",Bangalore,Internship,1211336
+633,Wedding Manager,HealthFirst Clinic,"salesforce, CRM, negotiation",Hyderabad,Part-time,2063636
+634,Product Manager,Global Travels,"curriculum planning, classroom management, communication",Mumbai,Full-time,700833
+635,Network Engineer,HealthFirst Clinic,"salesforce, CRM, negotiation",Delhi,Full-time,1382489
+636,UX Designer,Global Travels,"sql, data visualization, problem solving",Remote,Part-time,1090851
+637,Mobile App Developer,DataWiz,"legal documentation, compliance, case review",Mumbai,Contract,1698213
+638,ML Engineer,DevSolutions,"sql, data analysis, tableau",Bangalore,Internship,1738084
+639,Technical Writer,CloudNet,"autocad, site planning, structural analysis",Hyderabad,Contract,644931
+640,Backend Engineer,CloudNet,"patient care, diagnosis, medical documentation",Delhi,Internship,1106353
+641,Cloud Architect,TechNova,"excel, financial modeling, data interpretation",Bangalore,Internship,2205758
+642,Cloud Architect,BuildRight Infra,"java, spring, hibernate",Delhi,Part-time,2273773
+643,Product Manager,CreativeHub Agency,"java, spring, hibernate",Delhi,Full-time,1556390
+644,Mobile App Developer,DataWiz,"patient care, diagnosis, medical documentation",Mumbai,Part-time,1693484
+645,DevOps Engineer,DreamWeddings Inc.,"inventory, hospitality management, POS systems",Delhi,Contract,1180004
+646,Cybersecurity Analyst,BizConsult,"figma, user testing, wireframing",Hyderabad,Full-time,1551366
+647,Frontend Developer,DevSolutions,"curriculum planning, classroom management, communication",Hyderabad,Contract,2034982
+648,Data Scientist,DesignCrafters,"react, javascript, css",Mumbai,Full-time,1574757
+649,AI Researcher,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Delhi,Full-time,1771934
+650,Cloud Architect,DataWiz,"excel, financial modeling, data interpretation",Delhi,Internship,2469690
+651,QA Analyst,BuildRight Infra,"sql, data analysis, tableau",Bangalore,Full-time,755415
+652,Cybersecurity Analyst,CreativeHub Agency,"node.js, express, mongodb",Hyderabad,Full-time,839794
+653,Mobile App Developer,TechNova,"sql, data analysis, tableau",Pune,Internship,509798
+654,Wedding Manager,DataWiz,"prescription handling, pharma knowledge",Pune,Part-time,2408779
+655,Customer Support Specialist,FinEdge Solutions,"legal documentation, compliance, case review",Bangalore,Contract,848173
+656,Graphic Designer,DataWiz,"adobe photoshop, illustrator, creativity",Hyderabad,Part-time,625204
+657,Account Director,DataWiz,"adobe photoshop, illustrator, creativity",Remote,Part-time,943773
+658,Network Engineer,FinEdge Solutions,"excel, financial modeling, data interpretation",Delhi,Contract,1244090
+659,Graphic Designer,City Hospital,"patient care, diagnosis, medical documentation",Bangalore,Contract,1658438
+660,Pharmacist,Global Travels,"curriculum planning, classroom management, communication",Remote,Full-time,1864098
+661,DevOps Engineer,DevSolutions,"autocad, site planning, structural analysis",Pune,Internship,827988
+662,Software Engineer,CloudNet,"typing, accuracy, database entry",Mumbai,Contract,1125769
+663,Cybersecurity Analyst,CloudNet,"typing, accuracy, database entry",Mumbai,Full-time,1247485
+664,Network Engineer,HealthFirst Clinic,"event coordination, client management, budgeting",Hyderabad,Contract,2122585
+665,UX Designer,InnovateX,"customer service, ticketing, troubleshooting",Mumbai,Full-time,2128020
+666,Network Engineer,DataWiz,"curriculum planning, classroom management, communication",Pune,Part-time,1333768
+667,Nurse Practitioner,PharmaCare,"interviewing, HR software, conflict resolution",Bangalore,Part-time,1545008
+668,Wedding Manager,FinEdge Solutions,"patient care, diagnosis, medical documentation",Delhi,Internship,1714423
+669,Product Manager,BrightFuture School,"adobe photoshop, illustrator, creativity",Delhi,Full-time,933041
+670,Operations Manager,DevSolutions,"node.js, express, mongodb",Remote,Full-time,2023319
+671,Hotel Receptionist,CreativeHub Agency,"sql, data analysis, tableau",Remote,Full-time,546310
+672,Restaurant Manager,City Hospital,"sql, data visualization, problem solving",Bangalore,Full-time,1482851
+673,Account Director,EduWise Academy,"interviewing, HR software, conflict resolution",Pune,Internship,1528748
+674,QA Analyst,FinEdge Solutions,"event coordination, client management, budgeting",Mumbai,Contract,1693248
+675,Account Director,TechNova,"legal documentation, compliance, case review",Pune,Part-time,1510038
+676,Teacher,BrightFuture School,"curriculum planning, classroom management, communication",Mumbai,Full-time,2083268
+677,Financial Analyst,BizConsult,"patient care, diagnosis, medical documentation",Pune,Internship,1969715
+678,Mobile App Developer,CreativeHub Agency,"adobe photoshop, illustrator, creativity",Delhi,Contract,1273728
+679,Restaurant Manager,HealthFirst Clinic,"aws, docker, kubernetes",Remote,Full-time,1761234
+680,Cloud Architect,DevSolutions,"salesforce, CRM, negotiation",Pune,Full-time,1073764
+681,Wedding Manager,EduWise Academy,"figma, user testing, wireframing",Mumbai,Full-time,1265837
+682,Wedding Manager,BrightFuture School,"salesforce, CRM, negotiation",Mumbai,Internship,1552940
+683,Technical Writer,Global Travels,"customer service, ticketing, troubleshooting",Remote,Part-time,1534782
+684,Restaurant Manager,BizConsult,"sql, data visualization, problem solving",Mumbai,Internship,1717713
+685,Graphic Designer,CreativeHub Agency,"salesforce, CRM, negotiation",Delhi,Contract,1714946
+686,HR Coordinator,FinEdge Solutions,"check-in, phone etiquette, scheduling",Mumbai,Full-time,2395529
+687,Pharmacist,BrightFuture School,"node.js, express, mongodb",Delhi,Contract,1257160
+688,Pharmacist,EduWise Academy,"python, pandas, numpy",Pune,Internship,2035858
+689,Sales Executive,DesignCrafters,"patient care, diagnosis, medical documentation",Hyderabad,Contract,1771392
+690,Data Scientist,EduWise Academy,"autocad, site planning, structural analysis",Pune,Internship,1863165
+691,Game Developer,Global Travels,"event coordination, client management, budgeting",Delhi,Full-time,1180755
+692,Hotel Receptionist,CreativeHub Agency,"adobe photoshop, illustrator, creativity",Remote,Internship,1954210
+693,Business Analyst,DataWiz,"autocad, site planning, structural analysis",Remote,Internship,1484065
+694,Pharmacist,CloudNet,"java, spring, hibernate",Pune,Internship,2448786
+695,AI Researcher,FinEdge Solutions,"prescription handling, pharma knowledge",Bangalore,Part-time,2475888
+696,Sales Executive,City Hospital,"typing, accuracy, database entry",Bangalore,Full-time,521890
+697,Teacher,BuildRight Infra,"figma, user testing, wireframing",Hyderabad,Internship,1252624
+698,Restaurant Manager,CreativeHub Agency,"sql, data analysis, tableau",Mumbai,Part-time,899442
+699,Technical Writer,Global Travels,"event coordination, client management, budgeting",Remote,Contract,822907
+700,Account Director,DreamWeddings Inc.,"node.js, express, mongodb",Remote,Part-time,1812051
+701,Graphic Designer,City Hospital,"java, spring, hibernate",Bangalore,Internship,1381224
+702,Network Engineer,HealthFirst Clinic,"sql, data analysis, tableau",Bangalore,Internship,2279311
+703,HR Coordinator,DreamWeddings Inc.,"prescription handling, pharma knowledge",Pune,Full-time,513487
+704,UI/UX Designer,CreativeHub Agency,"react, javascript, css",Remote,Contract,1037801
+705,Blockchain Developer,InnovateX,"check-in, phone etiquette, scheduling",Bangalore,Part-time,1515056
+706,Software Engineer,EduWise Academy,"python, pandas, numpy",Delhi,Contract,1857726
+707,Operations Manager,BizConsult,"aws, docker, kubernetes",Delhi,Internship,2366267
+708,AI Researcher,PharmaCare,"figma, user testing, wireframing",Hyderabad,Internship,1216312
+709,AI Researcher,CloudNet,"event coordination, client management, budgeting",Pune,Part-time,2337772
+710,Technical Writer,BuildRight Infra,"patient care, diagnosis, medical documentation",Remote,Internship,1951134
+711,Account Director,DesignCrafters,"figma, user testing, wireframing",Delhi,Part-time,619275
+712,Frontend Developer,DataWiz,"figma, user testing, wireframing",Remote,Contract,2235361
+713,HR Coordinator,PharmaCare,"event coordination, client management, budgeting",Delhi,Part-time,2135227
+714,Wedding Manager,BrightFuture School,"check-in, phone etiquette, scheduling",Pune,Internship,1935968
+715,UI/UX Designer,Global Travels,"adobe photoshop, illustrator, creativity",Bangalore,Internship,1497843
+716,Database Administrator,DevSolutions,"inventory, hospitality management, POS systems",Bangalore,Part-time,2047954
+717,Cloud Architect,DevSolutions,"sql, data visualization, problem solving",Delhi,Contract,1777043
+718,Marketing Manager,DesignCrafters,"event coordination, client management, budgeting",Bangalore,Full-time,668431
+719,Sales Executive,TechNova,"excel, financial modeling, data interpretation",Mumbai,Contract,1271413
+720,QA Analyst,DreamWeddings Inc.,"figma, user testing, wireframing",Hyderabad,Internship,2000593
+721,Account Director,FinEdge Solutions,"aws, docker, kubernetes",Pune,Internship,1041057
+722,Game Developer,City Hospital,"autocad, site planning, structural analysis",Hyderabad,Internship,1206430
+723,Cybersecurity Analyst,FinEdge Solutions,"interviewing, HR software, conflict resolution",Mumbai,Part-time,2234874
+724,System Administrator,HealthFirst Clinic,"node.js, express, mongodb",Remote,Full-time,1595687
+725,Data Scientist,DesignCrafters,"customer service, ticketing, troubleshooting",Bangalore,Internship,1658934
+726,Data Scientist,DataWiz,"node.js, express, mongodb",Pune,Full-time,790919
+727,Cybersecurity Analyst,PharmaCare,"figma, user testing, wireframing",Hyderabad,Full-time,2179298
+728,Graphic Designer,BizConsult,"excel, financial modeling, data interpretation",Pune,Contract,1255375
+729,Teacher,CreativeHub Agency,"event coordination, client management, budgeting",Mumbai,Internship,936406
+730,DevOps Engineer,City Hospital,"autocad, site planning, structural analysis",Pune,Full-time,913582
+731,ML Engineer,Global Travels,"customer service, ticketing, troubleshooting",Pune,Part-time,1128778
+732,UI/UX Designer,DataWiz,"sql, data visualization, problem solving",Pune,Contract,1724989
+733,ML Engineer,DesignCrafters,"event coordination, client management, budgeting",Remote,Full-time,522648
+734,Legal Advisor,HealthFirst Clinic,"patient care, diagnosis, medical documentation",Hyderabad,Internship,2308217
+735,Mobile App Developer,DreamWeddings Inc.,"adobe photoshop, illustrator, creativity",Mumbai,Full-time,1370840
+736,Teacher,City Hospital,"node.js, express, mongodb",Hyderabad,Part-time,2103667
+737,Nurse Practitioner,CloudNet,"python, pandas, numpy",Mumbai,Internship,785657
+738,Network Engineer,InnovateX,"sql, data analysis, tableau",Bangalore,Contract,2090840
+739,Marketing Manager,InnovateX,"aws, docker, kubernetes",Remote,Full-time,1797330
+740,Graphic Designer,DataWiz,"typing, accuracy, database entry",Bangalore,Internship,905256
+741,Product Manager,CreativeHub Agency,"salesforce, CRM, negotiation",Remote,Part-time,1389178
+742,Cybersecurity Analyst,DataWiz,"excel, financial modeling, data interpretation",Delhi,Full-time,2278242
+743,Graphic Designer,DevSolutions,"event coordination, client management, budgeting",Bangalore,Contract,1307671
+744,Data Scientist,BizConsult,"event coordination, client management, budgeting",Mumbai,Full-time,1367961
+745,Data Scientist,FinEdge Solutions,"sql, data analysis, tableau",Hyderabad,Part-time,1604703
+746,QA Analyst,BrightFuture School,"python, pandas, numpy",Mumbai,Contract,1927832
+747,Game Developer,EduWise Academy,"aws, docker, kubernetes",Mumbai,Part-time,603684
+748,Blockchain Developer,DataWiz,"event coordination, client management, budgeting",Mumbai,Internship,1143326
+749,Backend Engineer,City Hospital,"event coordination, client management, budgeting",Pune,Contract,1058593
+750,HR Coordinator,BizConsult,"figma, user testing, wireframing",Remote,Contract,2242577
+751,Data Entry Clerk,DevSolutions,"event coordination, client management, budgeting",Mumbai,Internship,1658234
+752,Cybersecurity Analyst,DreamWeddings Inc.,"python, pandas, numpy",Delhi,Full-time,1559426
+753,Game Developer,InnovateX,"client relations, campaign strategy, presentations",Remote,Internship,845962
+754,Hotel Receptionist,DataWiz,"curriculum planning, classroom management, communication",Remote,Internship,2102415
+755,Business Analyst,Global Travels,"sql, data analysis, tableau",Mumbai,Contract,2060721
+756,Hotel Receptionist,TechNova,"interviewing, HR software, conflict resolution",Bangalore,Internship,1404303
+757,Blockchain Developer,TechNova,"aws, docker, kubernetes",Delhi,Contract,1347521
+758,Data Scientist,BrightFuture School,"prescription handling, pharma knowledge",Remote,Internship,1575691
+759,QA Analyst,Global Travels,"react, javascript, css",Delhi,Contract,1433562
+760,Teacher,EduWise Academy,"sql, data visualization, problem solving",Pune,Internship,2186260
+761,Legal Advisor,TechNova,"excel, financial modeling, data interpretation",Hyderabad,Internship,1721746
+762,Wedding Manager,BrightFuture School,"patient care, diagnosis, medical documentation",Delhi,Contract,1488892
+763,Marketing Manager,CloudNet,"inventory, hospitality management, POS systems",Delhi,Internship,2309257
+764,ML Engineer,EduWise Academy,"event coordination, client management, budgeting",Pune,Contract,2220615
+765,Business Analyst,CreativeHub Agency,"client relations, campaign strategy, presentations",Bangalore,Part-time,1386815
+766,Cloud Architect,Global Travels,"inventory, hospitality management, POS systems",Remote,Contract,847941
+767,UX Designer,CreativeHub Agency,"sql, data analysis, tableau",Delhi,Contract,810820
+768,Data Entry Clerk,City Hospital,"customer service, ticketing, troubleshooting",Bangalore,Internship,550850
+769,Mobile App Developer,CreativeHub Agency,"check-in, phone etiquette, scheduling",Hyderabad,Contract,1743595
+770,Game Developer,CloudNet,"legal documentation, compliance, case review",Delhi,Part-time,1809336
+771,Hotel Receptionist,EduWise Academy,"patient care, diagnosis, medical documentation",Remote,Part-time,1246902
+772,Wedding Manager,Global Travels,"python, pandas, numpy",Mumbai,Contract,717907
+773,Cloud Architect,EduWise Academy,"prescription handling, pharma knowledge",Delhi,Part-time,1866830
+774,Game Developer,BrightFuture School,"check-in, phone etiquette, scheduling",Bangalore,Full-time,2111004
+775,Software Engineer,City Hospital,"legal documentation, compliance, case review",Delhi,Internship,1686206
+776,Frontend Developer,DreamWeddings Inc.,"event coordination, client management, budgeting",Delhi,Contract,2461423
+777,HR Coordinator,DesignCrafters,"excel, financial modeling, data interpretation",Mumbai,Internship,2284309
+778,Marketing Manager,InnovateX,"node.js, express, mongodb",Bangalore,Internship,1375819
+779,Operations Manager,DreamWeddings Inc.,"node.js, express, mongodb",Delhi,Part-time,1532040
+780,Web Developer,FinEdge Solutions,"java, spring, hibernate",Remote,Full-time,1953291
+781,UI/UX Designer,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Delhi,Internship,511707
+782,DevOps Engineer,Global Travels,"test case writing, selenium, bug tracking",Delhi,Part-time,1750337
+783,Product Manager,DreamWeddings Inc.,"interviewing, HR software, conflict resolution",Pune,Part-time,1498087
+784,ML Engineer,City Hospital,"salesforce, CRM, negotiation",Bangalore,Full-time,1370013
+785,Sales Executive,BuildRight Infra,"java, spring, hibernate",Delhi,Part-time,558851
+786,Financial Analyst,CloudNet,"interviewing, HR software, conflict resolution",Hyderabad,Contract,617157
+787,Account Director,BrightFuture School,"interviewing, HR software, conflict resolution",Mumbai,Contract,1512620
+788,UI/UX Designer,FinEdge Solutions,"check-in, phone etiquette, scheduling",Bangalore,Contract,2237874
+789,Blockchain Developer,CreativeHub Agency,"autocad, site planning, structural analysis",Bangalore,Part-time,2417755
+790,ML Engineer,BuildRight Infra,"inventory, hospitality management, POS systems",Mumbai,Full-time,2309889
+791,AI Researcher,BrightFuture School,"test case writing, selenium, bug tracking",Bangalore,Part-time,1052089
+792,Network Engineer,DataWiz,"java, spring, hibernate",Bangalore,Internship,688345
+793,Product Manager,BizConsult,"typing, accuracy, database entry",Mumbai,Full-time,1675747
+794,Marketing Manager,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Mumbai,Part-time,1833799
+795,Cybersecurity Analyst,PharmaCare,"adobe photoshop, illustrator, creativity",Pune,Full-time,562948
+796,Civil Engineer,City Hospital,"client relations, campaign strategy, presentations",Pune,Contract,1990339
+797,Backend Engineer,InnovateX,"sql, data visualization, problem solving",Remote,Full-time,1469899
+798,Civil Engineer,CreativeHub Agency,"check-in, phone etiquette, scheduling",Remote,Full-time,2259223
+799,Software Engineer,InnovateX,"patient care, diagnosis, medical documentation",Remote,Contract,1584941
+800,Product Manager,HealthFirst Clinic,"sql, data visualization, problem solving",Mumbai,Part-time,1812875
+801,UI/UX Designer,HealthFirst Clinic,"aws, docker, kubernetes",Delhi,Contract,1288327
+802,Restaurant Manager,HealthFirst Clinic,"curriculum planning, classroom management, communication",Mumbai,Contract,1627765
+803,Backend Engineer,TechNova,"figma, user testing, wireframing",Bangalore,Part-time,1868277
+804,HR Coordinator,HealthFirst Clinic,"sql, data visualization, problem solving",Remote,Internship,1197148
+805,Backend Engineer,DesignCrafters,"client relations, campaign strategy, presentations",Pune,Part-time,1923146
+806,Civil Engineer,Global Travels,"autocad, site planning, structural analysis",Pune,Full-time,2378239
+807,Civil Engineer,BrightFuture School,"sql, data analysis, tableau",Pune,Internship,692574
+808,Game Developer,BizConsult,"legal documentation, compliance, case review",Bangalore,Full-time,2048393
+809,AI Researcher,CloudNet,"event coordination, client management, budgeting",Bangalore,Part-time,1438881
+810,Marketing Manager,BrightFuture School,"client relations, campaign strategy, presentations",Bangalore,Internship,1929708
+811,AI Researcher,PharmaCare,"adobe photoshop, illustrator, creativity",Pune,Internship,1170948
+812,Customer Support Specialist,Global Travels,"java, spring, hibernate",Delhi,Part-time,1448630
+813,ML Engineer,EduWise Academy,"test case writing, selenium, bug tracking",Mumbai,Full-time,1296462
+814,Cloud Architect,CloudNet,"java, spring, hibernate",Remote,Internship,1043913
+815,Technical Writer,TechNova,"event coordination, client management, budgeting",Bangalore,Part-time,643636
+816,Web Developer,Global Travels,"python, pandas, numpy",Mumbai,Contract,1475351
+817,DevOps Engineer,BuildRight Infra,"curriculum planning, classroom management, communication",Mumbai,Internship,909990
+818,System Administrator,TechNova,"client relations, campaign strategy, presentations",Remote,Contract,2218885
+819,Web Developer,Global Travels,"inventory, hospitality management, POS systems",Hyderabad,Full-time,623927
+820,Operations Manager,HealthFirst Clinic,"node.js, express, mongodb",Remote,Contract,1759981
+821,Graphic Designer,DreamWeddings Inc.,"python, pandas, numpy",Delhi,Internship,534009
+822,HR Coordinator,DreamWeddings Inc.,"check-in, phone etiquette, scheduling",Delhi,Full-time,727814
+823,Network Engineer,TechNova,"aws, docker, kubernetes",Delhi,Full-time,1302821
+824,Backend Engineer,InnovateX,"salesforce, CRM, negotiation",Mumbai,Full-time,1420371
+825,Mobile App Developer,DreamWeddings Inc.,"curriculum planning, classroom management, communication",Delhi,Part-time,1976174
+826,Restaurant Manager,CreativeHub Agency,"salesforce, CRM, negotiation",Hyderabad,Part-time,637948
+827,Account Director,PharmaCare,"figma, user testing, wireframing",Mumbai,Internship,1673941
+828,Business Analyst,EduWise Academy,"typing, accuracy, database entry",Remote,Internship,553320
+829,Account Director,DreamWeddings Inc.,"python, pandas, numpy",Remote,Internship,1447324
+830,Software Engineer,CreativeHub Agency,"sql, data analysis, tableau",Hyderabad,Internship,2387505
+831,Cybersecurity Analyst,CloudNet,"excel, financial modeling, data interpretation",Bangalore,Internship,869776
+832,Product Manager,EduWise Academy,"salesforce, CRM, negotiation",Mumbai,Full-time,2352873
+833,Data Scientist,DevSolutions,"interviewing, HR software, conflict resolution",Pune,Full-time,666686
+834,Account Director,Global Travels,"sql, data analysis, tableau",Hyderabad,Part-time,2411141
+835,Civil Engineer,HealthFirst Clinic,"legal documentation, compliance, case review",Remote,Part-time,1326185
+836,Operations Manager,FinEdge Solutions,"python, pandas, numpy",Pune,Part-time,1288260
+837,ML Engineer,EduWise Academy,"adobe photoshop, illustrator, creativity",Pune,Part-time,1688464
+838,ML Engineer,BuildRight Infra,"react, javascript, css",Mumbai,Full-time,600790
+839,AI Researcher,DreamWeddings Inc.,"customer service, ticketing, troubleshooting",Bangalore,Full-time,1772775
+840,Cloud Architect,BizConsult,"inventory, hospitality management, POS systems",Hyderabad,Internship,1468312
+841,Pharmacist,EduWise Academy,"react, javascript, css",Pune,Part-time,1179507
+842,Data Entry Clerk,CloudNet,"sql, data analysis, tableau",Bangalore,Part-time,2341236
+843,Backend Engineer,CloudNet,"customer service, ticketing, troubleshooting",Bangalore,Part-time,2462244
+844,HR Coordinator,CloudNet,"event coordination, client management, budgeting",Bangalore,Part-time,965387
+845,AI Researcher,BrightFuture School,"react, javascript, css",Mumbai,Part-time,873393
+846,Software Engineer,PharmaCare,"figma, user testing, wireframing",Remote,Part-time,2025957
+847,AI Researcher,CloudNet,"patient care, diagnosis, medical documentation",Bangalore,Contract,709780
+848,AI Researcher,InnovateX,"excel, financial modeling, data interpretation",Pune,Part-time,2403267
+849,Sales Executive,DataWiz,"react, javascript, css",Delhi,Part-time,1506266
+850,Network Engineer,CloudNet,"client relations, campaign strategy, presentations",Mumbai,Full-time,521708
+851,Web Developer,DataWiz,"sql, data visualization, problem solving",Mumbai,Contract,1674615
+852,Blockchain Developer,PharmaCare,"prescription handling, pharma knowledge",Bangalore,Internship,898543
+853,AI Researcher,BizConsult,"adobe photoshop, illustrator, creativity",Hyderabad,Internship,921455
+854,Cloud Architect,HealthFirst Clinic,"react, javascript, css",Pune,Part-time,821703
+855,UI/UX Designer,BuildRight Infra,"inventory, hospitality management, POS systems",Remote,Contract,1184327
+856,Database Administrator,CreativeHub Agency,"figma, user testing, wireframing",Hyderabad,Contract,2060591
+857,Marketing Manager,FinEdge Solutions,"inventory, hospitality management, POS systems",Mumbai,Internship,2074848
+858,Account Director,DreamWeddings Inc.,"excel, financial modeling, data interpretation",Remote,Internship,886395
+859,Teacher,CloudNet,"node.js, express, mongodb",Remote,Part-time,568880
+860,ML Engineer,DesignCrafters,"autocad, site planning, structural analysis",Bangalore,Contract,1392564
+861,Wedding Manager,CreativeHub Agency,"inventory, hospitality management, POS systems",Pune,Contract,2320878
+862,Product Manager,CreativeHub Agency,"adobe photoshop, illustrator, creativity",Bangalore,Part-time,1131054
+863,Sales Executive,Global Travels,"sql, data analysis, tableau",Delhi,Part-time,1231949
+864,Network Engineer,EduWise Academy,"autocad, site planning, structural analysis",Bangalore,Contract,1731328
+865,Software Engineer,BrightFuture School,"patient care, diagnosis, medical documentation",Hyderabad,Full-time,1354580
+866,Nurse Practitioner,PharmaCare,"inventory, hospitality management, POS systems",Hyderabad,Contract,2361374
+867,HR Coordinator,InnovateX,"sql, data analysis, tableau",Mumbai,Internship,942629
+868,System Administrator,HealthFirst Clinic,"customer service, ticketing, troubleshooting",Hyderabad,Internship,617376
+869,DevOps Engineer,DesignCrafters,"inventory, hospitality management, POS systems",Hyderabad,Internship,790949
+870,Teacher,City Hospital,"typing, accuracy, database entry",Hyderabad,Part-time,646623
+871,Civil Engineer,CloudNet,"react, javascript, css",Hyderabad,Part-time,801814
+872,Data Entry Clerk,BizConsult,"aws, docker, kubernetes",Pune,Part-time,2472926
+873,Network Engineer,DevSolutions,"sql, data visualization, problem solving",Mumbai,Full-time,1769640
+874,Pharmacist,DreamWeddings Inc.,"curriculum planning, classroom management, communication",Hyderabad,Part-time,546442
+875,Business Analyst,FinEdge Solutions,"react, javascript, css",Bangalore,Internship,1758169
+876,Software Engineer,CloudNet,"check-in, phone etiquette, scheduling",Pune,Contract,1701921
+877,UI/UX Designer,Global Travels,"sql, data analysis, tableau",Remote,Part-time,908512
+878,Account Director,City Hospital,"adobe photoshop, illustrator, creativity",Remote,Full-time,1359121
+879,Software Engineer,BrightFuture School,"figma, user testing, wireframing",Hyderabad,Internship,2401412
+880,Teacher,BizConsult,"event coordination, client management, budgeting",Mumbai,Internship,1299925
+881,Database Administrator,BuildRight Infra,"adobe photoshop, illustrator, creativity",Pune,Contract,2004801
+882,QA Analyst,TechNova,"aws, docker, kubernetes",Mumbai,Part-time,1804378
+883,Business Analyst,BizConsult,"autocad, site planning, structural analysis",Remote,Full-time,1612707
+884,UI/UX Designer,Global Travels,"excel, financial modeling, data interpretation",Remote,Full-time,1206034
+885,Data Entry Clerk,HealthFirst Clinic,"salesforce, CRM, negotiation",Mumbai,Full-time,1328566
+886,Customer Support Specialist,DataWiz,"inventory, hospitality management, POS systems",Mumbai,Internship,1545759
+887,Business Analyst,CloudNet,"event coordination, client management, budgeting",Mumbai,Internship,1862658
+888,Cloud Architect,BuildRight Infra,"figma, user testing, wireframing",Mumbai,Part-time,1642878
+889,Account Director,DesignCrafters,"autocad, site planning, structural analysis",Pune,Part-time,1579209
+890,Financial Analyst,DevSolutions,"prescription handling, pharma knowledge",Pune,Contract,2190646
+891,Web Developer,CloudNet,"aws, docker, kubernetes",Pune,Internship,1633204
+892,DevOps Engineer,BizConsult,"python, pandas, numpy",Delhi,Contract,1911169
+893,Technical Writer,InnovateX,"sql, data analysis, tableau",Pune,Internship,1879749
+894,Wedding Manager,BrightFuture School,"curriculum planning, classroom management, communication",Delhi,Part-time,1176877
+895,Pharmacist,InnovateX,"node.js, express, mongodb",Pune,Contract,2397587
+896,Software Engineer,EduWise Academy,"aws, docker, kubernetes",Remote,Full-time,2143477
+897,Cloud Architect,DevSolutions,"sql, data analysis, tableau",Mumbai,Contract,1758210
+898,System Administrator,DevSolutions,"excel, financial modeling, data interpretation",Delhi,Full-time,1640544
+899,Data Scientist,HealthFirst Clinic,"react, javascript, css",Mumbai,Full-time,524459
+900,Customer Support Specialist,DevSolutions,"excel, financial modeling, data interpretation",Hyderabad,Internship,1870323
+901,Nurse Practitioner,BizConsult,"java, spring, hibernate",Remote,Contract,1633373
+902,Frontend Developer,BuildRight Infra,"curriculum planning, classroom management, communication",Bangalore,Internship,1339278
+903,Account Director,CloudNet,"legal documentation, compliance, case review",Remote,Contract,1842132
+904,Graphic Designer,DataWiz,"excel, financial modeling, data interpretation",Pune,Full-time,2061368
+905,Hotel Receptionist,BizConsult,"sql, data analysis, tableau",Remote,Internship,2490361
+906,Data Entry Clerk,CloudNet,"interviewing, HR software, conflict resolution",Bangalore,Contract,922400
+907,Pharmacist,TechNova,"salesforce, CRM, negotiation",Mumbai,Part-time,952722
+908,Civil Engineer,DesignCrafters,"inventory, hospitality management, POS systems",Delhi,Full-time,513699
+909,DevOps Engineer,CreativeHub Agency,"python, pandas, numpy",Bangalore,Internship,895536
+910,Graphic Designer,BizConsult,"salesforce, CRM, negotiation",Mumbai,Internship,505053
+911,Sales Executive,HealthFirst Clinic,"autocad, site planning, structural analysis",Remote,Internship,1666410
+912,Financial Analyst,CloudNet,"client relations, campaign strategy, presentations",Remote,Contract,1479166
+913,Pharmacist,Global Travels,"patient care, diagnosis, medical documentation",Hyderabad,Part-time,1451338
+914,Frontend Developer,City Hospital,"legal documentation, compliance, case review",Bangalore,Full-time,1448379
+915,Data Entry Clerk,EduWise Academy,"react, javascript, css",Delhi,Part-time,1165874
+916,Account Director,HealthFirst Clinic,"patient care, diagnosis, medical documentation",Hyderabad,Full-time,1343545
+917,UX Designer,City Hospital,"legal documentation, compliance, case review",Remote,Internship,613394
+918,Hotel Receptionist,EduWise Academy,"sql, data visualization, problem solving",Delhi,Internship,2424471
+919,ML Engineer,DataWiz,"client relations, campaign strategy, presentations",Delhi,Full-time,872359
+920,Web Developer,DesignCrafters,"patient care, diagnosis, medical documentation",Bangalore,Part-time,1990514
+921,Hotel Receptionist,PharmaCare,"event coordination, client management, budgeting",Bangalore,Internship,838909
+922,Frontend Developer,EduWise Academy,"legal documentation, compliance, case review",Bangalore,Internship,792051
+923,Hotel Receptionist,DreamWeddings Inc.,"aws, docker, kubernetes",Hyderabad,Contract,766613
+924,DevOps Engineer,InnovateX,"interviewing, HR software, conflict resolution",Pune,Internship,1678988
+925,Business Analyst,PharmaCare,"patient care, diagnosis, medical documentation",Delhi,Part-time,1316865
+926,Data Entry Clerk,DataWiz,"inventory, hospitality management, POS systems",Remote,Part-time,1403927
+927,Database Administrator,HealthFirst Clinic,"adobe photoshop, illustrator, creativity",Pune,Internship,1005346
+928,Mobile App Developer,BrightFuture School,"react, javascript, css",Hyderabad,Part-time,2011705
+929,Nurse Practitioner,TechNova,"aws, docker, kubernetes",Delhi,Contract,1966666
+930,Civil Engineer,BuildRight Infra,"java, spring, hibernate",Mumbai,Full-time,754385
+931,Pharmacist,PharmaCare,"prescription handling, pharma knowledge",Bangalore,Part-time,1439262
+932,UX Designer,BrightFuture School,"sql, data analysis, tableau",Pune,Internship,2460655
+933,Game Developer,City Hospital,"test case writing, selenium, bug tracking",Remote,Contract,705817
+934,Cloud Architect,BrightFuture School,"node.js, express, mongodb",Hyderabad,Contract,1381667
+935,UI/UX Designer,BrightFuture School,"patient care, diagnosis, medical documentation",Bangalore,Part-time,2327865
+936,Data Entry Clerk,PharmaCare,"client relations, campaign strategy, presentations",Pune,Internship,1391197
+937,Graphic Designer,DreamWeddings Inc.,"node.js, express, mongodb",Hyderabad,Contract,803518
+938,Blockchain Developer,BrightFuture School,"adobe photoshop, illustrator, creativity",Remote,Internship,745589
+939,ML Engineer,PharmaCare,"check-in, phone etiquette, scheduling",Remote,Part-time,1391451
+940,Technical Writer,EduWise Academy,"client relations, campaign strategy, presentations",Mumbai,Internship,797214
+941,Software Engineer,DataWiz,"python, pandas, numpy",Remote,Internship,527108
+942,Business Analyst,DreamWeddings Inc.,"python, pandas, numpy",Remote,Contract,607011
+943,HR Coordinator,DreamWeddings Inc.,"python, pandas, numpy",Pune,Internship,2146421
+944,Mobile App Developer,Global Travels,"interviewing, HR software, conflict resolution",Bangalore,Full-time,2368433
+945,UX Designer,DataWiz,"prescription handling, pharma knowledge",Remote,Internship,1430784
+946,Graphic Designer,BrightFuture School,"legal documentation, compliance, case review",Pune,Part-time,684864
+947,Data Entry Clerk,Global Travels,"test case writing, selenium, bug tracking",Bangalore,Full-time,2475350
+948,Graphic Designer,TechNova,"typing, accuracy, database entry",Pune,Contract,1208395
+949,Civil Engineer,BrightFuture School,"client relations, campaign strategy, presentations",Hyderabad,Internship,1732258
+950,Graphic Designer,HealthFirst Clinic,"sql, data analysis, tableau",Bangalore,Internship,754353
+951,Business Analyst,HealthFirst Clinic,"test case writing, selenium, bug tracking",Pune,Full-time,1954259
+952,Frontend Developer,CreativeHub Agency,"excel, financial modeling, data interpretation",Pune,Contract,2079154
+953,Database Administrator,City Hospital,"typing, accuracy, database entry",Mumbai,Contract,624976
+954,Data Scientist,TechNova,"java, spring, hibernate",Hyderabad,Internship,1204295
+955,Wedding Manager,FinEdge Solutions,"patient care, diagnosis, medical documentation",Mumbai,Full-time,501470
+956,Nurse Practitioner,TechNova,"customer service, ticketing, troubleshooting",Pune,Part-time,860812
+957,Financial Analyst,TechNova,"java, spring, hibernate",Mumbai,Part-time,2065042
+958,Financial Analyst,DataWiz,"excel, financial modeling, data interpretation",Mumbai,Full-time,816125
+959,Data Scientist,EduWise Academy,"java, spring, hibernate",Remote,Internship,2137895
+960,Teacher,City Hospital,"react, javascript, css",Remote,Contract,1095636
+961,Teacher,DataWiz,"curriculum planning, classroom management, communication",Pune,Contract,1365023
+962,Technical Writer,HealthFirst Clinic,"check-in, phone etiquette, scheduling",Delhi,Contract,514284
+963,Account Director,BuildRight Infra,"sql, data analysis, tableau",Pune,Full-time,1991005
+964,Operations Manager,DataWiz,"excel, financial modeling, data interpretation",Mumbai,Internship,901588
+965,Teacher,PharmaCare,"interviewing, HR software, conflict resolution",Hyderabad,Full-time,2133036
+966,Technical Writer,Global Travels,"python, pandas, numpy",Remote,Contract,1137345
+967,Web Developer,DataWiz,"interviewing, HR software, conflict resolution",Hyderabad,Full-time,2185870
+968,Nurse Practitioner,HealthFirst Clinic,"node.js, express, mongodb",Mumbai,Internship,1511288
+969,Financial Analyst,DesignCrafters,"aws, docker, kubernetes",Pune,Full-time,1690698
+970,Database Administrator,HealthFirst Clinic,"inventory, hospitality management, POS systems",Delhi,Contract,794916
+971,Financial Analyst,BrightFuture School,"excel, financial modeling, data interpretation",Delhi,Internship,1697131
+972,Frontend Developer,DataWiz,"test case writing, selenium, bug tracking",Pune,Full-time,1225883
+973,Business Analyst,EduWise Academy,"react, javascript, css",Mumbai,Contract,1942003
+974,Database Administrator,HealthFirst Clinic,"salesforce, CRM, negotiation",Pune,Contract,2347201
+975,Customer Support Specialist,PharmaCare,"sql, data visualization, problem solving",Mumbai,Part-time,539750
+976,Product Manager,PharmaCare,"excel, financial modeling, data interpretation",Hyderabad,Contract,2077246
+977,UX Designer,HealthFirst Clinic,"curriculum planning, classroom management, communication",Hyderabad,Contract,2004308
+978,Marketing Manager,DevSolutions,"interviewing, HR software, conflict resolution",Remote,Part-time,1299746
+979,Pharmacist,InnovateX,"prescription handling, pharma knowledge",Mumbai,Part-time,1972744
+980,Data Scientist,BizConsult,"excel, financial modeling, data interpretation",Hyderabad,Part-time,1060400
+981,Civil Engineer,EduWise Academy,"interviewing, HR software, conflict resolution",Bangalore,Full-time,1136053
+982,UX Designer,Global Travels,"autocad, site planning, structural analysis",Hyderabad,Contract,1131400
+983,Nurse Practitioner,BizConsult,"aws, docker, kubernetes",Pune,Part-time,1820064
+984,Business Analyst,TechNova,"interviewing, HR software, conflict resolution",Pune,Internship,1111502
+985,Teacher,DataWiz,"java, spring, hibernate",Mumbai,Part-time,1154938
+986,UI/UX Designer,DesignCrafters,"figma, user testing, wireframing",Hyderabad,Contract,1134930
+987,Web Developer,DreamWeddings Inc.,"aws, docker, kubernetes",Delhi,Part-time,1240771
+988,Wedding Manager,DesignCrafters,"adobe photoshop, illustrator, creativity",Bangalore,Full-time,1794351
+989,Restaurant Manager,Global Travels,"patient care, diagnosis, medical documentation",Pune,Internship,861563
+990,Blockchain Developer,FinEdge Solutions,"sql, data visualization, problem solving",Remote,Part-time,526190
+991,Cybersecurity Analyst,InnovateX,"aws, docker, kubernetes",Delhi,Full-time,1685441
+992,Financial Analyst,City Hospital,"prescription handling, pharma knowledge",Delhi,Internship,1481835
+993,Technical Writer,BizConsult,"client relations, campaign strategy, presentations",Remote,Full-time,1876862
+994,Sales Executive,FinEdge Solutions,"adobe photoshop, illustrator, creativity",Delhi,Part-time,2374280
+995,AI Researcher,BuildRight Infra,"client relations, campaign strategy, presentations",Delhi,Part-time,799728
+996,Blockchain Developer,DreamWeddings Inc.,"java, spring, hibernate",Delhi,Part-time,1378370
+997,Backend Engineer,DataWiz,"sql, data analysis, tableau",Mumbai,Full-time,1399656
+998,Game Developer,City Hospital,"sql, data visualization, problem solving",Delhi,Full-time,1370065
+999,Financial Analyst,PharmaCare,"legal documentation, compliance, case review",Pune,Full-time,600968
+1000,Graphic Designer,HealthFirst Clinic,"python, pandas, numpy",Mumbai,Internship,664405
+1001,Account Director,CreativeHub Agency,"aws, docker, kubernetes",Delhi,Internship,695838
+1002,Wedding Manager,DreamWeddings Inc.,"java, spring, hibernate",Mumbai,Internship,710982
+1003,Frontend Developer,DreamWeddings Inc.,"java, spring, hibernate",Bangalore,Internship,2347717
+1004,System Administrator,EduWise Academy,"python, pandas, numpy",Delhi,Full-time,1964137
+1005,Cybersecurity Analyst,PharmaCare,"sql, data analysis, tableau",Delhi,Internship,1376305
+1006,Cybersecurity Analyst,HealthFirst Clinic,"typing, accuracy, database entry",Pune,Internship,1373846
+1007,Web Developer,BizConsult,"patient care, diagnosis, medical documentation",Delhi,Contract,527724
+1008,Wedding Manager,DevSolutions,"excel, financial modeling, data interpretation",Pune,Contract,1023247
+1009,Technical Writer,City Hospital,"customer service, ticketing, troubleshooting",Delhi,Full-time,944773
+1010,Product Manager,FinEdge Solutions,"sql, data visualization, problem solving",Delhi,Part-time,1416692
+1011,Web Developer,DevSolutions,"test case writing, selenium, bug tracking",Delhi,Internship,1802197
+1012,Cloud Architect,HealthFirst Clinic,"python, pandas, numpy",Hyderabad,Part-time,2119243
+1013,QA Analyst,DreamWeddings Inc.,"test case writing, selenium, bug tracking",Delhi,Part-time,1185159
+1014,Operations Manager,DataWiz,"event coordination, client management, budgeting",Pune,Internship,599926
+1015,Marketing Manager,EduWise Academy,"test case writing, selenium, bug tracking",Hyderabad,Contract,2448489
+1016,Pharmacist,DreamWeddings Inc.,"test case writing, selenium, bug tracking",Remote,Internship,1585611
+1017,Operations Manager,CreativeHub Agency,"autocad, site planning, structural analysis",Pune,Internship,2442894
+1018,Data Entry Clerk,Global Travels,"autocad, site planning, structural analysis",Bangalore,Internship,1031110
+1019,DevOps Engineer,CreativeHub Agency,"salesforce, CRM, negotiation",Remote,Part-time,674326
+1020,Cloud Architect,DataWiz,"excel, financial modeling, data interpretation",Mumbai,Part-time,2164305
+1021,,,,,,

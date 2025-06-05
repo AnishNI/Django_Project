@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Your Project - HireSense</title>
+  {% include "includes/index_assets.html" %}
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen overflow-x-hidden">
+  <div class="container mx-auto p-6">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6 max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6 text-white">Submit Your Project</h1>
+      {% if success %}
+        <div class="mb-4 p-3 bg-green-600 text-white rounded">
+          {{ success }}
+        </div>
+      {% endif %}
+      {% if error %}
+        <div class="mb-4 p-3 bg-red-600 text-white rounded">
+          {{ error }}
+        </div>
+      {% endif %}
+      <form method="POST" enctype="multipart/form-data" action="" class="space-y-6">
+        {% csrf_token %}
+        <div>
+          <label for="project_title" class="block text-sm font-semibold mb-2">Project Title</label>
+          <input type="text" id="project_title" name="project_title" required
+            class="w-full px-3 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label for="description" class="block text-sm font-semibold mb-2">Description</label>
+          <textarea id="description" name="description" required rows="4"
+            class="w-full px-3 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-vertical"></textarea>
+        </div>
+        <div>
+          <label for="image_upload" class="block text-sm font-semibold mb-2">Image to Upload</label>
+          <input type="file" id="image_upload" name="image_upload" accept="image/*" required
+            class="w-full text-white file:bg-gray-700 file:border file:border-gray-600 file:rounded-md file:px-3 file:py-2 file:text-white file:cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label for="github_link" class="block text-sm font-semibold mb-2">GitHub Link</label>
+          <input type="url" id="github_link" name="github_link" placeholder="https://github.com/username/repo" required
+            class="w-full px-3 py-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <button type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

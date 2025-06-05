@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers at HireSense</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 p-6 shadow flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Careers at HireSense</h1>
+    <a href="{% url 'company' %}#company" class="text-sm text-blue-400 hover:underline">← Back to Company Page</a>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-w-7xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-6 border-l-4 border-blue-500 pl-4">We're Hiring!</h2>
+    <p class="text-gray-400 mb-10 max-w-2xl">
+      Join HireSense in shaping the future of AI-powered job matching. Discover open roles across engineering, data, product, and more.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Frontend Developer -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">Frontend Developer (React)</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Pune / Remote | 🧑‍💻 Full-time</p>
+        <p class="mt-3 text-gray-300 text-sm">Build intuitive UIs using React and Tailwind.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>2+ years in React</li>
+          <li>Tailwind & Responsive Design</li>
+        </ul>
+        <a href="{% url 'apply_job' 1 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- Backend Developer -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">Backend Developer (Django)</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Remote | 🧑‍💻 Full-time</p>
+        <p class="mt-3 text-gray-300 text-sm">Design APIs and databases for a scalable AI system.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>Python, Django/DRF</li>
+          <li>RESTful API experience</li>
+        </ul>
+        <a href="{% url 'apply_job' 2 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- ML Engineer -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">Machine Learning Engineer</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Bengaluru / Remote</p>
+        <p class="mt-3 text-gray-300 text-sm">Build and train models for job match intelligence.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>NLP, scikit-learn, PyTorch</li>
+          <li>Recommendation engines</li>
+        </ul>
+        <a href="{% url 'apply_job' 3 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- UI/UX Designer -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">UI/UX Designer</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Mumbai / Remote</p>
+        <p class="mt-3 text-gray-300 text-sm">Craft clean and accessible interfaces for web apps.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>Figma, Adobe XD</li>
+          <li>Design Systems knowledge</li>
+        </ul>
+        <a href="{% url 'apply_job' 4 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- DevOps Engineer -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">DevOps Engineer</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Remote</p>
+        <p class="mt-3 text-gray-300 text-sm">Manage CI/CD, containerization, and infrastructure.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>AWS, Docker, GitHub Actions</li>
+          <li>Monitoring & reliability</li>
+        </ul>
+        <a href="{% url 'apply_job' 5 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- Marketing Specialist -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">Marketing Specialist</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Delhi / Remote</p>
+        <p class="mt-3 text-gray-300 text-sm">Drive campaigns to promote our AI hiring solution.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>Social Media / SEO</li>
+          <li>Content Strategy</li>
+        </ul>
+        <a href="{% url 'apply_job' 6 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+
+      <!-- HR & Recruitment Lead -->
+      <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-400">HR & Recruitment Lead</h3>
+        <p class="text-sm text-gray-400 mt-2">📍 Pune</p>
+        <p class="mt-3 text-gray-300 text-sm">Manage hiring pipeline and internal HR operations.</p>
+        <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
+          <li>3+ years in HR</li>
+          <li>People-first mindset</li>
+        </ul>
+        <a href="{% url 'apply_job' 7 %}" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm">Apply Now</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-gray-400 text-sm p-6 mt-12">
+    &copy; 2025 HireSense — Connecting talent with opportunities seamlessly.
+  </footer>
+
+</body>
+</html>

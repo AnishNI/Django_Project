@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employer Settings</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen px-6 py-10">
+
+  <h1 class="text-3xl font-bold mb-6 text-center">Employer Settings</h1>
+
+  <div class="grid gap-8 max-w-4xl mx-auto">
+
+    <!-- Account Info -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Account Information</h2>
+      <form class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="text" placeholder="Full Name" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+          <input type="email" placeholder="Email Address" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        </div>
+        <input type="text" placeholder="Phone Number" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Update Info</button>
+      </form>
+    </section>
+
+    <!-- Password Settings -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Change Password</h2>
+      <form class="space-y-4">
+        <input type="password" placeholder="Current Password" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <input type="password" placeholder="New Password" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <input type="password" placeholder="Confirm New Password" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <button class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-medium">Change Password</button>
+      </form>
+    </section>
+
+    <!-- Company Settings -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Company Profile</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Company Name" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <textarea placeholder="Company Description" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full h-24"></textarea>
+        <input type="text" placeholder="Website URL" class="p-3 rounded-lg bg-gray-700 border border-gray-600 w-full"/>
+        <button class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg font-medium">Update Company Info</button>
+      </form>
+    </section>
+
+    <!-- Notification Settings -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Notification Preferences</h2>
+      <form class="space-y-4">
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500" checked>
+          <span>Email notifications for new applicants</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+          <span>Weekly activity summary</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500" checked>
+          <span>Reminders for expiring job posts</span>
+        </label>
+        <button class="bg-yellow-600 hover:bg-yellow-700 px-6 py-2 rounded-lg font-medium">Save Preferences</button>
+      </form>
+    </section>
+
+    <!-- Job Posting Preferences -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Job Posting Preferences</h2>
+      <form class="space-y-4">
+        <label class="block">Default Job Visibility:
+          <select class="bg-gray-700 border border-gray-600 p-2 rounded-lg w-full mt-1">
+            <option>Public</option>
+            <option>Private</option>
+          </select>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500">
+          <span>Enable auto-expiry after 30 days</span>
+        </label>
+        <button class="bg-indigo-600 hover:bg-indigo-700 px-6 py-2 rounded-lg font-medium">Update Preferences</button>
+      </form>
+    </section>
+
+    <!-- Privacy -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4">Privacy & Visibility</h2>
+      <form class="space-y-4">
+        <label class="block">Who can view your company profile?
+          <select class="bg-gray-700 border border-gray-600 p-2 rounded-lg w-full mt-1">
+            <option>Everyone</option>
+            <option>Only registered candidates</option>
+            <option>Only you</option>
+          </select>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-500" checked>
+          <span>Hide company email from job seekers</span>
+        </label>
+        <button class="bg-pink-600 hover:bg-pink-700 px-6 py-2 rounded-lg font-medium">Update Privacy</button>
+      </form>
+    </section>
+
+    <!-- Delete Account -->
+    <section class="bg-gray-800 rounded-2xl p-6 shadow border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4 text-red-400">Delete Account</h2>
+      <p class="text-sm text-gray-400 mb-4">Once you delete your account, there is no going back. Please be certain.</p>
+      <button onclick="showModal()" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg font-medium">
+        Delete My Account
+      </button>      
+    </section>
+
+
+    <!-- Delete Confirmation Modal -->
+<div id="deleteModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg w-full max-w-md text-center">
+      <h2 class="text-xl font-bold mb-4 text-red-500">Are you sure?</h2>
+      <p class="mb-6 text-gray-300">This action will permanently delete your account and all data.</p>
+      <div class="flex justify-center gap-4">
+        <button onclick="hideModal()" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded-lg">Cancel</button>
+        <form method="POST" action="/employer/delete-account/">
+          <!-- CSRF Token if using Django -->
+          <input type="hidden" name="confirm_delete" value="true">
+          <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg">Delete</button>
+        </form>
+      </div>
+    </div>
+</div>
+
+  </div>
+</body>
+</html>
+
+
+<script>
+    function showModal() {
+      document.getElementById('deleteModal').classList.remove('hidden');
+    }
+    function hideModal() {
+      document.getElementById('deleteModal').classList.add('hidden');
+    }
+  </script>
+  

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  
+  .terms-container {
+    background-color: #1E293B;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .terms-box h2 {
+    color: #ced3db;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    color: #748396;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content h3 {
+    color: #F8FAFC;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .content p, .content ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #CBD5E1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .content ul {
+    padding-left: 1.5rem;
+  }
+  
+  .content ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+  }
+  
+  a {
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #60A5FA;
+  }
+  
+  .back-link {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  

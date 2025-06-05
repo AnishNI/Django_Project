@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center | HireSense</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 py-10 text-center shadow-md">
+    <h1 class="text-4xl font-bold text-white">Help Center</h1>
+    <p class="text-gray-400 mt-2">Your guide to using HireSense effectively</p>
+  </header>
+
+  <!-- Search 
+  <div class="max-w-3xl mx-auto mt-8 px-4">
+    <input 
+      type="text" 
+      placeholder="Search help topics..." 
+      class="w-full px-5 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500 focus:outline-none placeholder-gray-400" />
+  </div>
+-->
+  <!-- Categories -->
+  <section class="max-w-7xl mx-auto py-16 px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    <!-- Card -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">  
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Getting Started</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>How to create your account</li>
+        <li>Onboarding for new users</li>
+        <li>Build your profile</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Job Seekers</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>How to apply for jobs</li>
+        <li>Upload and edit resumes</li>
+        <li>Track job applications</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Employers</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>Posting job roles</li>
+        <li>Manage candidate pipeline</li>
+        <li>Edit or remove postings</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Account Settings</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>Update profile info</li>
+        <li>Manage notifications</li>
+        <li>Change your password</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Technical Issues</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>Website not loading</li>
+        <li>Error uploading files</li>
+        <li>Resume formatting problems</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+      <h2 class="text-xl font-semibold text-indigo-400 mb-3">Security & Privacy</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+        <li>Report suspicious activity</li>
+        <li>Delete your account</li>
+        <li>Data protection policies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Popular Articles -->
+  <section class="max-w-6xl mx-auto px-6 pb-16">
+    <h2 class="text-2xl font-semibold text-indigo-300 mb-6">Popular Help Articles</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-300">
+      <a href="{% url 'articles' %}" class="hover:text-white">How to create and complete your profile effectively</a>
+      <a href="{% url 'articles' %}" class="hover:text-white">Why your resume upload might fail</a>
+      <a href="{% url 'articles' %}" class="hover:text-white">How to search using AI-based filters</a>
+      <a href="{% url 'articles' %}" class="hover:text-white">Best practices for employers on candidate filtering</a>
+      <a href="{% url 'articles' %}" class="hover:text-white">How to reset your password securely</a>
+      <a href="{% url 'articles' %}" class="hover:text-white">Understanding job recommendation logic</a>
+    </div>
+  </section>
+
+  <!-- Need More Help -->
+  <section class="bg-gray-800 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-white mb-3">Still need help?</h2>
+      <p class="text-gray-400 mb-6">We're here to assist you 24/7. Choose how you'd like to get in touch.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="{% url 'support'%}#support" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition">View FAQs</a>
+        <a href="{% url 'support'%}#support" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition">Contact Support</a>
+        <a href="{% url 'support'%}#support" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition">Report an Issue</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-700 text-gray-500 text-sm">
+    &copy; 2025 HireSense. All rights reserved.
+  </footer>
+
+</body>
+</html>

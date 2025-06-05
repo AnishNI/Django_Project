@@ -1,0 +1,106 @@
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Sense Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<script>
+  // Force reload on back/forward navigation to prevent cached page showing logged-in state
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
+</script>
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white fixed h-full">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-6">Hire Sense</h2>
+        <ul class="space-y-4">
+          <li><a href="#" class="hover:text-gray-300">Dashboard</a></li>
+          <li><a href="{% url 'candidates' %}" class="hover:text-gray-300">Candidates</a></li>
+          <li><a href="{% url 'admin_panel' %}" class="hover:text-gray-300">Post a Job</a></li>
+          <li><a href="{% url 'settings' %}" class="hover:text-gray-300">Settings</a></li>
+          <li><a href="{% url 'logout' %}" class="hover:text-gray-300">Logout</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 flex-1 p-8 overflow-auto">
+      <h1 class="text-3xl font-semibold mb-4">Welcome to Hire Sense</h1>
+      <p class="text-gray-700 mb-6">
+        This is your dashboard. All your data appears here.
+      </p>
+
+      {% if job_data %}
+        {% for item in job_data %}
+          <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h2 class="text-xl font-bold mb-2">{{ item.job.title }}</h2>
+            <p class="mb-2"><strong>Location:</strong> {{ item.job.location }}</p>
+            <p class="mb-2"><strong>Experience:</strong> {{ item.job.experience }}</p>
+            <p class="mb-4"><strong>Applications ({{ item.applications_count }}):</strong></p>
+            {% if item.applications %}
+              <div class="space-y-4 max-h-96 overflow-y-auto">
+                {% for application in item.applications %}
+                  <div class="border border-gray-300 rounded p-4 flex space-x-4 items-center">
+                    <div>
+                      {% with seeker=application.candidate_email|user_seekerprofile %}
+                        {% if seeker and seeker.photo %}
+                          <img src="{{ seeker.photo.url }}" alt="Photo" class="w-16 h-16 rounded-full object-cover" />
+                        {% else %}
+                          <div class="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-gray-600">No Photo</div>
+                        {% endif %}
+                      {% endwith %}
+                    </div>
+                    <div class="flex-1">
+                      <p><strong>Name:</strong> {{ application.candidate_name }}</p>
+                      <p><strong>Email:</strong> {{ application.candidate_email }}</p>
+                      <p><strong>Contact:</strong> {{ application.candidate_contact }}</p>
+                      {% with seeker=application.candidate_email|user_seekerprofile %}
+                        {% if seeker and seeker.resume %}
+                          <p><a href="{{ seeker.resume.url }}" target="_blank" class="text-blue-600 underline">View Resume</a></p>
+                        {% else %}
+                          <p>No Resume Uploaded</p>
+                        {% endif %}
+                      {% endwith %}
+                    </div>
+                    <div>
+                      <p><strong>Status:</strong> {{ application.status }}</p>
+                      {% if application.status == 'Pending' %}
+                        <form method="post" action="{% url 'approve_application' application.application_id %}" style="display:inline;">
+                          {% csrf_token %}
+                          <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded mr-2">Approve</button>
+                        </form>
+                        <form method="post" action="{% url 'reject_application' application.application_id %}" style="display:inline;">
+                          {% csrf_token %}
+                          <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">Reject</button>
+                        </form>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% else %}
+              <p>No applications yet.</p>
+            {% endif %}
+            <form method="POST" action="{% url 'delete_job' item.job.id %}" onsubmit="return confirm('Are you sure you want to delete this job?');">
+              {% csrf_token %}
+              <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Delete Job</button>
+            </form>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No jobs posted yet.</p>
+      {% endif %}
+    </main>
+  </div>
+
+</body>
+</html>

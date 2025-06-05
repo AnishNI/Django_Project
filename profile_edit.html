@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Edit Profile</h1>
+    {% if messages %}
+      <div class="mb-4">
+        {% for message in messages %}
+          <div class="p-3 rounded mb-2 {% if message.tags %}bg-green-500 text-white{% else %}bg-gray-200 text-black{% endif %}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data" class="space-y-4">
+      {% csrf_token %}
+      <div>
+        <label class="block font-semibold mb-1" for="full_name">Full Name</label>
+        <input type="text" id="full_name" name="full_name" value="{{ profile.full_name }}" class="w-full border border-gray-300 rounded px-3 py-2" required />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="course">Course</label>
+        <input type="text" id="course" name="course" value="{{ profile.course }}" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="graduation">Graduation</label>
+        <input type="text" id="graduation" name="graduation" value="{{ profile.graduation }}" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="skills">Skills</label>
+        <textarea id="skills" name="skills" class="w-full border border-gray-300 rounded px-3 py-2">{{ profile.skills }}</textarea>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="contact_info">Contact Info</label>
+        <input type="text" id="contact_info" name="contact_info" value="{{ profile.contact_info }}" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="address">Address</label>
+        <textarea id="address" name="address" class="w-full border border-gray-300 rounded px-3 py-2">{{ profile.address }}</textarea>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" class="w-full" />
+        {% if profile.photo %}
+          <img id="photoPreview" src="{{ profile.photo.url }}" alt="Current Photo" class="w-24 h-24 object-cover rounded mt-2" />
+        {% else %}
+          <img id="photoPreview" src="#" alt="Photo Preview" class="w-24 h-24 object-cover rounded mt-2 hidden" />
+        {% endif %}
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="resume">Resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" class="w-full" />
+        {% if profile.resume %}
+          {% if resume_exists %}
+            <a href="{{ profile.resume.url }}" target="_blank" class="text-blue-600 hover:underline mt-2 block">Current Resume</a>
+          {% else %}
+            <p class="text-red-500 mt-2">Resume file not found.</p>
+          {% endif %}
+        {% endif %}
+      </div>
+      <script>
+        document.getElementById('photo').addEventListener('change', function(event) {
+          const [file] = event.target.files;
+          const preview = document.getElementById('photoPreview');
+          if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.classList.remove('hidden');
+          } else {
+            preview.src = '#';
+            preview.classList.add('hidden');
+          }
+        });
+      </script>
+      <div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Save Changes</button>
+        <a href="{% url 'profile_view' %}" class="ml-4 text-gray-600 hover:underline">Cancel</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-gray-100">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Sector Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="min-h-screen transition-all duration-300 ease-in-out bg-gray-900 text-gray-100">
+
+<div class="max-w-5xl mx-auto py-10 px-6">
+  <!-- Header -->
+  <div class="flex justify-center items-center mb-6">
+    <h1 class="text-3xl font-bold text-indigo-400">Job Sector Analysis</h1>
+  </div>
+
+  <!-- Sector Tabs -->
+  <div class="flex justify-center space-x-4 mb-6">
+    <button id="it-tab" onclick="toggleSector('it-jobs')" class="px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-600 text-white">IT Sector</button>
+    <button id="non-it-tab" onclick="toggleSector('non-it-jobs')" class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-white">Non-IT Sector</button>
+  </div>
+
+  <!-- IT Jobs Section -->
+  <div id="it-jobs">
+    <h2 class="text-xl font-semibold mb-4 text-indigo-400">Top IT Jobs 2025</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+
+      <!-- Python Developer -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('python-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Python Developer</h3>
+        <p>Avg Salary: ₹7 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="python-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 3–6 months</p>
+          <p><strong>Topics:</strong> Python Basics, OOP, Flask/Django, REST APIs, SQL</p>
+          <p><strong>Notes:</strong> Ideal for automation, scripting & web dev.</p>
+        </div>
+      </div>
+
+      <!-- Prompt Engineer(AI/LLMs) -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('Prompt-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Prompt Engineer (AI/LLMs)</h3>
+        <p>Avg Salary: ₹6–12 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="Prompt-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 3–6 months</p>
+          <p><strong>Topics:</strong> NLP, LLMs, Python, Prompt Tuning</p>
+          <p><strong>Notes:</strong> Stay updated with GPT, Claude, open-source LLMs like Mistral.</p>
+        </div>
+      </div>
+
+      <!-- Java Developer -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('java-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Java Developer</h3>
+        <p>Avg Salary: ₹6.5 LPA</p>
+        <div id="java-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 4–7 months</p>
+          <p><strong>Topics:</strong> Java Basics, OOP, Spring Boot, JDBC, Threads</p>
+          <p><strong>Notes:</strong> Common in enterprise-grade apps.</p>
+        </div>
+      </div>
+
+      <!-- Cloud DevOps Engineer -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('cloud-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Cloud DevOps Engineer</h3>
+        <p>Avg Salary: ₹5-10 LPA</p>
+        <div id="cloud-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 6–8 months</p>
+          <p><strong>Topics:</strong> Linux, AWS/GCP/Azure, CI/CD, Docker, Terraform</p>
+          <p><strong>Notes:</strong> Get AWS/GCP certified, real-world projects matter.</p>
+        </div>
+      </div>
+
+      <!-- Data Scientist -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('data-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Data Scientist</h3>
+        <p>Avg Salary: ₹10 LPA</p>
+        <div id="data-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 6–12 months</p>
+          <p><strong>Topics:</strong> Python, Numpy, Pandas, ML, Deep Learning, SQL, Data Viz</p>
+          <p><strong>Notes:</strong> Strong math/statistics and projects needed.</p>
+        </div>
+      </div>
+
+      <!-- Full Stack Developer (MERN/MEAN) -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('full-details')">
+        <h3 class="font-bold text-lg text-indigo-300">Full Stack Developer (MERN/MEAN)</h3>
+        <p>Avg Salary: ₹5-9 LPA</p>
+        <div id="full-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 5–8 months</p>
+          <p><strong>Topics:</strong> HTML, CSS, JS, React, Node.js, MongoDB</p>
+          <p><strong>Notes:</strong> Build a portfolio of at least 3 projects.</p>
+        </div>
+      </div>
+
+      <!--  Cybersecurity Analyst -->
+      <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('cyber-details')">
+        <h3 class="font-bold text-lg text-indigo-300"> Cybersecurity Analyst</h3>
+        <p>Avg Salary: ₹6–11 LPA <span class="text-red-400"></span></p>
+        <div id="cyber-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 8–12 months</p>
+          <p><strong>Topics:</strong> Networking, Linux, SOC, Tools like Wireshark, Burp Suite</p>
+          <p><strong>Notes:</strong> Start with CompTIA Security+, internships help a lot.</p>
+        </div>
+      </div>
+
+    </div>
+    <canvas id="itChart" class="mt-6"></canvas>
+  </div>
+
+    <!-- Non-IT Jobs Section -->
+    <div id="non-it-jobs" class="hidden">
+      <h2 class="text-xl font-semibold mb-4 text-indigo-400">Top Non-IT Jobs 2025</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+
+        <!-- Accountant -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('accountant-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">Accountant</h3>
+          <p>Avg Salary: ₹4 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="accountant-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 2–4 months</p>
+          <p><strong>Topics:</strong> Tally, GST, Excel, Accounting Principles</p>
+          <p><strong>Notes:</strong> Suitable for B.Com grads.</p>
+        </div>
+      </div>
+
+        <!-- Digital Marketing Executive -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('digitalmarketing-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">Digital Marketing Executive</h3>
+          <p>Avg Salary: ₹3-6 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="digitalmarketing-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 2–4 months</p>
+          <p><strong>Topics:</strong> SEO, SEM, Google Ads, Analytics, Social Media</p>
+          <p><strong>Notes:</strong> Use Google Garage, HubSpot, LinkedIn Learning.</p>
+        </div>
+      </div>
+
+        <!-- HR Executive -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('hr-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">HR Executive</h3>
+          <p>Avg Salary: ₹3.5 LPA</p>
+        <div id="hr-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 1–3 months</p>
+          <p><strong>Topics:</strong> Recruitment, Payroll, HRMS tools</p>
+          <p><strong>Notes:</strong> Communication & people skills required.</p>
+        </div>
+      </div>
+
+        <!-- Financial Analyst -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('FinancialAnalyst-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">Financial Analyst</h3>
+          <p>Avg Salary: ₹4-7 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="FinancialAnalyst-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 4–6 months</p>
+          <p><strong>Topics:</strong> Excel, Accounting, Valuation, Forecasting</p>
+          <p><strong>Notes:</strong> NISM, CFA Level 1 (optional), internships help.</p>
+        </div>
+      </div>
+
+        <!-- Sales Executive -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('sales-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">Sales Executive</h3>
+          <p>Avg Salary: ₹4.2 LPA</p>
+        <div id="sales-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 1–2 months</p>
+          <p><strong>Topics:</strong> CRM, Sales Funnel, Product Pitches</p>
+          <p><strong>Notes:</strong> Ideal for extroverted personalities.</p>
+        </div>
+      </div>
+
+        <!-- Content Creator / Technical Writer -->
+        <div class="bg-gray-800 p-4 rounded-xl shadow transition hover:scale-105 cursor-pointer" onclick="toggleDetails('content-details')">
+          <h3 class="font-bold text-lg text-indigo-300 not-italic">Content Creator / Technical Writer</h3>
+          <p>Avg Salary: ₹3-7 LPA <span class="text-green-400">• Fresher Friendly</span></p>
+        <div id="content-details" class="hidden mt-3 text-sm text-gray-400">
+          <p><strong>Learning Time:</strong> 2–4 months</p>
+          <p><strong>Topics:</strong> Blogging, SEO writing, Docs, Markdown</p>
+          <p><strong>Notes:</strong> Freelancing/LinkedIn presence gives visibility.</p>
+        </div>
+      </div>
+
+    </div>
+    <canvas id="nonItChart" class="mt-6"></canvas>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+  function toggleSector(sector) {
+    document.getElementById('it-jobs').classList.add('hidden');
+    document.getElementById('non-it-jobs').classList.add('hidden');
+    document.getElementById(sector).classList.remove('hidden');
+
+    document.getElementById('it-tab').classList.toggle('bg-indigo-500', sector === 'it-jobs');
+    document.getElementById('it-tab').classList.toggle('bg-gray-700', sector !== 'it-jobs');
+    document.getElementById('non-it-tab').classList.toggle('bg-indigo-500', sector === 'non-it-jobs');
+    document.getElementById('non-it-tab').classList.toggle('bg-gray-700', sector !== 'non-it-jobs');
+  }
+
+  function toggleDetails(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+
+  // Wait for DOM to fully load before creating gradients
+  window.onload = () => {
+    const itCtx = document.getElementById('itChart').getContext('2d');
+    const nonItCtx = document.getElementById('nonItChart').getContext('2d');
+
+    // Gradient colors for IT jobs
+    const itGradients = [
+      createGradient(itCtx, '#6366f1'),
+      createGradient(itCtx, '#5b4de0'),
+      createGradient(itCtx, '#5349d0'),
+      createGradient(itCtx, '#4a44c0'),
+      createGradient(itCtx, '#423eb0'),
+      createGradient(itCtx, '#3a39a0')
+    ];
+
+    new Chart(itCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Python Developer', 'Java Developer', 'Data Scientist', 'Prompt Engineer','Cloud DevOps Engineer', 'CyberSecurity Analyst'],
+        datasets: [{
+          label: 'Avg Salary (LPA)',
+          data: [7, 6.5, 10, 6, 8, 6],
+          backgroundColor: itGradients
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: {
+              color: '#d1d5db',
+              font: { weight: 'bold' }
+            }
+          },
+          y: {
+            ticks: {
+              color: '#d1d5db',
+              font: { weight: 'bold' }
+            }
+          }
+        }
+      }
+    });
+
+    // Gradient colors for Non-IT jobs
+    const nonItGradients = [
+      createGradient(nonItCtx, '#6366f1'),
+      createGradient(nonItCtx, '#5b4de0'),
+      createGradient(nonItCtx, '#5349d0'),
+      createGradient(nonItCtx, '#4a44c0'),
+      createGradient(nonItCtx, '#423eb0'),
+      createGradient(nonItCtx, '#3a39a0')
+    ];
+
+    new Chart(nonItCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Accountant', 'HR Executive', 'Sales Executive','Digital Marketing','Financial Analyst','Content Creator'],
+        datasets: [{
+          label: 'Avg Salary (LPA)',
+          data: [4, 3.5, 4.2, 3, 4.5, 3],
+          backgroundColor: nonItGradients
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: {
+              color: '#d1d5db',
+              font: { weight: 'bold' }
+            }
+          },
+          y: {
+            ticks: {
+              color: '#d1d5db',
+              font: { weight: 'bold' }
+            }
+          }
+        }
+      }
+    });
+
+    // Function to create vertical fade gradient
+    function createGradient(ctx, color) {
+      const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, color);
+      gradient.addColorStop(1, hexToRgba(color, 0.1));
+      return gradient;
+    }
+
+    // Helper: convert HEX to RGBA with fade
+    function hexToRgba(hex, alpha) {
+      const bigint = parseInt(hex.slice(1), 16);
+      const r = (bigint >> 16) & 255;
+      const g = (bigint >> 8) & 255;
+      const b = bigint & 255;
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+  };
+</script>
+</body>
+</html>

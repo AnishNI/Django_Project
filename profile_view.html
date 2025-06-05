@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Preview</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Profile Preview</h1>
+    {% if profile %}
+      <div class="mb-4">
+        <strong>Full Name:</strong> {{ profile.full_name }}
+      </div>
+      <div class="mb-4">
+        <strong>Course:</strong> {{ profile.course }}
+      </div>
+      <div class="mb-4">
+        <strong>Graduation:</strong> {{ profile.graduation }}
+      </div>
+      <div class="mb-4">
+        <strong>Skills:</strong> {{ profile.skills }}
+      </div>
+      <div class="mb-4">
+        <strong>Contact Info:</strong> {{ profile.contact_info }}
+      </div>
+      <div class="mb-4">
+        <strong>Address:</strong> {{ profile.address }}
+      </div>
+      <div class="mb-4">
+        {% if profile.photo %}
+          <img src="{{ profile.photo.url }}" alt="Profile Photo" class="w-32 h-32 object-cover rounded-full">
+        {% else %}
+          <p>No photo uploaded.</p>
+        {% endif %}
+      </div>
+      <div class="mb-4">
+        {% if profile.resume %}
+          <a href="{{ profile.resume.url }}" class="text-blue-600 hover:underline" target="_blank">View Resume</a>
+        {% else %}
+          <p>No resume uploaded.</p>
+        {% endif %}
+      </div>
+      <a href="{% url 'profile_edit' %}" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Edit Profile</a>
+    {% else %}
+      <p>No profile found. Please <a href="{% url 'profile_edit' %}" class="text-blue-600 hover:underline">create your profile</a>.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

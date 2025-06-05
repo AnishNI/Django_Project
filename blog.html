@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | HireSense</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 py-12 text-center">
+    <h1 class="text-4xl font-bold text-white">HireSense Blog</h1>
+    <p class="text-gray-400 mt-2">Insights, updates & stories from the future of hiring</p>
+  </header>
+
+  <!-- Blog Articles -->
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+
+    <!-- Article 1 -->
+    <article class="bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-indigo-500/20 transition">
+      <h2 class="text-2xl font-bold text-indigo-400">5 Ways AI is Revolutionizing Recruitment</h2>
+      <p class="text-sm text-gray-400 mb-2">Published: May 2025</p>
+      <p class="text-gray-300 text-sm mb-4">
+        Discover how machine learning is not just improving how fast companies hire but also ensuring better talent matches.
+        With AI-driven resume screening, skill-matching algorithms, and predictive analytics, recruitment is becoming more intelligent,
+        inclusive, and efficient than ever before.
+      </p>
+      <ul class="text-gray-400 text-sm list-disc pl-5 mb-4 space-y-1">
+        <li>Faster screening with resume parsing and NLP</li>
+        <li>Intelligent candidate ranking based on job fit</li>
+        <li>AI interview scheduling & assessment tools</li>
+        <li>Reducing bias through algorithmic fairness</li>
+        <li>Personalized job recommendations using behavioral data</li>
+      </ul>
+      <a href="{% url 'five_ways' %}#blog" class="text-indigo-400 text-sm hover:underline">Read More →</a>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-indigo-500/20 transition">
+      <h2 class="text-2xl font-bold text-indigo-400">Behind the Scenes: Building Hiro</h2>
+      <p class="text-sm text-gray-400 mb-2">Published: April 2025</p>
+      <p class="text-gray-300 text-sm mb-4">
+        Meet Hiro — our intelligent assistant built to personalize job matches for thousands of users. In this post, 
+        we take you behind the scenes to meet the development team and explore the architecture that powers Hiro’s human-like 
+        responses and smart filtering system.
+      </p>
+      <ul class="text-gray-400 text-sm list-disc pl-5 mb-4 space-y-1">
+        <li>How Hiro uses NLP and AI to understand candidate goals</li>
+        <li>Why personalized job matching leads to better retention</li>
+        <li>The tech stack powering Hiro (React, Django, DialoGPT)</li>
+        <li>Challenges we faced in building an offline-friendly chatbot</li>
+        <li>What's next for Hiro's learning capabilities</li>
+      </ul>
+      <a href="{% url 'behind_the_scenes' %}#behind_the_scenes" class="text-indigo-400 text-sm hover:underline">Read More →</a>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-700 text-gray-500 text-sm">
+    &copy; 2025 HireSense. All rights reserved.
+  </footer>
+
+</body>
+</html>

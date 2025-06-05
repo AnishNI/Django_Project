@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Applications</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <div class="min-h-screen flex">
+    <aside class="w-64 bg-gray-800 shadow-md hidden sm:block">
+      <div class="p-6 text-xl font-bold text-indigo-500">Job Portal</div>
+      <nav class="mt-4 space-y-2">
+        <a href="#" class="block px-6 py-2 text-gray-100 bg-gray-700 hover:bg-indigo-500 hover:text-white font-medium rounded-r-full">My Applications</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-8">
+      <h1 class="text-4xl font-extrabold mb-8 text-gray-100">My Job Applications</h1>
+      {% if messages %}
+        <div class="mb-6">
+          {% for message in messages %}
+            <div class="p-4 mb-4 rounded bg-green-100 text-green-800">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if applications %}
+        <div class="overflow-x-auto shadow-md rounded-lg">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-700 text-gray-300 uppercase text-sm leading-normal">
+              <tr>
+                <th class="py-3 px-6 text-left">Job</th>
+                <th class="py-3 px-6 text-left">Company</th>
+                <th class="py-3 px-6 text-left">Applied Date</th>
+                <th class="py-3 px-6 text-left">Status</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-100 text-sm divide-y divide-gray-600">
+              {% for application in applications %}
+                <tr class="hover:bg-gray-700">
+                  <td class="py-3 px-6 flex items-center space-x-3">
+                    <img src="https://ui-avatars.com/api/?name={{ application.job.title|urlencode }}" alt="Job Avatar" class="w-10 h-10 rounded-full" />
+                    <span>{{ application.job.title }}</span>
+                  </td>
+                  <td class="py-3 px-6">{{ application.job.company }}</td>
+                  <td class="py-3 px-6">{{ application.applied_at|date:"M d, Y" }}</td>
+                  <td class="py-3 px-6">
+                    <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">Applied</span>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <p>You have not applied for any jobs yet.</p>
+      {% endif %}
+    </main>
+  </div>
+</body>
+</html>

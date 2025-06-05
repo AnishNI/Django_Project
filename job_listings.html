@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobs Posted - Employer Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen p-6">
+
+  <h1 class="text-3xl font-bold mb-6 text-center">Jobs You've Posted</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Example Job Card - Repeat Dynamically -->
+    <div class="bg-gray-800 hover:shadow-lg hover:scale-[1.02] transform transition-all duration-200 rounded-2xl p-5 shadow-md border border-gray-700">
+      <h2 class="text-xl font-semibold">Frontend Developer</h2>
+      <p class="text-sm text-gray-400 mt-1">TechWave Inc.</p>
+      <p class="text-sm text-gray-400">Pune, India</p>
+      <p class="text-xs text-gray-500 mt-2">Posted on: 2025-05-15</p>
+
+      <div class="flex justify-end gap-3 mt-4">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-lg text-sm flex items-center gap-1">
+          <i data-lucide="pencil" class="w-4 h-4"></i>
+          Edit
+        </button>
+        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-1 rounded-lg text-sm flex items-center gap-1">
+          <i data-lucide="trash-2" class="w-4 h-4"></i>
+          Delete
+        </button>
+      </div>
+    </div>
+
+    <!-- Add more job cards dynamically here -->
+
+  </div>
+
+  <script>
+    lucide.createIcons(); // Load Lucide icons
+  </script>
+</body>
+</html>

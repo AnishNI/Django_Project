@@ -1,0 +1,338 @@
+[
+    {
+        "recuiter_email": "tejassolutions@gmail.com",
+        "recuiter_password": "tejas",
+        "recuiter_company_name": "Tejas Solutions",
+        "recuiter_contact_info": "9876543210",
+        "recuiter_Location": "Hydrabad",
+        "recuiter_Address": "hydrabad"
+    },
+    {
+        "recuiter_email": "omkarsolutions@gmail.com",
+        "recuiter_password": "omkar",
+        "recuiter_company_name": "Omkar solutions",
+        "recuiter_contact_info": "9872334534",
+        "recuiter_Location": "Dubai",
+        "recuiter_Address": "Dubai"
+    },
+    {
+        "recuiter_email": "abc@gmail.com",
+        "recuiter_password": "abc",
+        "recuiter_company_name": "abc",
+        "recuiter_contact_info": "978665675879",
+        "recuiter_Location": "wfh",
+        "recuiter_Address": "wfh"
+    },
+    {
+        "recuiter_email": "guidewiresoftware@gmail.com",
+        "recuiter_password": "GuidewireSoftware",
+        "recuiter_company_name": " Guidewire Software",
+        "recuiter_contact_info": "9236239103",
+        "recuiter_Location": "Work Form Home",
+        "recuiter_Address": "Bengaluru\r\n"
+    },
+    {
+        "recuiter_email": "civicminds@gmail.com",
+        "recuiter_password": "Civicminds",
+        "recuiter_company_name": "Civicminds India Pvt. Ltd",
+        "recuiter_contact_info": "9877223344",
+        "recuiter_Location": "Mohali",
+        "recuiter_Address": "Punjab"
+    },
+    {
+        "recuiter_email": "samajpragatisahayog@gmail.com",
+        "recuiter_password": "SamajPragatiSahayog",
+        "recuiter_company_name": "Samaj Pragati Sahayog",
+        "recuiter_contact_info": "9886453211",
+        "recuiter_Location": "Dewas, Madhya Pradesh",
+        "recuiter_Address": "Madhya Pradesh"
+    },
+    {
+        "recuiter_email": "lenovo@gmail.com",
+        "recuiter_password": "Lenovo",
+        "recuiter_company_name": "Lenovo",
+        "recuiter_contact_info": "9872231452",
+        "recuiter_Location": "Gurugram",
+        "recuiter_Address": "Haryana"
+    },
+    {
+        "recuiter_email": "vidhicentre@gmail.com",
+        "recuiter_password": "VidhiCentre",
+        "recuiter_company_name": "Vidhi Centre for Legal Policy",
+        "recuiter_contact_info": "8765998765",
+        "recuiter_Location": "Delhi",
+        "recuiter_Address": "Sarojini Nagar"
+    },
+    {
+        "recuiter_email": "aircraftmaintenanceengineer@gmail.com",
+        "recuiter_password": "AircraftMaintenanceEngineer",
+        "recuiter_company_name": "Aircraft Maintenance Engineer",
+        "recuiter_contact_info": "9745555542",
+        "recuiter_Location": "wfh",
+        "recuiter_Address": "Pune"
+    },
+    {
+        "recuiter_email": "robotictechnician@gmail.com",
+        "recuiter_password": "RoboticTechnician",
+        "recuiter_company_name": "Robotics Technician",
+        "recuiter_contact_info": "9542123121",
+        "recuiter_Location": "wfh",
+        "recuiter_Address": "Mumbai "
+    },
+    {
+        "recuiter_email": "unesco@gmail.com",
+        "recuiter_password": "unesco",
+        "recuiter_company_name": "UNESCO",
+        "recuiter_contact_info": "7765434567",
+        "recuiter_Location": "New Delhi",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "closingmanager@gmail.com",
+        "recuiter_password": "ClosingManager",
+        "recuiter_company_name": "Closing Manager",
+        "recuiter_contact_info": "9942012121",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": "Delhi"
+    },
+    {
+        "recuiter_email": "rackbankdatacenter@gmail.com",
+        "recuiter_password": "RackBankDataCenter",
+        "recuiter_company_name": "RackBank Data Center",
+        "recuiter_contact_info": "9876543211",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": " Chhattisgarh"
+    },
+    {
+        "recuiter_email": "unescoo@gmail.com",
+        "recuiter_password": "unescoo",
+        "recuiter_company_name": "UNESCO",
+        "recuiter_contact_info": "6567654897",
+        "recuiter_Location": "New Delhi, India",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "bimtechnician@gmail.com",
+        "recuiter_password": "BIM Technician",
+        "recuiter_company_name": "BIM Technician",
+        "recuiter_contact_info": "7896542134",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": "Haryana"
+    },
+    {
+        "recuiter_email": "appleretail@gmail.com",
+        "recuiter_password": "appleretail",
+        "recuiter_company_name": "Apple Retail",
+        "recuiter_contact_info": "8766754323",
+        "recuiter_Location": "Pan India",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "sustainabilityanalyst@gmail.com",
+        "recuiter_password": "SustainabilityAnalyst",
+        "recuiter_company_name": "Sustainability Analyst",
+        "recuiter_contact_info": "9876512345",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": "Punjab "
+    },
+    {
+        "recuiter_email": "agenticaispecialists@gmail.com",
+        "recuiter_password": "AgenticAISpecialists",
+        "recuiter_company_name": "Agentic AI Specialists",
+        "recuiter_contact_info": "122332331",
+        "recuiter_Location": "Russia",
+        "recuiter_Address": "Mosco City"
+    },
+    {
+        "recuiter_email": "appleeretail@gmail.com",
+        "recuiter_password": "appleeretail",
+        "recuiter_company_name": "Apple Retail",
+        "recuiter_contact_info": "7867899876",
+        "recuiter_Location": "Pan India",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "tnssecurityexpert@gmail.com",
+        "recuiter_password": "TNSSecurityExpert",
+        "recuiter_company_name": "TNS Security Expert",
+        "recuiter_contact_info": "9876543219",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Japan "
+    },
+    {
+        "recuiter_email": "picktime@gmail.com",
+        "recuiter_password": "picktime",
+        "recuiter_company_name": "Picktime India Pvt Ltd",
+        "recuiter_contact_info": "5644786543",
+        "recuiter_Location": "Hyderabad",
+        "recuiter_Address": "Hyderabad, Telangana"
+    },
+    {
+        "recuiter_email": "kpmg@gmail.com",
+        "recuiter_password": "kpmg",
+        "recuiter_company_name": "KPMG India",
+        "recuiter_contact_info": "6788765432",
+        "recuiter_Location": "Bengaluru",
+        "recuiter_Address": "Karnataka,India"
+    },
+    {
+        "recuiter_email": "trigentsoftware@gmail.com",
+        "recuiter_password": "TrigentSoftware",
+        "recuiter_company_name": "Trigent Software",
+        "recuiter_contact_info": "9478912123",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": " Bengaluru, Karnataka"
+    },
+    {
+        "recuiter_email": "kpmgt@gmail.com",
+        "recuiter_password": "kpmgt",
+        "recuiter_company_name": "KPMG India",
+        "recuiter_contact_info": "9872345432",
+        "recuiter_Location": "Bengaluru, Karnataka",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "amazon@gmail.com",
+        "recuiter_password": "amazon",
+        "recuiter_company_name": "Amazon",
+        "recuiter_contact_info": "7865432892",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Mumbai "
+    },
+    {
+        "recuiter_email": "hisanlabs@gmail.com",
+        "recuiter_password": "hisanlabs",
+        "recuiter_company_name": "Hisan Labs PVT LTD",
+        "recuiter_contact_info": "8768790876",
+        "recuiter_Location": "Pune",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "jio@gmail.com",
+        "recuiter_password": "jio",
+        "recuiter_company_name": "Jio ",
+        "recuiter_contact_info": "2323898371",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Mumbai"
+    },
+    {
+        "recuiter_email": "rimit@gmail.com",
+        "recuiter_password": "rimit",
+        "recuiter_company_name": "Rimit",
+        "recuiter_contact_info": "7656990876",
+        "recuiter_Location": "Mumbai",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "fiserv@gmail.com",
+        "recuiter_password": "fiserv",
+        "recuiter_company_name": "Fiserv",
+        "recuiter_contact_info": "6799980789",
+        "recuiter_Location": "Chennai, Tamil Nadu",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "licnursinghome@gmail.com",
+        "recuiter_password": "LICNursingHome",
+        "recuiter_company_name": "LIC Nursing Home",
+        "recuiter_contact_info": "7865432894",
+        "recuiter_Location": "On Site",
+        "recuiter_Address": "Pune"
+    },
+    {
+        "recuiter_email": "picktimeindia@gmail.com",
+        "recuiter_password": "PicktimeIndia",
+        "recuiter_company_name": "Picktime India Pvt Ltd",
+        "recuiter_contact_info": "8745658777",
+        "recuiter_Location": "wfh",
+        "recuiter_Address": "Hyderabad, Telangana"
+    },
+    {
+        "recuiter_email": "successivedigital@gmail.com",
+        "recuiter_password": "successivedigital",
+        "recuiter_company_name": "Successive Digital",
+        "recuiter_contact_info": "6757887633",
+        "recuiter_Location": "Noida, Uttar Pradesh",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "prismforceprivatelimited@gmail.com",
+        "recuiter_password": "PrismforcePrivateLimited",
+        "recuiter_company_name": "Prismforce Private Limited",
+        "recuiter_contact_info": "8765545454",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": "Bengaluru, Karnataka"
+    },
+    {
+        "recuiter_email": "paloaltonetworks@gmail.com",
+        "recuiter_password": "paloaltonetworks",
+        "recuiter_company_name": "Palo Alto Networks",
+        "recuiter_contact_info": "6755434589",
+        "recuiter_Location": "Pan India",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "hcl@gmail.com",
+        "recuiter_password": "hcl",
+        "recuiter_company_name": "HCL",
+        "recuiter_contact_info": "8976543219",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "PUNE"
+    },
+    {
+        "recuiter_email": "hcltech@gmail.com",
+        "recuiter_password": "hcltech",
+        "recuiter_company_name": "HCLTech",
+        "recuiter_contact_info": "7786569123",
+        "recuiter_Location": "Noida, Uttar Pradesh",
+        "recuiter_Address": "India"
+    },
+    {
+        "recuiter_email": "desirousglobalconsulting@gmail.com",
+        "recuiter_password": " DesirousGlobalConsulting",
+        "recuiter_company_name": " Desirous Global Consulting",
+        "recuiter_contact_info": "9888775651",
+        "recuiter_Location": "wfo",
+        "recuiter_Address": "Delhi"
+    },
+    {
+        "recuiter_email": "theclosinggap@gmail.com",
+        "recuiter_password": "TheClosingGap",
+        "recuiter_company_name": "The Closing Gap",
+        "recuiter_contact_info": "9845432212",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Thiruvananthapuram, Kerala"
+    },
+    {
+        "recuiter_email": "citi@gmail.com",
+        "recuiter_password": " Citi",
+        "recuiter_company_name": " Citi",
+        "recuiter_contact_info": "8787868612",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": " Chennai, Tamil Nadu"
+    },
+    {
+        "recuiter_email": "tanish@gmail.com",
+        "recuiter_password": "Tanish",
+        "recuiter_company_name": "Tanish",
+        "recuiter_contact_info": "7865432890",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Pune"
+    },
+    {
+        "recuiter_email": "samsung@gmail.com",
+        "recuiter_password": "samsung",
+        "recuiter_company_name": "Samsung",
+        "recuiter_contact_info": "9233923455",
+        "recuiter_Location": "WFO",
+        "recuiter_Address": "Germany"
+    },
+    {
+        "recuiter_email": "msilaptopservies@example.com",
+        "recuiter_password": "msilaptopservies",
+        "recuiter_company_name": "MSI LAPTOP Servies",
+        "recuiter_contact_info": "7865432891",
+        "recuiter_Location": "INDIA",
+        "recuiter_Address": "Karve nagar Kothrude"
+    }
+]

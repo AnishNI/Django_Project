@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HireSense Recruiter Signup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 flex justify-center items-start min-h-screen pt-5">
+
+  <div class="bg-gray-800 p-6 rounded-2xl shadow-lg w-full max-w-xl">
+    <h2 class="text-center text-indigo-400 text-2xl font-semibold mb-1">Recruiter Signup</h2>
+    <p class="text-center text-gray-400 mb-4">Register your organization to post jobs.</p>
+
+    {% if messages %}
+      <ul class="mb-4">
+        {% for message in messages %}
+          <li class="bg-{{ message.tags }}-600 text-white p-3 rounded mb-2">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+      <div class="mb-4">
+        <label for="recuiter_company_name" class="block mb-1">Organization Name</label>
+        <input type="text" id="recuiter_company_name" name="recuiter_company_name" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Enter organization name" required />
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_Location" class="block mb-1">Location</label>
+        <input type="text" id="recuiter_Location" name="recuiter_Location" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Enter location" />
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_Address" class="block mb-1">Address</label>
+        <textarea id="recuiter_Address" name="recuiter_Address" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Enter address"></textarea>
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_contact_info" class="block mb-1">Contact Info</label>
+        <input type="text" id="recuiter_contact_info" name="recuiter_contact_info" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Enter contact info" />
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_email" class="block mb-1">Organization Email</label>
+        <input type="email" id="recuiter_email" name="recuiter_email" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Enter email" required />
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_password" class="block mb-1">Set Password</label>
+        <input type="password" id="recuiter_password" name="recuiter_password" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Set password" required />
+      </div>
+      <div class="mb-4">
+        <label for="recuiter_password_confirm" class="block mb-1">Confirm Password</label>
+        <input type="password" id="recuiter_password_confirm" name="recuiter_password_confirm" class="w-full bg-gray-700 text-gray-100 placeholder-gray-300 rounded p-2" placeholder="Confirm password" required />
+      </div>
+
+      <button type="submit" class="w-full bg-indigo-400 hover:bg-indigo-500 text-white font-bold py-2 rounded">Sign Up</button>
+    </form>
+
+    <p class="text-center text-gray-400 mt-4">Already have an account? 
+      <a href="{% url 'login' %}" class="text-indigo-400 hover:text-indigo-500 font-semibold underline">Login here</a>
+    </p>
+  </div>
+
+</body>
+</html>

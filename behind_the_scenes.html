@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Behind the Scenes: Building Hiro | HireSense Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 py-10 px-4 text-center">
+    <h1 class="text-4xl font-bold text-indigo-400">Behind the Scenes: Building HireSense</h1>
+    <p class="text-sm text-gray-400 mt-2">Published: April 2025 | By HireSense Team</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-8">
+
+    <section class="text-gray-300 text-lg leading-relaxed space-y-6">
+      <p>
+        Creating HireSense — our AI-driven job assistant — was not just a technical challenge, but a mission to change how people find and apply to jobs.
+        We wanted Hiro to feel more like a trusted guide than a traditional chatbot. Here's a look behind the curtain at how we brought Hiro to life.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-indigo-400">1. Vision: Smarter Hiring for Everyone</h2>
+      <p>
+        Our mission at HireSense was to democratize job access. We envisioned a system where job seekers weren’t lost in endless applications, 
+        and employers could connect with the best talent through intelligent filtering. Hiro became the centerpiece of this dream.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-indigo-400">2. Conversational Intelligence</h2>
+      <p>
+        Hiro was built using cutting-edge language models trained to understand and respond in natural, friendly, and context-aware ways.
+        The goal was to ensure that users felt they were talking to a helpful, empathetic assistant — not a script.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-indigo-400">3. Resume Parsing & Job Matching</h2>
+      <p>
+        We implemented powerful resume parsers to extract skills, education, and experience, which Hiro uses to recommend the most relevant jobs. 
+        These recommendations are filtered through machine learning models trained on thousands of job descriptions and user behaviors.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-indigo-400">4. Real-Time Learning & Feedback</h2>
+      <p>
+        Hiro gets smarter over time. Based on candidate queries, employer preferences, and success outcomes, Hiro adjusts how it prioritizes suggestions and responses.
+        This feedback loop allows us to constantly refine the experience.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-indigo-400">5. Secure, Scalable, and Human-Centered</h2>
+      <p>
+        We never compromise on user privacy. Hiro anonymizes sensitive information, follows secure practices, and offers full transparency.
+        Our team continuously evaluates fairness, accessibility, and usability to keep Hiro ethical and inclusive.
+      </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold text-center text-indigo-400 mb-8">Meet the Minds Behind HireSense</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-gray-800 rounded-xl p-4 text-center shadow hover:shadow-lg transition">
+          <img src="{% static 'Pranav.jpg' %}" alt="Team Member" class="w-25 h-30 mx-auto rounded-full mb-4">
+          <h3 class="text-lg font-semibold text-white">Pranav P Thombre</h3>
+          <p class="text-sm text-gray-400"></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-800 rounded-xl p-4 text-center shadow hover:shadow-lg transition">
+          <img src="{% static 'Anish.jpeg' %}" alt="Team Member" class="w-25 h-30 mx-auto rounded-full mb-4">
+          <h3 class="text-lg font-semibold text-white">Anish P Niravane</h3>
+          <p class="text-sm text-gray-400"></p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-800 rounded-xl p-4 text-center shadow hover:shadow-lg transition">
+          <img src="{% static 'Rohan.jpg' %}" alt="Team Member" class="w-25 h-30 mx-auto rounded-full mb-4">
+          <h3 class="text-lg font-semibold text-white">Rohan Pawar</h3>
+          <p class="text-sm text-gray-400"></p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gray-800 rounded-xl p-4 text-center shadow hover:shadow-lg transition">
+          <img src="{% static 'Tejas.jpg' %}" alt="Team Member" class="w-25 h-30 mx-auto rounded-full mb-4">
+          <h3 class="text-lg font-semibold text-white">Tejas Bhosale</h3>
+          <p class="text-sm text-gray-400"></p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-gray-800 rounded-xl p-4 text-center shadow hover:shadow-lg transition">
+          <img src="{% static 'omkar.jpg' %}" alt="Team Member" class="w-25 h-30 mx-auto rounded-full mb-4">
+          <h3 class="text-lg font-semibold text-white">Omkar Mali</h3>
+          <p class="text-sm text-gray-400"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-12 text-center">
+      <a href="{% url 'blog' %}#blog" class="inline-block px-6 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition">← Back to Blog</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-700 text-gray-500 text-sm">
+    &copy; 2025 HireSense. All rights reserved.
+  </footer>
+
+</body>
+</html>

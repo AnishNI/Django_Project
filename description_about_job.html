@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{ job.title }} - Job Description</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-slate-900 font-sans text-white">
+
+      <div class="max-w-7xl mx-auto p-6">
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- Job Description -->
+          <div class="md:col-span-2 bg-slate-800 p-6 rounded-lg shadow">
+            <h1 class="text-2xl font-bold text-white mb-4">{{ job.title }}</h1>
+            <p class="text-slate-200 mb-4">{{ job.description }}</p>
+
+            {% if job.responsibilities %}
+            <h2 class="text-xl font-semibold text-white mb-2">Responsibilities</h2>
+            <ul class="list-disc list-inside text-slate-200 mb-4">
+              {% for responsibility in job.responsibilities %}
+              <li>{{ responsibility }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if job.requirements %}
+            <h2 class="text-xl font-semibold text-white mb-2">Requirements</h2>
+            <ul class="list-disc list-inside text-slate-200">
+              {% for requirement in job.requirements %}
+              <li>{{ requirement }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          <!-- Related Jobs -->
+          <div class="bg-slate-800 p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold text-white mb-4">Related Jobs</h2>
+            <ul class="space-y-4">
+              {% for related_job in related_jobs %}
+              <li>
+                <a href="{% url 'description_about_job' related_job.id %}" class="block p-4 bg-slate-700 rounded hover:bg-slate-600 transition">
+                  <p class="font-semibold text-indigo-300">{{ related_job.title }}</p>
+                  <p class="text-slate-300 text-sm">{{ related_job.location }} · {{ related_job.experience }}</p>
+                </a>
+              </li>
+              {% empty %}
+              <li class="text-slate-400">No related jobs available.</li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </body>
+    </html>

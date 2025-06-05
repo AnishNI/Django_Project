@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <div class="p-6 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Admin Dashboard</h1>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h2 class="text-lg text-gray-700">Total Recruiters</h2>
+        <p class="text-2xl font-bold text-blue-600">12</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h2 class="text-lg text-gray-700">Total Candidates</h2>
+        <p class="text-2xl font-bold text-green-600">89</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h2 class="text-lg text-gray-700">Total Applications</h2>
+        <p class="text-2xl font-bold text-purple-600">154</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h2 class="text-lg text-gray-700">Pending Reviews</h2>
+        <p class="text-2xl font-bold text-red-600">7</p>
+      </div>
+    </div>
+
+    <!-- Recruiters Table -->
+    <div class="bg-white p-4 rounded shadow mb-8 overflow-auto">
+      <h2 class="text-2xl font-semibold mb-4">Recruiters</h2>
+      <table class="min-w-full table-auto text-left">
+        <thead>
+          <tr class="bg-gray-200 text-gray-700">
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Email</th>
+            <th class="px-4 py-2">Contact</th>
+            <th class="px-4 py-2">Company</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <tr class="border-t">
+            <td class="px-4 py-2">John Doe</td>
+            <td class="px-4 py-2">john@company.com</td>
+            <td class="px-4 py-2">+1234567890</td>
+            <td class="px-4 py-2">TechCorp</td>
+          </tr>
+          <!-- More rows here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Candidates Table -->
+    <div class="bg-white p-4 rounded shadow overflow-auto">
+      <h2 class="text-2xl font-semibold mb-4">Candidates</h2>
+      <table class="min-w-full table-auto text-left">
+        <thead>
+          <tr class="bg-gray-200 text-gray-700">
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Email</th>
+            <th class="px-4 py-2">Applied Projects</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <tr class="border-t">
+            <td class="px-4 py-2">Alice Smith</td>
+            <td class="px-4 py-2">alice@example.com</td>
+            <td class="px-4 py-2">3</td>
+          </tr>
+          <!-- More rows here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

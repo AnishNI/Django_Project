@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}HireSense{% endblock %}</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #111827;
+      color: #f3f4f6;
+    }
+    .btn-accent {
+      background-color: #818cf8;
+      color: white;
+    }
+    .btn-accent:hover {
+      background-color: #6366f1;
+    }
+    .form-control {
+      background-color: #374151;
+      border: none;
+      color: white;
+    }
+    .form-control::placeholder {
+      color: #d1d5db;
+    }
+    a {
+      color: #818cf8;
+    }
+    a:hover {
+      color: #6366f1;
+    }
+    .text-muted {
+      color: #9ca3af !important;
+    }
+    .text-white {
+      color: #ffffff !important;
+    }
+    .nav-link {
+      color: #818cf8;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .nav-link:hover {
+      color: #6366f1;
+      text-decoration: underline;
+    }
+    .navbar {
+      background-color: #1f2937;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="{% url 'index' %}" class="nav-link">Home</a>
+    <a href="{% url 'job_analysis' %}" class="nav-link">Job Market</a>
+    <a href="{% url 'candidates_project_dashboard' %}" class="nav-link">Projects</a>
+    <a href="{% url 'support' %}" class="nav-link">Support</a>
+
+    {% if user.is_authenticated %}
+      {% if user.groups.all|length > 0 %}
+        {% for group in user.groups.all %}
+          {% if group.name == "Recruiters" %}
+            <a href="{% url 'recuiter_dashboard' %}" class="nav-link">Recruiter Dashboard</a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <a href="{% url 'logout' %}" class="nav-link">Logout</a>
+    {% else %}
+      <a href="{% url 'login' %}" class="nav-link">Login</a>
+      <a href="{% url 'signup' %}" class="nav-link">Signup</a>
+    {% endif %}
+  </nav>
+
+  <div class="container mt-4">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

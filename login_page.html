@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HireSense Login</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Background & Base Text */
+    body {
+      background-color: #111827; /* Tailwind: bg-gray-900 */
+      color: #f3f4f6; /* Tailwind: text-gray-100 */
+    }
+
+    /* Card Background */
+    .card-bg {
+      background-color: #1f2937; /* Tailwind: bg-gray-800 */
+    }
+
+    /* Buttons */
+    .btn-accent {
+      background-color: #818cf8; /* Tailwind: indigo-400 */
+      color: white;
+    }
+
+    .btn-accent:hover {
+      background-color: #6366f1; /* Tailwind: indigo-500 */
+    }
+
+    /* Input Fields */
+    .form-control {
+      background-color: #374151; /* Tailwind: bg-gray-700 */
+      border: none;
+      color: white;
+    }
+
+    .form-control::placeholder {
+      color: #d1d5db; /* Tailwind: text-gray-300 */
+    }
+
+    /* Link Styling */
+    a {
+      color: #818cf8; /* Tailwind: text-indigo-400 */
+    }
+
+    a:hover {
+      color: #6366f1; /* Tailwind: text-indigo-500 */
+    }
+
+    .text-muted {
+      color: #9ca3af !important; /* Tailwind: text-gray-400 */
+    }
+
+    .text-white {
+      color: #ffffff !important; /* Tailwind: text-white */
+    }
+
+    /* Navigation Bar */
+    .nav-link {
+      color: #818cf8;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #6366f1;
+      text-decoration: underline;
+    }
+
+    .navbar {
+      background-color: #1f2937;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="{% url 'index' %}" class="nav-link">Home</a>
+    <a href="{% url 'job_analysis' %}" class="nav-link">Job Market</a>
+    <a href="{% url 'candidates_project_dashboard' %}" class="nav-link">Projects</a>
+    <a href="{% url 'support' %}" class="nav-link">Support</a>
+  <!---  <a href="{% url 'login' %}" class="nav-link">Login</a>
+    --><a href="{% url 'signup' %}" class="nav-link">Signup</a>
+  </nav>
+
+  <div class="d-flex justify-content-center align-items-center vh-100 py-4">
+
+    <div class="card-bg p-4 rounded shadow-lg w-100" style="max-width: 450px;">
+      <h2 class="text-center mb-1" style="color: #818cf8;">Welcome Back to <span class="fw-bold text-white">HireSense</span></h2>
+      <p class="text-center text-muted mb-4">Connecting talent with opportunities seamlessly.</p>
+
+      {% if messages %}
+        <div class="mb-3">
+          {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if error %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          {{ error }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endif %}
+
+      <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required autocomplete="off" />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-accent w-100 fw-bold">Login</button>
+      </form>
+
+      <p class="text-center text-muted mt-4">Don't have an account? 
+        <a href="{% url 'signup' %}" class="fw-semibold text-decoration-none">Sign Up</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

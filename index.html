@@ -1,0 +1,645 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HireSense - Connecting talent with opportunities seamlessly</title>
+  {% include "includes/index_assets.html" %}
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen overflow-x-hidden">
+  <header class="flex justify-end items-center p-4 bg-gray-800 text-white">
+    {% if user.is_authenticated %}
+      <div class="flex items-center space-x-3">
+        {% if user.seekerprofile.photo %}
+       <!---   <img src="{{ user.seekerprofile.photo.url }}" alt="Profile Photo" class="w-10 h-10 rounded-full border-2 border-green-500 shadow-lg" />
+        -->{% else %}
+          <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center text-white font-bold">?</div>
+        {% endif %}
+        <!--<span class="font-semibold">{{ user.seekerprofile.full_name }}</span> -->
+      </div>
+    {% else %}
+      
+    {% endif %}
+  </header>
+
+<style>
+  .logo-container {
+    margin-left: -95px; /* Adjust this value as needed to move logo left */
+  }
+</style>
+<script src="{% static 'js/session_reload.js' %}"></script>
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center logo-container">
+            <img class="h-8 m w-auto" src="{% static 'Logo_.png' %}" alt="HireSense" />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <!---  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
+              -->
+            {% if not user.is_authenticated or user.is_staff %}
+
+            {% if messages %}
+              <div class="absolute top-16 right-4 z-50 max-w-sm w-full">
+                {% for message in messages %}
+                  <div class="bg-green-600 text-white p-3 rounded mb-2 shadow">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+              <div class="relative inline-block text-left group" id="recruiter-dropdown">
+                <button type="button" id="recruiter-button" class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-expanded="false" aria-haspopup="true">
+                  Recruiter
+                  <svg class="-mr-1 ml-2 h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <div id="recruiter-menu" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="recruiter-button" tabindex="-1">
+<a href="{% url 'signup_recruiter' %}" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Signup as recruiter</a>
+                  <a href="{% url 'login_recruiter' %}" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Login as recruiter</a>
+                </div>
+              </div>
+              {% endif %}
+              <script>
+                const recruiterButton = document.getElementById('recruiter-button');
+                const recruiterMenu = document.getElementById('recruiter-menu');
+                const recruiterDropdown = document.getElementById('recruiter-dropdown');
+
+                recruiterButton.addEventListener('click', (e) => {
+                  e.stopPropagation();
+                  recruiterMenu.classList.toggle('hidden');
+                });
+
+                // Remove hover event listeners to prevent immediate hiding
+                // Keep dropdown open until user clicks outside or toggles button
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                  if (!recruiterDropdown.contains(e.target)) {
+                    recruiterMenu.classList.add('hidden');
+                  }
+                });
+              </script>
+              <a href="{% url 'job_analysis' %}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Job Market</a>
+              {% if user.is_authenticated %}
+              <a href="{% url 'candidates_project_dashboard' %}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              {% else %}
+              <a href="{% url 'login' %}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              {% endif %}
+         <!---     <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+              -->
+            </div>
+          </div>
+        </div>
+       </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Recruiter</a>
+            <a href="{% url 'job_analysis' %}" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Job Market</a>  
+            {% if user.is_authenticated %}
+            <a href="{% url 'candidates_project_dashboard' %}" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            {% endif %}
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+          
+            
+          </div>
+        </div>
+  </nav>
+  <!-- Main Container -->
+  <div class="container mx-auto p-6">
+  <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
+      <div class="flex flex-wrap justify-between items-center mb-6 w-full gap-4">
+        <div class="flex items-center space-x-3 flex-shrink-0">
+          <img alt="HireSense Logo" class="" height="40" src="{% static 'Hire_sense_logo.png' %}" width="40"/>
+          <span class="text-2xl font-bold">HireSense</span>
+        </div>
+          <div class="flex items-center bg-gray-700 rounded-full px-4 py-2 max-w-lg flex-grow justify-center relative min-w-0">
+            <i class="fas fa-search text-blue-500 mr-2"></i>
+            <input type="text" id="jobSearch" placeholder="Search Jobs Here..." class="bg-transparent focus:outline-none text-white placeholder-gray-400 w-full" autocomplete="off" />
+            <div id="suggestions" class="absolute top-full left-0 right-0 bg-gray-700 text-white rounded-b-md shadow-lg hidden z-10 max-h-60 overflow-y-auto"></div>
+          </div>
+       <div class="flex items-center space-x-9 flex-shrink-0">
+          {% if user.is_authenticated and user.seekerprofile.photo %}
+         
+            <div class="relative ml-3">
+              <div>
+                <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Open user menu</span>
+                  <img class="w-16 h-16 rounded-full border-2 border-green-500 shadow-lg" src="{{ user.seekerprofile.photo.url }}" alt="Profile Photo" />
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center space-x-7 mr-4  font-bold " style=color:green> Welcome back,&nbsp;&nbsp; 
+              <span class="text-white font-semibold">{{ user.seekerprofile.full_name }}</span>
+              <a href="{% url 'logout' %}" title="Logout" aria-label="Logout" class="logout-button ml-3">
+                <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </div>
+          {% else %}
+          <a href="{% url 'login' %}">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mr-2">Login</button>
+          </a>
+          <a href="{% url 'signup_seeker' %}">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mr-2">Signup</button>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+  <!-- Search -->
+  <!-- Removed duplicate search bar as it is now inline with logo -->
+
+    <script>
+    const searchInput = document.getElementById('jobSearch');
+    const suggestionsBox = document.getElementById('suggestions');
+    const featuredJobsGrid = document.querySelector('.featured-jobs-grid');
+    const searchedJobsGrid = document.querySelector('.searched-jobs-grid');
+
+    let timeout = null;
+
+    function renderJobs(jobs, container) {
+      if (!container) return;
+      container.innerHTML = '';
+      if (jobs.length === 0) {
+        container.innerHTML = '<p class="text-gray-400">No jobs found.</p>';
+        return;
+      }
+      jobs.forEach(job => {
+        const jobCard = document.createElement('div');
+        jobCard.className = 'bg-gray-700 rounded-lg p-4 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out';
+        jobCard.innerHTML = `
+          <div class="flex items-center mb-2">
+            <i class="fas fa-thumbtack text-red-500 mr-2"></i>
+            <span class="font-semibold">${job.title} @ ${job.company}</span>
+          </div>
+          ${job.location ? `<p class="text-gray-400">Location: ${job.location}</p>` : ''}
+          ${job.experience ? `<p class="text-gray-400">Experience: ${job.experience}</p>` : ''}
+          <div class="flex flex-col sm:flex-row sm:space-x-4 mt-2">
+            <form action="/apply/${job.id}/" method="post">
+              <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+              <button type="submit" class="bg-[#4B46E5] text-white font-extrabold text-lg rounded-xl px-4 py-2 shadow-md mb-2 sm:mb-0">Apply Here...</button>
+            </form>
+          </div>
+        `;
+        container.appendChild(jobCard);
+      });
+    }
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim();
+
+      clearTimeout(timeout);
+
+      if (query.length === 0) {
+        suggestionsBox.classList.add('hidden');
+        // Reset to show all jobs in featured and clear searched jobs
+        fetch('/search/')
+          .then(response => response.json())
+          .then(data => {
+            renderJobs(data.results, featuredJobsGrid);
+            searchedJobsGrid.innerHTML = '';
+          });
+        return;
+      }
+
+      timeout = setTimeout(() => {
+        fetch(`/search/?q=${encodeURIComponent(query)}`)
+          .then(response => response.json())
+          .then(data => {
+            let html = '';
+            if (data.results.length > 0) {
+              data.results.forEach(job => {
+                html += `<div class="px-4 py-2 hover:bg-gray-700 cursor-pointer" data-job-id="${job.id}">${job.title} ${job.company ? '@ ' + job.company : ''}</div>`;
+              });
+            } else {
+              html = `<div class="px-4 py-2 text-gray-400">No jobs found</div>`;
+            }
+            suggestionsBox.innerHTML = html;
+            suggestionsBox.classList.remove('hidden');
+
+            // Filter featured jobs to get only those matching the search query
+            const filteredFeaturedJobs = [];
+            const allFeaturedJobCards = featuredJobsGrid.querySelectorAll('div.bg-gray-700');
+            console.log('Filtering featured jobs for query:', query);
+            allFeaturedJobCards.forEach(card => {
+              const titleElem = card.querySelector('span.font-semibold');
+              if (titleElem) {
+                // Parse job title and company separately
+                const titleCompanyText = titleElem.textContent;
+                console.log('Job card titleCompanyText:', titleCompanyText);
+                const match = titleCompanyText.match(/^(.*?)\s*@\s*(.*)$/);
+                let jobTitle = titleCompanyText;
+                let jobCompany = '';
+                if (match) {
+                  jobTitle = match[1].toLowerCase();
+                  jobCompany = match[2].toLowerCase();
+                }
+                const queryLower = query.toLowerCase();
+                if (jobTitle.includes(queryLower) || jobCompany.includes(queryLower)) {
+                  console.log('Job matches query:', jobTitle, jobCompany);
+                  // Extract job details from the card
+                  const locationElem = card.querySelector('p.text-gray-400');
+                  const location = locationElem ? locationElem.textContent : '';
+                  const experienceElem = card.querySelectorAll('p.text-gray-400')[1];
+                  const experience = experienceElem ? experienceElem.textContent : '';
+                  // Extract job id from form action
+                  const formElem = card.querySelector('form');
+                  let jobId = null;
+                  if (formElem) {
+                    const action = formElem.getAttribute('action');
+                    const matchId = action.match(/\/apply\/(\d+)\//);
+                    if (matchId) {
+                      jobId = matchId[1];
+                    }
+                  }
+                  if (jobId) {
+                    filteredFeaturedJobs.push({
+                      id: jobId,
+                      title: jobTitle,
+                      company: jobCompany,
+                      location: location,
+                      experience: experience
+                    });
+                  }
+                }
+              }
+            });
+
+            renderJobs(filteredFeaturedJobs, searchedJobsGrid);
+
+            renderJobs(data.results, featuredJobsGrid);
+
+            // Add click event listeners to suggestion items to scroll to job card
+            const suggestionItems = suggestionsBox.querySelectorAll('div[data-job-id]');
+            suggestionItems.forEach(item => {
+              item.addEventListener('click', () => {
+                const jobId = item.getAttribute('data-job-id');
+                // Find the job card in featured jobs grid
+                const jobCard = featuredJobsGrid.querySelector(`form[action="/apply/${jobId}/"]`);
+                if (jobCard) {
+                  jobCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  // Optionally highlight the job card briefly
+                  jobCard.parentElement.classList.add('ring-4', 'ring-yellow-400');
+                  setTimeout(() => {
+                    jobCard.parentElement.classList.remove('ring-4', 'ring-yellow-400');
+                  }, 2000);
+                }
+                suggestionsBox.classList.add('hidden');
+                searchInput.value = item.textContent.trim();
+              });
+            });
+          });
+      }, 300); // Debounce
+    });
+
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!suggestionsBox.contains(e.target) && !searchInput.contains(e.target)) {
+        suggestionsBox.classList.add('hidden');
+      }
+    });
+  </script>
+<!--Search Jobs>
+   <div class="border-t border-gray-700 pt-6">
+        <div class="mb-4 flex items-center">
+          <i class="fas fa-fire text-orange-500 mr-2"></i>
+          <span class="text-xl font-semibold">The Job You are Searching For Will apper her</span>
+        </div>
+-->
+        
+      <!-- Featured Jobs -->
+      <div class="border-t border-gray-700 pt-6">
+        <div class="mb-4 flex items-center">
+          <i class="fas fa-fire text-orange-500 mr-2"></i>
+          <span class="text-xl font-semibold">Featured Jobs</span>
+        </div>
+    <!---   {% for post in post_list %} 
+        <div class="post-card">
+           
+            <h3>Title: {{ post.title }}</h3>
+            <p><strong>Author: </strong>{{ post.author | title }}</p>
+            <p>{{ post.content|slice:":250" }}</p>
+            <a href="{% url 'blog_view' post.slug %}">Read More</a>
+        </div>
+        {% endfor %} 
+        --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 featured-jobs-grid">
+          {% for job in jobs %}
+          <div class="bg-gray-700 rounded-lg p-4 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+            <div class="flex items-center mb-2">
+              <i class="fas fa-thumbtack text-red-500 mr-2"></i>
+              <span class="font-semibold">{{ job.title }} @ {{ job.company }}</span>
+            </div>
+            {% if job.location %}
+            <p class="text-gray-400">Location: {{ job.location }}</p>
+            {% endif %}
+            {% if job.experience %}
+            <p class="text-gray-400">Experience: {{ job.experience }}</p>
+            {% endif %}
+            {% if job.relative_time %}
+            <p class="text-gray-400 italic text-sm">{{ job.relative_time }}</p>
+            <div class="flex flex-col sm:flex-row sm:space-x-4 mt-2">
+               <form action="{% url 'apply_job' job.id %}" method="post"> 
+              {% csrf_token %}
+               <button type="submit" class="bg-[#4B46E5] text-white font-extrabold text-lg rounded-xl px-4 py-2 shadow-md mb-2 sm:mb-0">Apply Here...</button>
+              <!---   <a href="{% url 'description_about_job' job.id %}" class="bg-[#4B46E5] text-white font-extrabold text-lg rounded-xl px-4 py-2 shadow-md inline-block text-center">View More...</a>
+               --></form>
+             </div>
+            {% endif %}
+          </div>
+          {% empty %}
+          <p class="text-gray-400">No jobs available at the moment.</p>
+          {% endfor %}
+        
+        </div>
+      </div>
+      <!-- Search Jobs -->
+    <!---   <div class="border-t border-gray-700 pt-6 mt-8">
+        <div class="mb-4 flex items-center">
+          <i class="fas fa-fire text-orange-500 mr-2"></i>
+         <span class="text-xl font-semibold">The Job You are Searching For Will Appear Here</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 searched-jobs-grid">
+        -->  <!-- Searched jobs will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .searched-jobs-grid > div {
+      border: 2px solid #f59e0b; /* yellow-500 */
+      box-shadow: 0 0 10px #f59e0b;
+      transition: box-shadow 0.3s ease;
+    }
+    .searched-jobs-grid > div:hover {
+      box-shadow: 0 0 15px #fbbf24; /* yellow-400 */
+    }
+  </style>
+
+  <!-- Floating Chatbot Toggle Button -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <button id="chatToggle" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg flex items-center">
+      <i class="fas fa-robot mr-2"></i> Chat
+    </button>
+  </div>
+
+  <!-- Chatbot Widget -->
+  <div id="chatWidget" class="fixed bottom-20 right-6 bg-white text-black rounded-lg shadow-lg w-80 hidden z-50">
+    <div class="bg-blue-600 text-white px-4 py-2 rounded-t-lg flex justify-between items-center">
+      <span>HireSense Assistant 🤖</span>
+      <button onclick="toggleChat()" class="text-white">&times;</button>
+    </div>
+    <div id="chatMessages" class="p-4 h-64 overflow-y-auto">
+      <p class="text-sm text-gray-700 mb-2">Hi there! How can I help you with job recommendations?</p>
+    </div>
+      <div class="p-2 border-t flex flex-col space-y-2">
+        <div class="flex items-center space-x-2">
+          <input id="chatInput" type="text" placeholder="Ask me anything..." class="flex-grow p-2 text-sm border border-gray-300 rounded-l focus:outline-none" />
+          <button id="sendButton" class="bg-blue-500 text-white px-4 py-2 rounded-r">Send</button>
+          
+        </div>
+        <!---    <div class="flex items-center space-x-2">
+          <input id="chatInput" type="text" placeholder="Search jobs (e.g. Python Remote Developer)" class="flex-grow p-2 text-sm border border-gray-300 rounded-l focus:outline-none" />
+          <button id="sendButton" class="bg-blue-500 text-white px-4 py-2 rounded-r">Filter</button>
+          
+        </div>
+       -->
+        <div class="flex items-center space-x-2 mt-2">
+          <input id="resumeInput" type="file" accept=".pdf,.txt,.doc,.docx" class="p-1 text-xs border border-gray-300 rounded focus:outline-none w-32" />
+          <button id="uploadButton" class="bg-green-500 text-white px-3 py-1 rounded text-sm">Upload</button>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    const chatToggle = document.getElementById('chatToggle');
+    const chatWidget = document.getElementById('chatWidget');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatInput = document.getElementById('chatInput');
+    const sendButton = document.getElementById('sendButton');
+    const resumeInput = document.getElementById('resumeInput');
+    const uploadButton = document.getElementById('uploadButton');
+
+    function toggleChat() {
+      if (chatWidget.classList.contains('hidden')) {
+        chatWidget.classList.remove('hidden');
+        chatInput.focus();
+      } else {
+        chatWidget.classList.add('hidden');
+      }
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+
+    function appendMessage(text, sender) {
+      const messageElem = document.createElement('p');
+      messageElem.textContent = text;
+      messageElem.classList.add('mb-2', 'text-sm');
+      if (sender === 'user') {
+        messageElem.classList.add('text-right', 'text-blue-600');
+      } else {
+        messageElem.classList.add('text-gray-700');
+      }
+      chatMessages.appendChild(messageElem);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const message = chatInput.value.trim();
+      if (!message) return;
+
+      appendMessage(message, 'user');
+      chatInput.value = '';
+      try {
+        const response = await fetch('/chatbot-api/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message }),
+        });
+        const data = await response.json();
+        if (data.response) {
+          appendMessage(data.response, 'bot');
+        } else {
+          appendMessage('Oops! Something went wrong. Please try again.', 'bot');
+        }
+      } catch (error) {
+        appendMessage('Oops! Something went wrong. Please try again.', 'bot');
+      }
+    }
+
+    async function uploadResume() {
+      const file = resumeInput.files[0];
+      if (!file) {
+        alert('Please select a resume file to upload.');
+        return;
+      }
+
+      appendMessage('Uploading resume...', 'user');
+
+      const formData = new FormData();
+      formData.append('resume', file);
+
+      try {
+        const response = await fetch('/chatbot-api/', {
+          method: 'POST',
+          body: formData,
+        });
+        const data = await response.json();
+        if (data.response) {
+          appendMessage(data.response, 'bot');
+        } else {
+          appendMessage('Oops! Something went wrong while processing your resume.', 'bot');
+        }
+      } catch (error) {
+        appendMessage('Oops! Something went wrong while processing your resume.', 'bot');
+      }
+    }
+
+    sendButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        sendMessage();
+      }
+    });
+    uploadButton.addEventListener('click', uploadResume);
+
+    const filterButton = document.getElementById('filterButton');
+    const filterInput = document.getElementById('filterInput');
+
+    filterButton.addEventListener('click', async () => {
+      const filterText = filterInput.value.trim();
+      if (!filterText) {
+        alert('Please enter filter text.');
+        return;
+      }
+
+      appendMessage(`Filter applied: ${filterText}`, 'user');
+
+      try {
+        const response = await fetch('/chatbot-api/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message: filterText }),
+        });
+        const data = await response.json();
+        if (data.response) {
+          appendMessage(data.response, 'bot');
+        } else {
+          appendMessage('Oops! Something went wrong with the filter.', 'bot');
+        }
+      } catch (error) {
+        appendMessage('Oops! Something went wrong with the filter.', 'bot');
+      }
+    });
+  </script>
+  <footer class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 py-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- Logo & Socials -->
+      <div>
+        <div class="text-2xl font-bold text-white-600 mb-4">HireSense</div>
+        <p class="mb-4">Connecting Talent with Opportunity</p>
+        <div class="flex space-x-4">
+          <a href="#"><img src="{% static 'whatsapp-brands.svg' %}" class="w-5 h-5 cursor-pointer hover:brightness-110" alt="Whatsapp" /></a>
+          <a href="#"><img src="{% static 'github-brands.svg' %}" class="w-5 h-5 cursor-pointer hover:brightness-110" alt="Github" /></a>
+          <a href="#"><img src="{% static 'instagram-brands (1).svg' %}" class="w-5 h-5 cursor-pointer hover:brightness-110" alt="Instagram" /></a>
+          <a href="#"><img src="{% static 'linkedin-in-brands.svg' %}" class="w-5 h-5 cursor-pointer hover:brightness-110" alt="LinkedIn" /></a>
+        </div>
+      </div>
+
+      <!-- Company -->
+          <div>
+            <h4 class="font-semibold mb-3">Company</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="{% url 'company' %}#about" class="hover:underline">About Us</a></li>
+              <li><a href="{% url 'company' %}#careers" class="hover:underline">Careers</a></li>
+              <li><a href="{% url 'company' %}#press" class="hover:underline">Press</a></li>
+              <li><a href="{% url 'company' %}#press" class="hover:underline">Blog</a></li>
+            </ul>
+          </div>
+
+      <!-- Support -->
+      <div>
+        <h4 class="font-semibold mb-3">Support</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{% url 'support' %}#support" class="hover:underline">Help Center</a></li>
+          <li><a href="{% url 'support' %}#support" class="hover:underline">FAQ</a></li>
+          <li><a href="{% url 'support' %}#support" class="hover:underline">Report Issue</a></li>
+          <li><a href="{% url 'support' %}#support" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="font-semibold mb-3">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{% url 'Legal' %}#Legal" class="hover:underline">Terms of Service</a></li>
+          <li><a href="{% url 'Legal' %}#Legal" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="{% url 'Legal' %}#Legal" class="hover:underline">Trust & Safety</a></li>
+          <li><a href="{% url 'Legal' %}#Legal" class="hover:underline">License</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-300 dark:border-gray-700 mt-10 pt-6 text-sm text-center">
+      &copy; 2025 Hire Sense. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for Theme Toggle -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
+
+
+
+  
+
+  

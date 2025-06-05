@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidate Insights - Employer Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="min-h-screen p-6">
+
+  <h1 class="text-3xl font-bold mb-4 text-center">Candidate Insights</h1>
+
+  <!-- Candidate Visit Counter -->
+  <div class="bg-gray-800 p-4 rounded-xl text-center shadow-md border border-gray-700 max-w-md mx-auto mb-8">
+    <h2 class="text-2xl font-semibold">👤 Total Visits</h2>
+    <p class="text-4xl font-bold mt-2 text-green-400">24</p>
+    <p class="text-sm text-gray-400">Candidates have viewed your job post</p>
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="bg-gray-800 p-6 rounded-xl shadow-md border border-gray-700 max-w-2xl mx-auto mb-10">
+    <h2 class="text-xl font-semibold mb-4 text-center">Candidate Background Distribution</h2>
+    <canvas id="backgroundChart" class="w-full h-64"></canvas>
+  </div>
+
+  <!-- Candidate Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Candidate Card - Repeat Dynamically -->
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-md border border-gray-700 hover:scale-[1.02] transform transition-all duration-200">
+      <h3 class="text-xl font-semibold">Riya Sharma</h3>
+      <p class="text-sm text-gray-400 mt-1">Background: Computer Science</p>
+      <p class="text-sm text-gray-400">Experience: 2 years</p>
+      <p class="text-sm text-gray-400">Visited: May 20, 2025</p>
+    </div>
+
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-md border border-gray-700 hover:scale-[1.02] transform transition-all duration-200">
+      <h3 class="text-xl font-semibold">Arjun Mehta</h3>
+      <p class="text-sm text-gray-400 mt-1">Background: Data Science</p>
+      <p class="text-sm text-gray-400">Experience: 1 year</p>
+      <p class="text-sm text-gray-400">Visited: May 21, 2025</p>
+    </div>
+
+    <!-- Add more candidate cards dynamically -->
+
+  </div>
+
+  <!-- Chart.js Setup -->
+  <script>
+    const ctx = document.getElementById('backgroundChart').getContext('2d');
+
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Computer Science', 'Data Science', 'Mechanical', 'Electrical', 'Other'],
+        datasets: [{
+          data: [10, 7, 3, 2, 2], // These values should be dynamically generated from your backend
+          backgroundColor: [
+            '#3B82F6', // blue
+            '#10B981', // green
+            '#F59E0B', // yellow
+            '#EF4444', // red
+            '#8B5CF6'  // purple
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            labels: {
+              color: 'white'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

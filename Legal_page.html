@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal | HireSense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="bg-gray-950 text-gray-100 font-sans antialiased">
+    <header class="bg-gray-900 shadow-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">HireSense</h1>
+        <nav>
+      <!---    <a href="/" class="text-sm text-gray-300 hover:text-white">Home</a>
+        --></nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+      <h2 class="text-4xl font-bold text-white mb-6">Legal</h2>
+      <p class="text-gray-400 mb-10 leading-relaxed">
+        Review our legal terms and policies to understand how we protect your data, maintain safety, and define user responsibilities.
+      </p>
+
+      <!-- Section Template -->
+      <section id="terms" class="mb-12">
+        <h3 class="text-2xl font-semibold text-white mb-3">Terms of Service</h3>
+        <div class="space-y-2 text-gray-300">
+          <p><strong>Eligibility:</strong> You must be 18+ to use HireSense.</p>
+          <p><strong>Use of Services:</strong> Misuse or abuse of the platform is prohibited.</p>
+          <p><strong>Account Responsibility:</strong> Keep your login credentials secure.</p>
+          <p><strong>Termination:</strong> Accounts violating terms may be suspended.</p>
+        </div>
+        <a href="{% url 'Terms_of_service' %}" class="text-blue-500 hover:underline inline-block mt-2">Read full Terms →</a>
+      </section>
+
+      <section id="privacy" class="mb-12">
+        <h3 class="text-2xl font-semibold text-white mb-3">Privacy Policy</h3>
+        <div class="space-y-2 text-gray-300">
+          <p><strong>Information Collection:</strong> We collect necessary data for service improvement.</p>
+          <p><strong>Usage:</strong> Data helps match talent and opportunity more effectively.</p>
+          <p><strong>Third Parties:</strong> We never sell your personal information.</p>
+          <p><strong>Your Rights:</strong> You can access or delete your data anytime.</p>
+        </div>
+        <a href="{% url 'Privacy_policy' %}" class="text-blue-500 hover:underline inline-block mt-2">View Privacy Policy →</a>
+      </section>
+
+      <section id="trust" class="mb-12">
+        <h3 class="text-2xl font-semibold text-white mb-3">Trust & Safety</h3>
+        <div class="space-y-2 text-gray-300">
+          <p><strong>User Verification:</strong> We verify identities to ensure platform trust.</p>
+          <p><strong>Reporting:</strong> You can report harmful or suspicious activity.</p>
+          <p><strong>Zero Tolerance:</strong> Harassment, fraud, and discrimination are strictly forbidden.</p>
+        </div>
+        <a href="{% url 'Trust_Safety' %}" class="text-blue-500 hover:underline inline-block mt-2">Explore Trust & Safety →</a>
+      </section>
+
+      <section id="license" class="mb-12">
+        <h3 class="text-2xl font-semibold text-white mb-3">License</h3>
+        <div class="space-y-2 text-gray-300">
+          <p><strong>Usage:</strong> Users are granted limited, non-transferable access.</p>
+          <p><strong>Ownership:</strong> You own your content but grant us display rights.</p>
+          <p><strong>Restrictions:</strong> Reproduction or redistribution without consent is prohibited.</p>
+        </div>
+        <a href="{% url 'License_Agreement'  %}" class="text-blue-500 hover:underline inline-block mt-2">Full License Details →</a>
+      </section>
+    </main>
+  </body>
+</html>

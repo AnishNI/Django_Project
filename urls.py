@@ -1,0 +1,50 @@
+from django.urls import path
+from django.urls import path
+from . import views
+from .views import Trust_Safety, Privacy_policy, Terms_of_service, articles, five_ways, index, signup_seeker, new_signup_recruiter, candidate_login, candidate_signup, new_login_recruiter, job_analysis, candidates_project_dashboard, login, company, support, Legal, help_centre, open_roles, press, blog, candidates_projects, admin_panel, profile_edit, profile_view, logout, application, behind_the_scenes, help_centre, recuiter_dashboard, job_listings, candidates, settings_view, delete_job, description_about_job, chatbot_api,License_Agreement
+
+
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('signup/', views.signup_seeker, name='signup'),
+    path('signup/seeker/', views.signup_seeker, name='signup_seeker'),
+    path('signup/recruiter/', views.new_signup_recruiter, name='signup_recruiter'),
+    path('login/candidate/', views.candidate_login, name='candidate_login'),
+    path('signup/candidate/', views.candidate_signup, name='candidate_signup'),
+    path('login/recruiter/', views.new_login_recruiter, name='login_recruiter'),
+    path('recruiter/dashboard/', views.recuiter_dashboard, name='recuiter_dashboard'),
+    path('job_analysis/', views.job_analysis, name='job_analysis'),
+    path('candidates_project_dashboard/', views.candidates_project_dashboard, name='candidates_project_dashboard'),
+    path('login/', views.login, name='login'),
+    path('company/', views.company, name='company'),
+    path('support/', views.support, name='support'),
+    path('Legal/', views.Legal, name='Legal'),
+    path('apply/<int:job_id>/', views.apply_job, name='apply_job'),
+    path('help_centre/', views.help_centre, name='help_centre'),
+    path('open_roles/', views.open_roles, name='open_roles'),
+    path('press/', views.press, name='press'),
+    path('blog/', views.blog, name='blog'),
+    path('candidates_projects/', views.candidates_projects, name='candidates_projects'),
+    path('candidates_project_dashboard/', views.candidates_project_dashboard, name='candidates_project_dashboard'),
+    path('admin_panel/', views.admin_panel, name='admin_panel'),
+    path('profile_edit/', views.profile_edit, name='profile_edit'),
+    path('profile_view/', views.profile_view, name='profile_view'),
+    path('logout/', views.logout, name='logout'),
+    path('application/', views.application, name='application'),
+    path('five_ways/', views.five_ways, name='five_ways'),
+    path('behind_the_scenes/', views.behind_the_scenes, name='behind_the_scenes'),
+    path('help_centre/', views.help_centre, name='help_centre'),
+    path('articles/', views.articles, name='articles'),
+    path('Terms_of_service/', views.Terms_of_service, name='Terms_of_service'),
+    path('Privacy_policy/', views.Privacy_policy, name='Privacy_policy'),
+    path('Trust_Safety/', views.Trust_Safety, name='Trust_Safety'),
+    path('License_Agreement/', views.License_Agreement, name='License_Agreement'),
+    path('job_listings/', views.job_listings, name='job_listings'),
+    path('candidates/', views.candidates, name='candidates'),
+    path('settings/', views.settings_view, name='settings'),    
+    path('delete_job/<int:job_id>/', views.delete_job, name='delete_job'),
+    path('job/<int:job_id>/', views.description_about_job, name='description_about_job'),
+    path('chatbot-api/', views.chatbot_api, name='chatbot_api'),
+    path('search/', views.search_jobs, name='search_jobs'),
+]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support | HireSense</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 p-6 shadow flex justify-between items-center">
+    <h1 class="text-2xl font-bold">HireSense Support</h1>
+    <nav class="space-x-6">
+      <a href="#help" class="hover:text-blue-400">Help Center</a>
+      <a href="#faq" class="hover:text-blue-400">FAQ</a>
+      <a href="#report" class="hover:text-blue-400">Report Issue</a>
+      <a href="#contact" class="hover:text-blue-400">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+    <!-- Help Center -->
+    <section id="help" class="space-y-4">
+      <h2 class="text-3xl font-bold border-l-4 border-blue-500 pl-3">Help Center</h2>
+      <p class="text-gray-300">
+        Need assistance? The HireSense Help Center is your go-to guide for account setup, job posting, resume parsing, and using the Hiro chatbot.
+      </p>
+      <ul class="list-disc pl-6 text-gray-400">
+        <li>Getting started with your employer/candidate account</li>
+        <li>How to post jobs and manage applicants</li>
+        <li>Using AI-based job recommendations</li>
+        <li>Privacy and data handling FAQs</li>
+      </ul>
+      <a href="{% url 'help_centre' %}#help_centre" class="mt-4 inline-block px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 font-semibold">Visit Full Help Center</a>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="space-y-4">
+      <h2 class="text-3xl font-bold border-l-4 border-green-500 pl-3">Frequently Asked Questions</h2>
+      <div class="bg-gray-800 p-6 rounded-lg space-y-6 border border-gray-700">
+        <div>
+          <h3 class="text-lg font-semibold text-white">❓ How does HireSense match jobs?</h3>
+          <p class="text-gray-400">We use AI algorithms that consider skills, experience, preferences, and real-time job trends.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">❓ Can I edit or delete a job post?</h3>
+          <p class="text-gray-400">Yes, go to your employer dashboard to edit or remove any posted jobs.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white">❓ Is my data secure?</h3>
+          <p class="text-gray-400">Absolutely. We follow modern encryption standards and GDPR-compliant policies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Report an Issue -->
+    <section id="report" class="space-y-4">
+      <h2 class="text-3xl font-bold border-l-4 border-yellow-500 pl-3">Report an Issue</h2>
+      <p class="text-gray-300">Encountered a bug or system error? Please report it so our team can fix it quickly.</p>
+      <form class="bg-gray-800 p-6 rounded-lg space-y-4 border border-gray-700">
+        <div>
+          <label class="block mb-1 text-gray-300">Your Email</label>
+          <input type="email" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" required>
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-300">Issue Description</label>
+          <textarea class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 hover:bg-red-700 px-5 py-2 rounded font-semibold">Submit Issue</button>
+      </form>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="space-y-4">
+      <h2 class="text-3xl font-bold border-l-4 border-purple-500 pl-3">Contact Us</h2>
+      <p class="text-gray-300">Still need help? Reach out to our support team directly.</p>
+      <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 space-y-2">
+        <p><strong>Email:</strong> <a href="mailto:tejasbhosale2030@gmail.com" class="text-blue-400 underline">tejasbhosale2030@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 90219 22760</p>
+        <p><strong>Office Hours:</strong> Mon–Fri, 9:00am – 6:00pm IST</p>
+        <p><strong>Chatbot:</strong> Available inside your dashboard</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-6 text-center text-sm text-gray-400">
+    &copy; 2025 HireSense. All rights reserved.
+  </footer>
+
+</body>
+</html>
